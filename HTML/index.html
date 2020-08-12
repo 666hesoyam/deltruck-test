@@ -41,7 +41,7 @@
                         <div class="header__hot-line">
                             <div class="hot-line">
                                 <div class="hot-line__icon">
-                                    <img src="img/icon/phone.png" alt="Phone Icon">
+                                    <a href="tel:067 628 26 30"><img src="img/icon/phone.png" alt="Phone Icon"></a>
                                 </div>
                                 <div class="hot-line__number">
                                     <h5 class="number__title">гаряча лінія</h5>
@@ -63,11 +63,6 @@
                         </li>
 
                         <li class="nav__li-title"><a href="#" aria-haspopup="true">Послуги</a>
-                            <ul class="dropdown" aria-label="submenu">
-                                <li class="dropdown__li"><a href="#" class="link">Вантажні перевезення</a></li>
-                                <li class="dropdown__li"><a href="#" class="link">Консолідовані перевезення</a></li>
-                                <li class="dropdown__li"><a href="#" class="link">Заявка на перевезення<div class="new--white">new</div></a> </li>
-                            </ul>
                         </li>
 
                         <li class="nav__li-title"><a href="#" aria-haspopup="true">Компанія</a>
@@ -121,8 +116,324 @@
         <main class="services__order">
             <div class="container">
                 <div class="order">
-                    <div class="info">
-                        <h3 class="info__title">Вантажні перевезення</h3>
+
+                    <ul class="tabs" role="tablist">
+                        <li class="tabs__li">
+                            <input class="tabs__input" type="radio" name="tabs" id="tab1" checked />
+                            <label class="tabs__label" for="tab1" 
+                                role="tab" 
+                                aria-selected="true" 
+                                aria-controls="panel1" 
+                                tabindex="0">Вантажні перевезення</label>
+                            <div id="tab-content1" 
+                                class="tab-content" 
+                                role="tabpanel" 
+                                aria-labelledby="description" 
+                                aria-hidden="false">
+
+                                <div class="info">
+                                    <h4 class="info__sub-title">Перевезення стандартного вантажу по Україні</h4>
+                                    
+                                    <div class="info__text">
+                                        <p>Якщо Ви зацікавлені в замовленні автомобіля для перевезення Вашого вантажу, заповніть заявку. Ми зв’яжемося з Вами в максимально короткі терміни і надамо варіанти перевезень.</p>
+
+                                        <br>
+
+                                        <p>З допомогою компанії “DelTruck” доставка вантажів по Україні відбувається в максимально короткі терміни з високим рівнем безпеки та за вигідними тарифами.</p>
+                                    </div>
+                                    <div class="info__img">
+                                        <img src="img/order.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="request">
+                                    <div class="request__group">
+                                        <form class="form">
+                                            <label class="form__label">Ваше прізвище та ім’я</label>
+                                            <input class="form__input" type="text" placeholder=" ">
+                                        </form>
+
+                                        <form class="form">
+                                            <label class="form__label">Ваш номер</label>
+                                            <input class="form__input" type="number" placeholder="+380">
+                                        </form>
+
+                                        <form class="form">
+                                            <label class="form__label">Звідки</label>
+                                            <input class="form__input" type="text" placeholder=" ">
+                                        </form>
+
+                                        <form class="form">
+                                            <label class="form__label">Куди</label>
+                                            <input class="form__input" type="text" placeholder=" ">
+                                        </form>
+
+                                        <div class="form-small-wrap">
+                                            <form class="form form--small">
+                                                <label class="form__label">Дата подачі</label>
+                                                <input type='text' class="datepicker-here form__input" data-position="right top" />
+                                            </form>
+
+                                            <form class="form form--small">
+                                                <label class="form__label">Час подачі</label>
+                                                <select class="form__select">
+                                                    <option style="display:none;"></option>
+                                                    <option value="1">00:30</option>
+                                                    <option value="2">01:00</option>
+                                                    <option value="3">01:30</option>
+                                                    <option value="4">02:00</option>
+                                                    <option value="5">02:30</option>
+                                                    <option value="6">03:00</option>
+                                                    <option value="7">03:30</option>
+                                                    <option value="8">04:00</option>
+                                                    <option value="9">04:30</option>
+                                                    <option value="10">05:00</option>
+                                                    <option value="11">05:30</option>
+                                                    <option value="12">06:00</option>
+                                                    <option value="13">06:30</option>
+                                                    <option value="14">07:00</option>
+                                                    <option value="15">07:30</option>
+                                                    <option value="16">08:00</option>
+                                                    <option value="17">08:30</option>
+                                                    <option value="18">09:00</option>
+                                                    <option value="19">09:30</option>
+                                                    <option value="20">10:00</option>
+                                                    <option value="21">10:30</option>
+                                                    <option value="22">11:00</option>
+                                                    <option value="23">11:30</option>
+                                                    <option value="24">12:00</option>
+                                                    <option value="25">12:30</option>
+                                                    <option value="26">13:00</option>
+                                                    <option value="27">13:30</option>
+                                                    <option value="28">14:00</option>
+                                                    <option value="29">14:30</option>
+                                                    <option value="30">15:00</option>
+                                                    <option value="31">15:30</option>
+                                                    <option value="32">16:00</option>
+                                                    <option value="33">16:30</option>
+                                                    <option value="34">17:00</option>
+                                                    <option value="35">17:30</option>
+                                                    <option value="36">18:00</option>
+                                                    <option value="37">18:30</option>
+                                                    <option value="38">19:00</option>
+                                                    <option value="39">19:30</option>
+                                                    <option value="40">20:00</option>
+                                                    <option value="41">20:30</option>
+                                                    <option value="42">21:00</option>
+                                                    <option value="43">21:30</option>
+                                                    <option value="44">22:00</option>
+                                                    <option value="45">22:30</option>
+                                                    <option value="46">23:00</option>
+                                                    <option value="47">23:30</option>
+                                                </select>
+                                            </form>
+                                        </div>
+
+                                        <form class="form">
+                                            <label class="form__label">Вид автомобіля</label>
+                                            <select class="form__select">
+                                                <option style="display:none;"></option>
+                                                <option value="Iзотерм">Iзотерм</option>
+                                                <option value="Контейнер">Контейнер</option>
+                                                <option value="Рефрижератор">Рефрижератор</option>
+                                                <option value="Тент">Тент</option>
+                                                <option value="Суцільнометалева">Суцільнометалева</option>
+                                                <option value="Самоскид">Самоскид</option>
+                                                <option value="Трал">Трал</option>
+                                                <option value="Бортова">Бортова</option>
+                                                <option value="Бус">Бус</option>
+                                            </select>
+                                        </form>
+
+                                        <div class="form-small-wrap">
+                                            <form class="form form--small">
+                                                <label class="form__label">Вантажопідйомність</label>
+                                                <input class="form__input" type="number" placeholder=" ">
+                                            </form>
+
+                                            <form class="form form--small">
+                                                <label class="form__label">Об’єм, м3</label>
+                                                <input class="form__input" type="number" placeholder=" ">
+                                            </form>
+                                        </div>
+
+                                        <div class="form-small-wrap">
+                                            <form class="form form--small">
+                                                <label class="form__label">Тип завантаження</label>
+                                                <select class="form__select">
+                                                    <option style="display:none;"></option>
+                                                    <option value="Задня">Задня</option>
+                                                    <option value="Бокова">Бокова</option>
+                                                    <option value="Верхня">Верхня</option>
+                                                </select>
+                                            </form>
+                                        </div>
+
+                                        <button class="request__btn">відправити заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    <!-- TABS 2 -->
+
+                        <li class="tabs__li">
+                            <input class="tabs__input" type="radio" name="tabs" id="tab2" />
+                            <label class="tabs__label" for="tab2"
+                                role="tab" 
+                                aria-selected="false" 
+                                aria-controls="panel2" 
+                                tabindex="0">Консалідовані перевезення</label>
+                            <div id="tab-content2" 
+                                class="tab-content"
+                                role="tabpanel" 
+                                aria-labelledby="specification" 
+                                aria-hidden="true">
+
+                                <div class="info">
+                                    <h4 class="info__sub-title">Перевезення стандартного вантажу по Україні</h4>
+                                    <div class="info__text">
+                                        <p>Якщо Ви зацікавлені в замовленні автомобіля для перевезення Вашого вантажу, заповніть заявку. Ми зв’яжемося з Вами в максимально короткі терміни і надамо варіанти перевезень.</p>
+
+                                        <br>
+
+                                        <p>З допомогою компанії “DelTruck” доставка вантажів по Україні відбувається в максимально короткі терміни з високим рівнем безпеки та за вигідними тарифами.</p>
+                                    </div>
+                                    <div class="info__img">
+                                        <img src="img/order-2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="request">
+                                    <div class="request__group">
+                                        <form class="form">
+                                            <label class="form__label">Ваше прізвище та ім’я</label>
+                                            <input class="form__input" type="text" placeholder=" ">
+                                        </form>
+
+                                        <form class="form">
+                                            <label class="form__label">Ваш номер</label>
+                                            <input class="form__input" type="number" placeholder="+380">
+                                        </form>
+
+                                        <form class="form">
+                                            <label class="form__label">Звідки</label>
+                                            <input class="form__input" type="text" placeholder=" ">
+                                        </form>
+
+                                        <form class="form">
+                                            <label class="form__label">Куди</label>
+                                            <input class="form__input" type="text" placeholder=" ">
+                                        </form>
+
+                                        <div class="form-small-wrap">
+                                            <form class="form form--small">
+                                                <label class="form__label">Дата подачі</label>
+                                                <input type='text' class="datepicker-here form__input" data-position="right top" />
+                                            </form>
+
+                                            <form class="form form--small">
+                                                <label class="form__label">Час подачі</label>
+                                                <select class="form__select">
+                                                    <option style="display:none;"></option>
+                                                    <option value="1">00:30</option>
+                                                    <option value="2">01:00</option>
+                                                    <option value="3">01:30</option>
+                                                    <option value="4">02:00</option>
+                                                    <option value="5">02:30</option>
+                                                    <option value="6">03:00</option>
+                                                    <option value="7">03:30</option>
+                                                    <option value="8">04:00</option>
+                                                    <option value="9">04:30</option>
+                                                    <option value="10">05:00</option>
+                                                    <option value="11">05:30</option>
+                                                    <option value="12">06:00</option>
+                                                    <option value="13">06:30</option>
+                                                    <option value="14">07:00</option>
+                                                    <option value="15">07:30</option>
+                                                    <option value="16">08:00</option>
+                                                    <option value="17">08:30</option>
+                                                    <option value="18">09:00</option>
+                                                    <option value="19">09:30</option>
+                                                    <option value="20">10:00</option>
+                                                    <option value="21">10:30</option>
+                                                    <option value="22">11:00</option>
+                                                    <option value="23">11:30</option>
+                                                    <option value="24">12:00</option>
+                                                    <option value="25">12:30</option>
+                                                    <option value="26">13:00</option>
+                                                    <option value="27">13:30</option>
+                                                    <option value="28">14:00</option>
+                                                    <option value="29">14:30</option>
+                                                    <option value="30">15:00</option>
+                                                    <option value="31">15:30</option>
+                                                    <option value="32">16:00</option>
+                                                    <option value="33">16:30</option>
+                                                    <option value="34">17:00</option>
+                                                    <option value="35">17:30</option>
+                                                    <option value="36">18:00</option>
+                                                    <option value="37">18:30</option>
+                                                    <option value="38">19:00</option>
+                                                    <option value="39">19:30</option>
+                                                    <option value="40">20:00</option>
+                                                    <option value="41">20:30</option>
+                                                    <option value="42">21:00</option>
+                                                    <option value="43">21:30</option>
+                                                    <option value="44">22:00</option>
+                                                    <option value="45">22:30</option>
+                                                    <option value="46">23:00</option>
+                                                    <option value="47">23:30</option>
+                                                </select>
+                                            </form>
+                                        </div>
+
+                                        <form class="form">
+                                            <label class="form__label">Вид автомобіля</label>
+                                            <select class="form__select">
+                                                <option style="display:none;"></option>
+                                                <option value="Iзотерм">Iзотерм</option>
+                                                <option value="Контейнер">Контейнер</option>
+                                                <option value="Рефрижератор">Рефрижератор</option>
+                                                <option value="Тент">Тент</option>
+                                                <option value="Суцільнометалева">Суцільнометалева</option>
+                                                <option value="Самоскид">Самоскид</option>
+                                                <option value="Трал">Трал</option>
+                                                <option value="Бортова">Бортова</option>
+                                                <option value="Бус">Бус</option>
+                                            </select>
+                                        </form>
+
+                                        <div class="form-small-wrap">
+                                            <form class="form form--small">
+                                                <label class="form__label">Вантажопідйомність</label>
+                                                <input class="form__input" type="number" placeholder=" ">
+                                            </form>
+
+                                            <form class="form form--small">
+                                                <label class="form__label">Об’єм, м3</label>
+                                                <input class="form__input" type="number" placeholder=" ">
+                                            </form>
+                                        </div>
+
+                                        <div class="form-small-wrap">
+                                            <form class="form form--small">
+                                                <label class="form__label">Тип завантаження</label>
+                                                <select class="form__select">
+                                                    <option style="display:none;"></option>
+                                                    <option value="Задня">Задня</option>
+                                                    <option value="Бокова">Бокова</option>
+                                                    <option value="Верхня">Верхня</option>
+                                                </select>
+                                            </form>
+                                        </div>
+
+                                        <button class="request__btn">відправити заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <div class="info">
                         <h4 class="info__sub-title">Перевезення стандартного вантажу по Україні</h4>
                         
                         <div class="info__text">
@@ -148,7 +459,7 @@
 
                             <form class="form">
                                 <label class="form__label">Ваш номер</label>
-                                <input class="form__input" type="number" placeholder=" ">
+                                <input class="form__input" type="number" placeholder="+380">
                             </form>
 
                             <form class="form">
@@ -264,7 +575,7 @@
 
                             <button class="request__btn">відправити заявку</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </main>
@@ -332,7 +643,7 @@
                             <a href="#">
                                 <div class="news-block__btn">
                                     <p>Всі новини</p> 
-                                    <img src="img/icon/arrow.svg" alt="">
+                                    <img src="img/icon/arrow.png" alt="">
                                 </div>
                             </a>
                         </div>
@@ -345,27 +656,37 @@
 
                         <div class="advantages-block">
                             <div class="advantages-block__item">
-                                <img src="img/icon/truck_icon.png" alt="">
+                                <div class="img-wrap">
+                                    <img src="img/icon/truck_icon.png" alt="">
+                                </div>
                                 <h3 class="title">Великий парк автомобілів</h3>
                             </div>
 
                             <div class="advantages-block__item">
-                                <img src="img/icon/time_truck_icon.png" alt="">
+                                <div class="img-wrap">
+                                    <img src="img/icon/time_truck_icon.png" alt="">
+                                </div>
                                 <h3 class="title">Подача автомобіля в максимально стислі терміни</h3>
                             </div>
 
                             <div class="advantages-block__item">
-                                <img src="img/icon/document_icon.png" alt="">
+                                <div class="img-wrap">
+                                    <img src="img/icon/document_icon.png" alt="">
+                                </div>
                                 <h3 class="title">Оптимальна вартість перевезення</h3>
                             </div>
 
                             <div class="advantages-block__item">
-                                <img src="img/icon/track_icon.png" alt="">
+                                <div class="img-wrap">
+                                    <img src="img/icon/track_icon.png" alt="">
+                                </div>
                                 <h3 class="title">Автоматичний контроль перевезення</h3>
                             </div>
 
                             <div class="advantages-block__item">
-                                <img src="img/icon/umbrella_icon.png" alt="">
+                                <div class="img-wrap">
+                                    <img src="img/icon/umbrella_icon.png" alt="">
+                                </div>
                                 <h3 class="title">Індивідуальне страхування</h3>
                             </div>
                         </div>
@@ -385,7 +706,7 @@
 
                                 <form class="feedback-form">
                                     <label class="feedback-form__label">Номер на який ми зателефонуємо</label>
-                                    <input class="feedback-form__input" type="number" placeholder=" ">
+                                    <input class="feedback-form__input" type="number" placeholder="+380">
                                 </form>
 
                                 <button class="feedback-form__btn">Надіслати</button>
