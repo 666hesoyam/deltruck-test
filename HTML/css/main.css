@@ -299,7 +299,10 @@ a, a:focus, a:hover, a:active {
     border: 1px solid #D9D9D9;
     padding-left: 1vh;
     font-size: 1.6667vh;
-    line-height: 2.2222vh; }
+    line-height: 2.2222vh;
+    -moz-appearance: textfield; }
+    .form__input::-webkit-inner-spin-button {
+      display: none; }
     .form__input::placeholder {
       font-size: 1.6667vh;
       line-height: 2.2222vh;
@@ -481,7 +484,10 @@ a, a:focus, a:hover, a:active {
         background: #F8F8F8;
         border: 1px solid #DFDFDF;
         padding-left: 1vh;
-        font-size: 2vh; }
+        font-size: 2vh;
+        -moz-appearance: textfield; }
+        .feedback-block__item .feedback-form__input::-webkit-inner-spin-button {
+          display: none; }
         .feedback-block__item .feedback-form__input::placeholder {
           font-size: 1.8667vh;
           line-height: 2.2222vh;

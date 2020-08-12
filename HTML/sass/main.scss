@@ -393,6 +393,10 @@ a, a:focus, a:hover, a:active {
 		padding-left: 1vh;
 		font-size: 1.6667vh;
 		line-height: 2.2222vh;
+		-moz-appearance: textfield;
+		&::-webkit-inner-spin-button { 
+			display: none;
+		}
 		&::placeholder {
 			font-size: 1.6667vh;
 			line-height: 2.2222vh;
@@ -614,6 +618,10 @@ a, a:focus, a:hover, a:active {
 				border: 1px solid #DFDFDF;
 				padding-left: 1vh;
 				font-size: 2vh;
+				-moz-appearance: textfield;
+				&::-webkit-inner-spin-button { 
+					display: none;
+				}
 				&::placeholder {
 					font-size: 1.8667vh;
 					line-height: 2.2222vh;
