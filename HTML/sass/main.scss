@@ -403,12 +403,14 @@ a, a:focus, a:hover, a:active {
 		height: 3.8889vh;
 		width: 100%;
 		font-size: 1.6667vh;
+		padding-left: 1vh;
 		line-height: 2.2222vh;
 		border: 1px solid #D9D9D9;
 
-		// background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat center;
-		// -webkit-appearance: none;
-		// background-position-x: 97%;
+		background: url('../img/icon/Arrow-select.svg') no-repeat center;
+		-webkit-appearance: none;
+		background-position-x: 97%;
+		cursor: pointer;
 	}
 	option,
 	option:hover,
