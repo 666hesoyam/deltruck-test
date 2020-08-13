@@ -325,6 +325,8 @@ a, a:focus, a:hover, a:active {
     -webkit-appearance: none;
     background-position-x: 97%;
     cursor: pointer; }
+    .form__select::-ms-expand {
+      display: none; }
   .form option,
   .form option:hover,
   .form option:focus {

@@ -423,6 +423,9 @@ a, a:focus, a:hover, a:active {
 		-webkit-appearance: none;
 		background-position-x: 97%;
 		cursor: pointer;
+		&::-ms-expand {
+			display: none;
+		}
 	}
 	option,
 	option:hover,
