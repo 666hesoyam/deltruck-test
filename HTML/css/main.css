@@ -116,8 +116,6 @@ a, a:focus, a:hover, a:active {
   width: 100%;
   height: 100%;
   background-color: #E6E6E6; }
-  .nav a {
-    text-decoration: none; }
   .nav .nav__ul {
     list-style: none;
     margin: 0;
@@ -125,72 +123,79 @@ a, a:focus, a:hover, a:active {
     display: flex;
     justify-content: space-evenly;
     height: 100%; }
-  .nav .nav__li-title {
+  .nav .nav__li {
     width: 100%;
-    text-align: center;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1vh 0;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.5s;
-    font-size: 1.3889vh;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .nav .nav__li--long {
+      width: 124%; }
+  .nav .nav__li:hover {
+    background: #B72126;
+    cursor: pointer; }
+  .nav .nav__li:hover .new {
+    background-color: #fff;
+    color: #000; }
+  .nav .nav__title {
+    font-size: 1.6667vh;
     line-height: 1.8519vh;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-weight: 400; }
-    .nav .nav__li-title--long {
-      width: 124%; }
-  .nav .nav__li-title a {
+    font-weight: 400;
     color: #303030; }
-  .nav .nav__li-title:hover,
-  .nav .nav__li-title:focus-within {
-    background: #B72126;
-    cursor: pointer;
+  .nav .nav__li:hover .nav__title {
     color: #fff; }
-  .nav .dropdown__li {
-    text-align: left;
-    font-size: 1.6667vh;
-    line-height: 1.8519vh;
-    height: 4.6296vh;
-    display: flex;
-    align-items: center;
-    text-transform: none; }
-    .nav .dropdown__li a {
-      padding: 1.3vh;
-      width: 100%; }
-    .nav .dropdown__li:hover {
-      background-color: #B72126; }
-  .nav .dropdown__li:hover .link,
-  .nav .dropdown__li:focus-within .link {
-    color: #fff; }
-  .nav .nav__li-title:focus-within a {
-    outline: none; }
-  .nav .nav__ul .nav__li-title .dropdown {
+  .nav .drop__ul {
     background: #E6E6E6;
-    visibility: hidden;
-    opacity: 0;
     min-width: 29.8148vh;
+    padding: 0;
     position: absolute;
-    transition: all 0.5s ease;
     top: 5.5vh;
     left: 0;
-    display: none; }
-  .nav .nav__ul .nav__li-title:hover > .dropdown,
-  .nav .nav__ul .nav__li-title:focus-within > .dropdown,
-  .nav .nav__ul .nav__li-title .dropdown:hover,
-  .nav .nav__ul .nav__li-title .dropdown:focus {
-    visibility: visible;
-    opacity: 1;
-    display: block; }
-  .nav .nav__ul .nav__li-title .dropdown .dropdown__li {
-    clear: both;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s; }
+  .nav .drop__li {
+    height: 4.6296vh; }
+  .nav .drop__li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2.7778vh;
+    height: 100%;
     width: 100%;
+    text-transform: none;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 1.6667vh;
+    line-height: 1.8519vh;
+    letter-spacing: 0.0463vh; }
+  .nav .drop__li:hover a {
+    color: #fff; }
+  .nav .drop__li:hover {
+    background: #B72126; }
+  .nav .nav__ul .nav__li:hover .drop__ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
     list-style-type: none; }
 
-.new, .new--white {
+.new {
   color: #fff;
   font-weight: normal;
   font-size: 1.3889vh;
@@ -204,14 +209,9 @@ a, a:focus, a:hover, a:active {
   height: 2.2222vh;
   margin-left: 0.4vh; }
 
-.nav__li-title:hover .new {
+.nav__li:hover .new {
   background-color: #fff;
   color: #000; }
-
-.new--white {
-  background-color: #fff;
-  color: #B72126;
-  display: inline-block; }
 
 .services__heading {
   margin-bottom: 6.4815vh; }
@@ -637,3 +637,10 @@ a, a:focus, a:hover, a:active {
     visibility: visible;
     height: auto;
     display: flex; }
+
+.in-dev {
+  margin-top: 20vh; }
+  .in-dev h1 {
+    font-size: 5vh;
+    text-align: center;
+    text-transform: uppercase; }

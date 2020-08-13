@@ -9,7 +9,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>DelTruck</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta name="keywords" content="text, text">
         <!-- Fonts -->
@@ -59,49 +59,56 @@
             <div class="container">
                 <nav class="nav" role="navigation">
                     <ul class="nav__ul">
-                        <li class="nav__li-title"><a href="#">Головна</a>
-                        </li>
-
-                        <li class="nav__li-title"><a href="#" aria-haspopup="true">Послуги</a>
-                        </li>
-
-                        <li class="nav__li-title"><a href="#" aria-haspopup="true">Компанія</a>
-                            <ul class="dropdown" aria-label="submenu">
-                                <li class="dropdown__li"><a href="#" class="link">Новини</a></li>
-                                <li class="dropdown__li"><a href="#" class="link">Про компанію</a></li>
-                                <li class="dropdown__li"><a href="#" class="link">Переваги</a></li>
+                        <li class="nav__li">
+                            <a class="nav__title" href="in-dev.html">Головна</a></li>
+                        
+                        <li class="nav__li">
+                            <a class="nav__title" href="index.html">Послуги</a>
+                            <ul class="drop__ul">
+                                <li class="drop__li"><a href="index.html">Перевезення</a></li>
+                                <li class="drop__li"><a href="in-dev.html">Додаткові послуги</a></li>
                             </ul>
                         </li>
 
-
-                        <li class="nav__li-title"><a href="#" aria-haspopup="true">Клієнтам</a>
-                            <ul class="dropdown" aria-label="submenu">
-                                <li class="dropdown__li"><a href="#" class="link">Послуги</a></li>
-                                <li class="dropdown__li"><a href="#" class="link">Документація</a></li>
-                                <li class="dropdown__li"><a href="#" class="link">Спец. пропозиції</a></li>
+                        <li class="nav__li">
+                            <a class="nav__title" href="in-dev.html">Компанія</a>
+                            <ul class="drop__ul">
+                                <li class="drop__li"><a href="in-dev.html">Новини</a></li>
+                                <li class="drop__li"><a href="in-dev.html">Про компанію</a></li>
+                                <li class="drop__li"><a href="in-dev.html">Переваги</a></li>
                             </ul>
                         </li>
 
-                        <li class="nav__li-title"><a href="#" aria-haspopup="true">Співробітництво</a>
-                            <ul class="dropdown" aria-label="submenu">
-                                <li class="dropdown__li"><a href="#" class="link">Робота з перевізниками</a></li>
+                        <li class="nav__li">
+                            <a class="nav__title" href="in-dev.html">Клієнтам</a>
+                            <ul class="drop__ul">
+                                <li class="drop__li"><a href="in-dev.html">Послуги</a></li>
+                                <li class="drop__li"><a href="in-dev.html">Документація</a></li>
+                                <li class="drop__li"><a href="in-dev.html">Спец. пропозиції</a></li>
                             </ul>
                         </li>
 
-                        <li class="nav__li-title"><a href="#">Контакти</a>
+                        <li class="nav__li">
+                            <a class="nav__title" href="in-dev.html">Співробітництво</a>
+                            <ul class="drop__ul">
+                                <li class="drop__li"><a href="in-dev.html">Робота з перевізниками</a></li>
+                            </ul>
                         </li>
 
-                        <li class="nav__li-title nav__li-title--long">
-                            <a href="#">Пошук рейсу 
+                        <li class="nav__li">
+                            <a class="nav__title" href="in-dev.html">Контакти</a>
+                        </li>
+
+                        <li class="nav__li nav__li--long">
+                            <a class="nav__title" href="in-dev.html">Пошук рейсу
                             </a>
-                            <div class="new"><p>new</p></div> 
+                            <div class="new"><p>new</p></div>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
         <!--========== \END HEADER ==========-->
-
 
 
         <!--========== PAGE LAYOUT ==========-->
@@ -417,149 +424,6 @@
                             </div>
                         </li>
                     </ul>
-                    <!-- <div class="info">
-                        <h4 class="info__sub-title">Перевезення стандартного вантажу по Україні</h4>
-                        
-                        <div class="info__text">
-                            <p>Якщо Ви зацікавлені в замовленні автомобіля для перевезення Вашого вантажу, заповніть заявку. Ми зв’яжемося з Вами в максимально короткі терміни і надамо варіанти перевезень.</p>
-
-                            <br>
-
-                            <p>З допомогою компанії “DelTruck” доставка вантажів по Україні відбувається в максимально короткі терміни з високим рівнем безпеки та за вигідними тарифами.</p>
-                        </div>
-                        <div class="info__img">
-                            <img src="img/order.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="request">
-                        <h3 class="request__title">Вантажні перевезення</h3>
-
-                        <div class="request__group">
-                            <form class="form">
-                                <label class="form__label">Ваше прізвище та ім’я</label>
-                                <input class="form__input" type="text" placeholder=" ">
-                            </form>
-
-                            <form class="form">
-                                <label class="form__label">Ваш номер</label>
-                                <input class="form__input" type="number" placeholder="+380">
-                            </form>
-
-                            <form class="form">
-                                <label class="form__label">Звідки</label>
-                                <input class="form__input" type="text" placeholder=" ">
-                            </form>
-
-                            <form class="form">
-                                <label class="form__label">Куди</label>
-                                <input class="form__input" type="text" placeholder=" ">
-                            </form>
-
-                            <div class="form-small-wrap">
-                                <form class="form form--small">
-                                    <label class="form__label">Дата подачі</label>
-                                    <input type='text' class="datepicker-here form__input" data-position="right top" />
-                                </form>
-
-                                <form class="form form--small">
-                                    <label class="form__label">Час подачі</label>
-                                    <select class="form__select">
-                                        <option style="display:none;"></option>
-                                        <option value="1">00:30</option>
-                                        <option value="2">01:00</option>
-                                        <option value="3">01:30</option>
-                                        <option value="4">02:00</option>
-                                        <option value="5">02:30</option>
-                                        <option value="6">03:00</option>
-                                        <option value="7">03:30</option>
-                                        <option value="8">04:00</option>
-                                        <option value="9">04:30</option>
-                                        <option value="10">05:00</option>
-                                        <option value="11">05:30</option>
-                                        <option value="12">06:00</option>
-                                        <option value="13">06:30</option>
-                                        <option value="14">07:00</option>
-                                        <option value="15">07:30</option>
-                                        <option value="16">08:00</option>
-                                        <option value="17">08:30</option>
-                                        <option value="18">09:00</option>
-                                        <option value="19">09:30</option>
-                                        <option value="20">10:00</option>
-                                        <option value="21">10:30</option>
-                                        <option value="22">11:00</option>
-                                        <option value="23">11:30</option>
-                                        <option value="24">12:00</option>
-                                        <option value="25">12:30</option>
-                                        <option value="26">13:00</option>
-                                        <option value="27">13:30</option>
-                                        <option value="28">14:00</option>
-                                        <option value="29">14:30</option>
-                                        <option value="30">15:00</option>
-                                        <option value="31">15:30</option>
-                                        <option value="32">16:00</option>
-                                        <option value="33">16:30</option>
-                                        <option value="34">17:00</option>
-                                        <option value="35">17:30</option>
-                                        <option value="36">18:00</option>
-                                        <option value="37">18:30</option>
-                                        <option value="38">19:00</option>
-                                        <option value="39">19:30</option>
-                                        <option value="40">20:00</option>
-                                        <option value="41">20:30</option>
-                                        <option value="42">21:00</option>
-                                        <option value="43">21:30</option>
-                                        <option value="44">22:00</option>
-                                        <option value="45">22:30</option>
-                                        <option value="46">23:00</option>
-                                        <option value="47">23:30</option>
-                                    </select>
-                                </form>
-                            </div>
-
-                            <form class="form">
-                                <label class="form__label">Вид автомобіля</label>
-                                <select class="form__select">
-                                    <option style="display:none;"></option>
-                                    <option value="Iзотерм">Iзотерм</option>
-                                    <option value="Контейнер">Контейнер</option>
-                                    <option value="Рефрижератор">Рефрижератор</option>
-                                    <option value="Тент">Тент</option>
-                                    <option value="Суцільнометалева">Суцільнометалева</option>
-                                    <option value="Самоскид">Самоскид</option>
-                                    <option value="Трал">Трал</option>
-                                    <option value="Бортова">Бортова</option>
-                                    <option value="Бус">Бус</option>
-                                </select>
-                            </form>
-
-                            <div class="form-small-wrap">
-                                <form class="form form--small">
-                                    <label class="form__label">Вантажопідйомність</label>
-                                    <input class="form__input" type="number" placeholder=" ">
-                                </form>
-
-                                <form class="form form--small">
-                                    <label class="form__label">Об’єм</label>
-                                    <input class="form__input" type="number" placeholder=" ">
-                                </form>
-                            </div>
-
-                            <div class="form-small-wrap">
-                                <form class="form form--small">
-                                    <label class="form__label">Тип завантаження</label>
-                                    <select class="form__select">
-                                        <option style="display:none;"></option>
-                                        <option value="Задня">Задня</option>
-                                        <option value="Бокова">Бокова</option>
-                                        <option value="Верхня">Верхня</option>
-                                    </select>
-                                </form>
-                            </div>
-
-                            <button class="request__btn">відправити заявку</button>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </main>
@@ -574,7 +438,7 @@
                         </div>
 
                         <div class="news-block">
-                            <a href="#">
+                            <a href="in-dev.html">
                                 <div class="news-block__item">
                                     <div class="date-wrap">
                                         <div class="point"></div>
@@ -584,7 +448,7 @@
                                 </div>
                             </a>
 
-                            <a href="#">
+                            <a href="in-dev.html">
                                 <div class="news-block__item">
                                     <div class="date-wrap">
                                         <div class="point"></div>
@@ -594,7 +458,7 @@
                                 </div>
                             </a>
 
-                            <a href="#">
+                            <a href="in-dev.html">
                                 <div class="news-block__item">
                                     <div class="date-wrap">
                                         <div class="point"></div>
@@ -604,7 +468,7 @@
                                 </div>
                             </a>
 
-                            <a href="#">
+                            <a href="in-dev.html">
                                 <div class="news-block__item">
                                     <div class="date-wrap">
                                         <div class="point"></div>
@@ -614,7 +478,7 @@
                                 </div>
                             </a>
 
-                            <a href="#">
+                            <a href="in-dev.html">
                                 <div class="news-block__item">
                                     <div class="date-wrap">
                                         <div class="point"></div>
@@ -624,7 +488,7 @@
                                 </div>
                             </a>
 
-                            <a href="#">
+                            <a href="in-dev.html">
                                 <div class="news-block__btn">
                                     <p>Всі новини</p> 
                                     <img src="img/icon/arrow.png" alt="">
@@ -703,40 +567,39 @@
         <!--========== \END PAGE LAYOUT ==========-->
 
 
-
         <!--========== FOOTER ==========-->
         <footer class="footer">
             <div class="container">
                 <div class="footer-info">
                     <div class="footer-info__item">
                         <h3>Компанія</h3>
-                        <a href="#">Новини</a>
-                        <a href="#">Про компанію</a>
-                        <a href="#">Переваги</a>
+                        <a href="in-dev.html">Новини</a>
+                        <a href="in-dev.html">Про компанію</a>
+                        <a href="in-dev.html">Переваги</a>
                     </div>
                     
                     <div class="footer-info__item">
                         <h3>Клієнтам</h3>
-                        <a href="#">Послуги</a>
-                        <a href="#">Документація</a>
-                        <a href="#">Спец. пропозиції</a>
+                        <a href="in-dev.html">Послуги</a>
+                        <a href="in-dev.html">Документація</a>
+                        <a href="in-dev.html">Спец. пропозиції</a>
                     </div>
 
                     <div class="footer-info__item">
                         <h3>Співробітництво</h3>
-                        <a href="#">Робота з перевізниками</a>
+                        <a href="in-dev.html">Робота з перевізниками</a>
                     </div>
 
                     <div class="footer-info__item">
                         <h3>Послуги</h3>
-                        <a href="#">Вантажні перевезення</a>
-                        <a href="#">Консолідовані перевезення</a>
+                        <a href="in-dev.html">Вантажні перевезення</a>
+                        <a href="in-dev.html">Консолідовані перевезення</a>
 
                         <button class="footer-info__btn">Замовити Авто</button>
                     </div>
 
                     <div class="footer-info__item footer-info__item--new">
-                        <a href="#">
+                        <a href="in-dev.html">
                             <h3>Пошук рейсу <div class="new"><p>new</p></div></h3>
                         </a>
                     </div>
@@ -749,6 +612,7 @@
                 </div>
             </div>
         </footer>
+
         <!--========== \END FOOTER ==========-->
 
 
