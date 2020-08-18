@@ -8,7 +8,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>DelTruck</title>
+        <title>DelTruck / Перевезення</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta name="keywords" content="text, text">
@@ -28,93 +28,21 @@
     <body>
 
         <!--========== HEADER ==========-->
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <a href="index.html"><img src="img/deltruck-logo.png" alt="DelTruck" class="header__logo"></a>
-                    <div class="header__wrapper">
-                        <div class="header__title">
-                            <h3>Рішення. Розвиток. Результат</h3>
-                            <p>Перевезення по Україні окремими автомобілями</p>
-                        </div>
-
-                        <div class="header__hot-line">
-                            <div class="hot-line">
-                                <div class="hot-line__icon">
-                                    <a href="tel:067 628 26 30"><img src="img/icon/phone.png" alt="Phone Icon"></a>
-                                </div>
-                                <div class="hot-line__number">
-                                    <h5 class="number__title">гаряча лінія</h5>
-                                    <a href="tel:067 628 26 30" class="number__num">067 628 26 30</a>
-                                </div>
-                            </div>
-                            <p class="hot-line__alert">*Безкоштовно з усіх операторів України</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="header__nav">
-            <div class="container">
-                <nav class="nav" role="navigation">
-                    <ul class="nav__ul">
-                        <li class="nav__li">
-                            <a class="nav__title" href="in-dev.html">Головна</a></li>
-                        
-                        <li class="nav__li">
-                            <a class="nav__title" href="index.html">Послуги</a>
-                            <ul class="drop__ul">
-                                <li class="drop__li"><a href="index.html">Перевезення</a></li>
-                                <li class="drop__li"><a href="in-dev.html">Додаткові послуги</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav__li">
-                            <a class="nav__title" href="in-dev.html">Компанія</a>
-                            <ul class="drop__ul">
-                                <li class="drop__li"><a href="in-dev.html">Новини</a></li>
-                                <li class="drop__li"><a href="in-dev.html">Про компанію</a></li>
-                                <li class="drop__li"><a href="in-dev.html">Переваги</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav__li">
-                            <a class="nav__title" href="in-dev.html">Клієнтам</a>
-                            <ul class="drop__ul">
-                                <li class="drop__li"><a href="in-dev.html">Послуги</a></li>
-                                <li class="drop__li"><a href="in-dev.html">Документація</a></li>
-                                <li class="drop__li"><a href="in-dev.html">Спец. пропозиції</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav__li">
-                            <a class="nav__title" href="in-dev.html">Співробітництво</a>
-                            <ul class="drop__ul">
-                                <li class="drop__li"><a href="in-dev.html">Робота з перевізниками</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav__li">
-                            <a class="nav__title" href="in-dev.html">Контакти</a>
-                        </li>
-
-                        <li class="nav__li nav__li--long">
-                            <a class="nav__title" href="in-dev.html">Пошук рейсу
-                            <div class="new"><p>new</p></div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        <header id="included__header" class="header"></header>
         <!--========== \END HEADER ==========-->
 
-
         <!--========== PAGE LAYOUT ==========-->
-        <section class="services__heading">
+        <section class="crumbs">
             <div class="container">
-                <div class="heading">
+                <div class="crumbs__inner">
+                    <a href="index.html">Головна</a><p>/</p>Послуги<p>/</p><a href="transit.html">Перевезення</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="heading-block">
+            <div class="container">
+                <div class="heading heading--transit">
                     <h1 class="heading__title">Консолідовані перевезення палетомісць країною</h1>
                 </div>
             </div>
@@ -123,7 +51,7 @@
         <main class="services__order">
             <div class="container">
                 <div class="order">
-
+                    <!-- Tabs -->
                     <ul class="tabs" role="tablist">
                         <li class="tabs__li">
                             <input class="tabs__input" type="radio" name="tabs" id="tab1" checked />
@@ -137,19 +65,16 @@
                                 role="tabpanel" 
                                 aria-labelledby="description" 
                                 aria-hidden="false">
-
                                 <div class="info">
                                     <h4 class="info__sub-title">Перевезення стандартного вантажу <br> по Україні</h4>
-                                    
+
                                     <div class="info__text">
                                         <p>Якщо Ви зацікавлені в замовленні автомобіля для перевезення Вашого вантажу, заповніть заявку. Ми зв’яжемося з Вами в максимально короткі терміни і надамо варіанти перевезень.</p>
-
                                         <br>
-
                                         <p>З допомогою компанії “DelTruck” доставка вантажів по Україні відбувається в максимально короткі терміни з високим рівнем безпеки та за вигідними тарифами.</p>
                                     </div>
                                     <div class="info__img">
-                                        <img src="img/order.png" alt="">
+                                        <img src="img/order.png" alt="order truck">
                                     </div>
                                 </div>
 
@@ -162,7 +87,7 @@
 
                                         <form class="form">
                                             <label class="form__label">Ваш номер</label>
-                                            <input class="form__input" type="number" placeholder="+380">
+                                            <input class="form__input" type="tel" placeholder="+380" minlength="10" maxlength="13">
                                         </form>
 
                                         <form class="form">
@@ -275,7 +200,6 @@
                                                 </select>
                                             </form>
                                         </div>
-
                                         <button class="request__btn">відправити заявку</button>
                                     </div>
                                 </div>
@@ -296,19 +220,15 @@
                                 role="tabpanel" 
                                 aria-labelledby="specification" 
                                 aria-hidden="true">
-
                                 <div class="info">
                                     <h4 class="info__sub-title">Перевезення консалідованого вантажу по Україні</h4>
                                     <div class="info__text">
                                         <p>Перевезення збірних вантажів на палетах - ідеальний варіант для відносно невеликої партії вантажу.</p>
-
                                         <br>
-
-
                                         <p>Технічно послуга має на увазі, що вантажі від різних замовників при достатньому обсязі і попутному напрямку перевозяться в одному транспортному засобі. Таким чином, Ви не платите за пусте місце в автомобілі і значно скорочуєте свої витрати на логістику, отримуючи якісну і своєчасну доставку вантажу.</p>
                                     </div>
                                     <div class="info__img">
-                                        <img src="img/order-2.png" alt="">
+                                        <img src="img/order-2.png" alt="order truck">
                                     </div>
                                 </div>
 
@@ -321,7 +241,7 @@
 
                                         <form class="form">
                                             <label class="form__label">Ваш номер</label>
-                                            <input class="form__input" type="number" placeholder="+380">
+                                            <input class="form__input" type="tel" placeholder="+380" minlength="10" maxlength="13">
                                         </form>
 
                                         <form class="form">
@@ -428,191 +348,12 @@
             </div>
         </main>
 
-
-        <section class="services__about">
-            <div class="container">
-                <div class="about">
-                    <div class="news">
-                        <div class="about__heading">
-                            <h2>Новини</h2>
-                        </div>
-
-                        <div class="news-block">
-                            <a href="in-dev.html">
-                                <div class="news-block__item">
-                                    <div class="date-wrap">
-                                        <div class="point"></div>
-                                        <time>31.01.2020</time>
-                                    </div>
-                                    <h3 class="title">Акція: Палети відправляй  весняний подарунок вигравай</h3>
-                                </div>
-                            </a>
-
-                            <a href="in-dev.html">
-                                <div class="news-block__item">
-                                    <div class="date-wrap">
-                                        <div class="point"></div>
-                                        <time>28.01.2020</time>
-                                    </div>
-                                    <h3 class="title">DELTRUCK оновив маршрути послуги“ONLINE-ЗАМОВЛЕННЯ ПАЛЕТОМІСЦЬ В АВТО”</h3>
-                                </div>
-                            </a>
-
-                            <a href="in-dev.html">
-                                <div class="news-block__item">
-                                    <div class="date-wrap">
-                                        <div class="point"></div>
-                                        <time>08.02.2019</time>
-                                    </div>
-                                    <h3 class="title">Акція “Зафрахтуємо - Довеземою Реєстратор надаємо!” </h3>
-                                </div>
-                            </a>
-
-                            <a href="in-dev.html">
-                                <div class="news-block__item">
-                                    <div class="date-wrap">
-                                        <div class="point"></div>
-                                        <time>29.12.2018</time>
-                                    </div>
-                                    <h3 class="title">DELTRUCK вітає з прийдешнім Новим роком та Різдвом Христовим!</h3>
-                                </div>
-                            </a>
-
-                            <a href="in-dev.html">
-                                <div class="news-block__item">
-                                    <div class="date-wrap">
-                                        <div class="point"></div>
-                                        <time>23.08.2018</time>
-                                    </div>
-                                    <h3 class="title">З Днем Державного Прапору та Днем Незалежності України!</h3>
-                                </div>
-                            </a>
-
-                            <a href="in-dev.html">
-                                <div class="news-block__btn">
-                                    <p>Всі новини</p> 
-                                    <img src="img/icon/arrow.png" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="advantages">
-                        <div class="about__heading">
-                            <h2>Переваги</h2>
-                        </div>
-
-                        <div class="advantages-block">
-                            <div class="advantages-block__item">
-                                <div class="img-wrap">
-                                    <img src="img/icon/truck_icon.png" alt="">
-                                </div>
-                                <h3 class="title">Великий парк автомобілів</h3>
-                            </div>
-
-                            <div class="advantages-block__item">
-                                <div class="img-wrap">
-                                    <img src="img/icon/time_truck_icon.png" alt="">
-                                </div>
-                                <h3 class="title">Подача автомобіля в максимально стислі терміни</h3>
-                            </div>
-
-                            <div class="advantages-block__item">
-                                <div class="img-wrap">
-                                    <img src="img/icon/document_icon.png" alt="">
-                                </div>
-                                <h3 class="title">Оптимальна вартість перевезення</h3>
-                            </div>
-
-                            <div class="advantages-block__item">
-                                <div class="img-wrap">
-                                    <img src="img/icon/track_icon.png" alt="">
-                                </div>
-                                <h3 class="title">Автоматичний контроль перевезення</h3>
-                            </div>
-
-                            <div class="advantages-block__item">
-                                <div class="img-wrap">
-                                    <img src="img/icon/umbrella_icon.png" alt="">
-                                </div>
-                                <h3 class="title">Індивідуальне страхування</h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="feedback">
-                        <div class="about__heading">
-                            <h2>Зворотній зв’язок</h2>
-                        </div>
-
-                        <div class="feedback-block">
-                            <div class="feedback-block__item">
-                                <form class="feedback-form">
-                                    <label class="feedback-form__label">Ваше ім’я</label>
-                                    <input class="feedback-form__input" type="text" placeholder=" ">
-                                </form>
-
-                                <form class="feedback-form">
-                                    <label class="feedback-form__label">Номер на який ми зателефонуємо</label>
-                                    <input class="feedback-form__input" type="number" placeholder="+380">
-                                </form>
-
-                                <button class="feedback-form__btn">Надіслати</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!--========== \END PAGE LAYOUT ==========-->
 
 
         <!--========== FOOTER ==========-->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-info">
-                    <div class="footer-info__item">
-                        <h3>Компанія</h3>
-                        <a href="in-dev.html">Новини</a>
-                        <a href="in-dev.html">Про компанію</a>
-                        <a href="in-dev.html">Переваги</a>
-                    </div>
-                    
-                    <div class="footer-info__item">
-                        <h3>Клієнтам</h3>
-                        <a href="in-dev.html">Послуги</a>
-                        <a href="in-dev.html">Документація</a>
-                        <a href="in-dev.html">Спец. пропозиції</a>
-                    </div>
-
-                    <div class="footer-info__item">
-                        <h3>Співробітництво</h3>
-                        <a href="in-dev.html">Робота з перевізниками</a>
-                    </div>
-
-                    <div class="footer-info__item">
-                        <h3>Послуги</h3>
-                        <a href="in-dev.html">Вантажні перевезення</a>
-                        <a href="in-dev.html">Консолідовані перевезення</a>
-
-                        <button class="footer-info__btn">Замовити Авто</button>
-                    </div>
-
-                    <div class="footer-info__item footer-info__item--new">
-                        <a href="in-dev.html">
-                            <h3>Пошук рейсу <div class="new"><p>new</p></div></h3>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="footer-adress">
-                    <p>Україна 01024, м. Київ, вул. Велика Васильківська 15/2</p>
-                    <p>Гаряча лінія:+38 (067) 62826 30</p>
-                </div>
-            </div>
-        </footer>
-
+        <section id="included__about-block" class="about-block"></section>
+        <footer id="included__footer" class="footer"></footer>
         <!--========== \END FOOTER ==========-->
 
 
@@ -622,5 +363,13 @@
         <script src="js/main.js" type="text/javascript"></script>
         <!-- Calendar -->
         <script src="js/components/datepicker.min.js" type="text/javascript"></script>
+        <!--  Included Template Script -->
+        <script>
+            $(function(){
+                $("#included__header").load("template/header.html");
+                $("#included__about-block").load("template/about-block.html"); 
+                $("#included__footer").load("template/footer.html"); 
+            });
+        </script>
     </body>
 </html>

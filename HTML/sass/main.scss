@@ -28,19 +28,40 @@ body {
 	padding: 0;
 }
 
+input:invalid {
+	border-color: red !important;
+}
+
 a, a:focus, a:hover, a:active {
 	outline: 0;
 	color: inherit;
 	text-decoration: none;
 }
 
-:active,
-:focus {outline: none;}
+:active, :focus {outline: none;}
 
-// ======================//
-// 		MAIN STYLE 		//
-// ====================//
+.container {
+	margin: 0 auto;
+	height: 100%;
+	max-width: 133.3333vh;
+	padding: 0 1vh;
+}
 
+// ==============================//
+// 			Общие стили 		//
+// ============================//
+
+// IN DEV PAGE
+.in-dev {
+	margin-top: 20vh;
+	h1 {
+		font-size: 5vh;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+//  Header
 .header {
 	width: 100%;
 	height: 17.7778vh;
@@ -82,71 +103,66 @@ a, a:focus, a:hover, a:active {
 			color: #000;
 		}
 	}
-}
-
-.header__hot-line {
-	width: 31.9444vh;
-	margin-right: 1vh;
-	.hot-line__alert {
-		display: inline-block;
-		font-weight: normal;
-		font-size: 1.2963vh;
-		line-height: 1.4815vh;
-		color: #999999;
-		margin-left: 2vh;
-	}
-}
-
-.hot-line {
-	display: flex;
-	align-items: center;
-	&__icon {
-		width: 3.7963vh;
-		height: 3.7963vh;
-		background-color: #B72126;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		a {
-			display: flex;
-			align-items: center;
-			width: 100%;
-			height: 100%;
-			justify-content: center;
-		}
-		img {
-			width: 2.037vh;
-			height: 2.037vh;
-		}
-	}
-	&__number {
-		margin-left: 1vh;
-		color: #303030;
-		.number__title {
+	&__hot-line {
+		width: 31.9444vh;
+		margin-right: 1vh;
+		.hot-line__alert {
+			display: inline-block;
 			font-weight: normal;
-			font-size: 1.4815vh;
-			line-height: 1.8519vh;
+			font-size: 1.2963vh;
+			line-height: 1.4815vh;
+			color: #999999;
+			margin-left: 2vh;
 		}
-		.number__num {
-			font-weight: 600;
-			font-size: 3.2407vh;
-			line-height: 2.963vh;
+	}
+	.hot-line {
+		display: flex;
+		align-items: center;
+		&__icon {
+			width: 3.7963vh;
+			height: 3.7963vh;
+			background-color: #B72126;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&:hover {
+				background-color: #666;
+			}
+			a {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				justify-content: center;
+			}
+			img {
+				width: 2.037vh;
+				height: 2.037vh;
+			}
+		}
+		&__number {
+			margin-left: 1vh;
+			color: #303030;
+			.number__title {
+				font-weight: normal;
+				font-size: 1.4815vh;
+				line-height: 1.8519vh;
+			}
+			.number__num {
+				font-weight: 600;
+				font-size: 3.2407vh;
+				line-height: 2.963vh;
+			}
 		}
 	}
 }
 
-.container {
-	margin: 0 auto;
-	height: 100%;
-	max-width: 133.3333vh;
-	padding: 0 1vh;
-}
-
+// Navigation
 .nav {
 	width: 100%;
 	height: 100%;
 	background-color: #E6E6E6;
-	.nav__ul {
+	&__ul {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -154,37 +170,34 @@ a, a:focus, a:hover, a:active {
 	justify-content: space-evenly;
 	height: 100%;
 	}
-	.nav__li {
+	&__li {
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		position: relative;
+		z-index: 9999;
 		text-decoration: none;
 		cursor: pointer;
-		-webkit-transition: all 0.2s;
-		-moz-transition: all 0.2s;
-		-ms-transition: all 0.2s;
-		-o-transition: all 0.2s;
 		transition: all 0.2s;
 		&--long {
 			width: 124%;
 		}
 	}
-	.nav__li:hover {
+	&__li:hover {
 		background: #B72126;
 		cursor: pointer;
 	}
-	.nav__li:hover .new {
+	&__li:hover .new {
 		background-color: #fff;
 		color: #000;
 	}
-	.nav__title {
+	&__title {
 		height: 100%;
 		width: 100%;
 		display: flex;
 		align-items: center;
-    	justify-content: center;
+		justify-content: center;
 		font-size: 1.6667vh;
 		line-height: 1.8519vh;
 		text-transform: uppercase;
@@ -192,7 +205,7 @@ a, a:focus, a:hover, a:active {
 		font-weight: 400;
 		color: #303030;
 	}
-	.nav__li:hover .nav__title {
+	&__li:hover .nav__title {
 		color: #fff;
 	}
 	.drop__ul {
@@ -206,11 +219,7 @@ a, a:focus, a:hover, a:active {
 		display: none;
 		opacity: 0;
 		visibility: hidden;
-		-webkit-transiton: opacity 0.2s;
-		-moz-transition: opacity 0.2s;
-		-ms-transition: opacity 0.2s;
-		-o-transition: opacity 0.2s;
-		-transition: opacity 0.2s;
+		transition: opacity 0.2s;
 	}
 	.drop__li {
 		height: 4.6296vh;
@@ -241,8 +250,13 @@ a, a:focus, a:hover, a:active {
 		visibility: visible;
 		list-style-type: none;
 	}
+	.nav__li:hover .new {
+		background-color: #fff;
+		color: #000;
+	}
 }
 
+// Icon New
 .new {
 	color: #fff;
 	font-weight: normal;
@@ -258,24 +272,282 @@ a, a:focus, a:hover, a:active {
 	margin-left: 0.4vh;
 }
 
-.nav__li:hover .new {
-	background-color: #fff;
-	color: #000;
+// Блок Новости/Преймущестава/Обратная связь
+// (используеться на многих страницах)
+.about-block{
+	margin-top: 8.3333vh;
 }
 
-.services__heading {
+.about {
+	display: flex;
+	justify-content: space-between;
+	&__heading {
+		border-bottom: 2px solid #B72126;
+		padding-bottom: 1.8519vh;
+		h2 {
+			text-transform: uppercase;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.6667vh;
+			line-height: 1.6667vh;
+			font-weight: bold;
+			color: #303030;
+			letter-spacing: 0.0463vh;
+		}
+	}
+	.news, .advantages, .feedback {
+		width: 41.0185vh;
+	}
+	.news-block {
+		margin-top: 2.037vh;
+		&__item {
+			border-bottom: 1px solid #ECECEC;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			min-height: 10.3704vh;
+			&:hover .title {
+				color: #B72126;
+			}
+			&:hover .point {
+				background: #666;
+			}
+		}
+		.date-wrap {
+			display: flex;
+			height: 2vh;
+			align-items: center;
+			time {
+				font-family: 'Segoe UI';
+				font-weight: normal;
+				font-size: 1.2963vh;
+				line-height: 1.4815vh;
+				color: #666666;
+			}
+		}
+		.point {
+			width: 1.2963vh;
+			height: 1.2963vh;
+			background: #B72126;
+			margin-right: 0.7037vh;
+		}
+		.title {
+			font-family: 'Segoe UI';
+			font-weight: normal;
+			color: #303030;
+			font-size: 1.6667vh;
+			line-height: 2.2vh;
+			margin-left: 1.5vh;
+			margin-top: 1.1111vh;
+		}
+		.news-block__btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 1.1vh;
+			width: 13.9815vh;
+			height: 3.1481vh;
+			background: #F8F8F8;
+			border-radius: 0.2778vh;
+			p {
+				display: flex;
+				align-items: center;
+				color: #666666;
+				font-family: 'Segoe UI';
+				text-align: center;
+				font-size: 1.2963vh;
+				height: 100%;
+			}
+			img {
+				width: 1.6vh;
+				margin-left: 0.5vh;
+			}
+			&:hover {
+				background: rgba(248, 248, 248, 0.5);
+			}
+			&:hover p {
+				color: #B72126;
+			}
+		}
+	}
+	.advantages-block {
+		margin-top: 2.037vh;
+		&__item {
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid #ECECEC;
+			display: flex;
+			display: flex;
+			justify-content: flex-start;
+			min-height: 10.3704vh;
+			.title {
+				font-family: 'Segoe UI';
+				font-weight: normal;
+				color: #000;
+				margin-left: 6.0185vh;
+				font-size: 1.6667vh;
+				line-height: 1.4815vh;
+			}
+			.img-wrap {
+				height: 8.1111vh;
+				display: flex;
+				align-items: center;
+				img {
+					width: 5.5556vh;
+					height: 5.5556vh;
+				}
+			}
+		}
+	}
+	.feedback-block {
+		margin-top: 2.037vh;
+		&__item {
+			padding-top: 1.5vh;
+			.feedback-form {
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+				margin-bottom: 2.7778vh;
+				width: 100%;
+				position: relative;
+				&__label {
+					font-family: 'Segoe UI';
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.8519vh;
+					line-height: 1.4815vh;
+					color: #666666;
+					margin-bottom: 1.0185vh;
+				}
+				&__input {
+					height: 5vh;
+					width: 37.3148vh;
+					background: #F8F8F8;
+					border: 1px solid #DFDFDF;
+					padding-left: 1vh;
+					font-size: 2vh;
+					-moz-appearance: textfield;
+					&::-webkit-inner-spin-button { 
+						display: none;
+					}
+					&::placeholder {
+						font-size: 1.8667vh;
+						line-height: 2.2222vh;
+						color: #D9D9D9;
+					}
+				}
+				&__btn {
+					width: 19.3519vh;
+					height: 5.5556vh;
+					border: 2px solid #B72126;
+					text-transform: uppercase;
+					background-color: transparent;
+					font-family: 'Montserrat', sans-serif;
+					font-weight: bold;
+					font-size: 1.6667vh;
+					line-height: 1.6667vh;
+					text-align: center;
+					letter-spacing: 0.5px;
+					color: #B72126;
+					&:hover {
+						color: #fff;
+						background-color: #B72126;
+						cursor: pointer;
+						transition: all 1s ease;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Футер
+.footer {
+	margin-top: 8.1481vh;
+	background: #DADADA;
+	&-info {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 3.0556vh;
+		&__item {
+			display: flex;
+			flex-direction: column;
+			&--new {
+					h3 {
+					display: flex;
+				}
+			}
+			h3, a {
+				font-family: 'Segoe UI';
+				margin-bottom: 1.6667vh;
+				line-height: 1.8519vh;
+				letter-spacing: 0.5px;
+			}
+			h3 {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 1.6667vh;
+				text-transform: uppercase;
+				color: #303030;
+			}
+			a {
+				color: #666666;
+				font-size: 1.2963vh;
+				&:hover {
+					color: #B72126;
+				}
+			}
+		}
+		&__btn {
+			width: 31.4815vh;
+			height: 5.5556vh;
+			margin-top: 8.3333vh;
+			border: 2px solid #B72126;
+			text-transform: uppercase;
+			background-color: transparent;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			font-size: 1.6667vh;
+			line-height: 1.6667vh;
+			text-align: center;
+			letter-spacing: 0.5px;
+			color: #B72126;
+			&:hover {
+				color: #fff;
+				background-color: #B72126;
+				cursor: pointer;
+				transition: all 1s ease;
+			}
+		}
+	}
+	&-adress {
+		padding-bottom: 3.2407vh;
+		p {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.2963vh;
+			line-height: 2.8519vh;
+			letter-spacing: 0.0463vh;
+			color: #666666;
+		}
+		a:hover {
+			color: #B72126;
+		}
+	}
+}
+
+// Заголовок страницы
+.heading-block {
 	margin-bottom: 6.4815vh;
 }
 
 .heading {
 	width: 100%;
-	height: 56.2037vh;
-	background: url('../img/haeding-truck.jpg');
+	height: auto;
+	display: flex;
+    align-items: flex-end;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
-	display: flex;
-    align-items: flex-end;
 	&__title {
 		font-family: 'Montserrat', sans-serif;
 		font-style: normal;
@@ -287,7 +559,60 @@ a, a:focus, a:hover, a:active {
 		padding: 5vh 0 10.1852vh 11.1111vh;
 		margin: 0;
 	}
+	&--transit {
+		height: 56.2037vh;
+		background: url('../img/haeding-truck.jpg');
+	}
+	&--additional-services {
+		height: 28.2407vh;
+		background: url('../img/heading__additional-services.jpg');
+		.heading__title {
+			max-width: 111vh;
+			padding: 5vh 0 6.5vh 11.1111vh;
+		}
+	}
+	&--news {
+		height: 28.2407vh;
+		background: url('../img/heading__news.jpg');
+		.heading__title {
+			max-width: 111vh;
+			padding: 5vh 0 2.5vh 11.1111vh;
+		}
+	}
 }
+
+// Хлебные крошки
+.crumbs {
+	margin-top: 5.5556vh;
+	height: 5.5556vh;
+    width: 100%;
+	&__inner {
+		display: flex;
+		height: 100%;
+		align-items: center;
+
+		font-weight: normal;
+		font-size: 1.1111vh;
+		line-height: 1.4815vh;
+		color: #666666;
+		cursor: pointer;
+		p {
+			margin-right: 0.9259vh;
+			margin-left: 0.9259vh;
+		}
+		a:hover {
+			color: #B72126;
+		}
+	}
+}
+
+
+
+
+
+// ==================================================//
+// 			Страница	Послуги/перевезення			//
+// ================================================//
 
 .order {
 	display: flex;
@@ -305,15 +630,14 @@ a, a:focus, a:hover, a:active {
 		font-family: 'Segoe UI';
 		font-weight: bold;
 		color: #303030;
-		margin-bottom: 3.7037vh;
-
 		font-size: 2.7778vh;
 		line-height: 3.5185vh;
+		margin-bottom: 3.7037vh;
 	}
 	&__text {
+		max-width: 51.8519vh;
 		font-weight: normal;
 		color: #303030;
-		max-width: 51.8519vh;
 		font-size: 1.8519vh;
 		line-height: 1.9444vh;
 	}
@@ -346,8 +670,7 @@ a, a:focus, a:hover, a:active {
 		width: 41.6667vh;
 	}
 }
-
-
+// Форма заявки
 .form {
 	display: flex;
     flex-direction: column;
@@ -388,7 +711,6 @@ a, a:focus, a:hover, a:active {
 		padding-left: 1vh;
 		line-height: 2.2222vh;
 		border: 1px solid #D9D9D9;
-
 		background: url('../img/icon/Arrow-select.svg') no-repeat center;
 		background-size: 1.8519vh 0.8333vh;
 		-webkit-appearance: none;
@@ -441,262 +763,6 @@ a, a:focus, a:hover, a:active {
 		background-color: #B72126;
 		cursor: pointer;
 		transition: all 1s ease;
-	}
-}
-
-.services__about {
-	margin-top: 8.3333vh;
-}
-
-.about {
-	display: flex;
-	justify-content: space-between;
-	&__heading {
-		border-bottom: 2px solid #B72126;
-		padding-bottom: 1.8519vh;
-		h2 {
-			text-transform: uppercase;
-			font-family: 'Montserrat', sans-serif;
-			font-size: 1.6667vh;
-			line-height: 1.6667vh;
-			font-weight: bold;
-			color: #303030;
-			letter-spacing: 0.0463vh;
-		}
-	}
-}
-
-.news, .advantages, .feedback {
-	width: 41.0185vh;
-}
-
-.news-block {
-	margin-top: 2.037vh;
-	&__item {
-		border-bottom: 1px solid #ECECEC;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		min-height: 10.3704vh;
-		&:hover {
-			opacity: .5;
-		}
-	}
-	.date-wrap {
-		display: flex;
-		height: 2vh;
-		align-items: center;
-		time {
-			font-family: 'Segoe UI';
-			font-weight: normal;
-			font-size: 1.2963vh;
-			line-height: 1.4815vh;
-			color: #666666;
-		}
-	}
-	.point {
-		width: 1.2963vh;
-		height: 1.2963vh;
-		background: #B72126;
-		margin-right: 0.7037vh;
-	}
-	.title {
-		font-family: 'Segoe UI';
-		font-weight: normal;
-		color: #303030;
-		font-size: 1.6667vh;
-		line-height: 2.2vh;
-		margin-left: 1.5vh;
-		margin-top: 1.1111vh;
-	}
-	.news-block__btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 1.1vh;
-		width: 13.9815vh;
-		height: 3.1481vh;
-		background: #F8F8F8;
-		border-radius: 0.2778vh;
-		p {
-			display: flex;
-			align-items: center;
-			color: #666666;
-			font-family: 'Segoe UI';
-			text-align: center;
-			font-size: 1.2963vh;
-			height: 100%;
-		}
-		img {
-			width: 1.6vh;
-			margin-left: 0.5vh;
-		}
-		&:hover {
-			opacity: .5;
-		}
-	}
-}
-
-.advantages-block {
-	margin-top: 2.037vh;
-	&__item {
-		display: flex;
-		align-items: center;
-		border-bottom: 1px solid #ECECEC;
-		display: flex;
-		display: flex;
-		justify-content: flex-start;
-		min-height: 10.3704vh;
-		.title {
-			font-family: 'Segoe UI';
-			font-weight: normal;
-			color: #000;
-			margin-left: 6.0185vh;
-			font-size: 1.6667vh;
-			line-height: 1.4815vh;
-		}
-		.img-wrap {
-			height: 8.1111vh;
-			display: flex;
-			align-items: center;
-			img {
-				width: 6.1vh;
-				height: 6.1vh;
-			}
-		}
-	}
-}
-
-.feedback-block {
-	margin-top: 2.037vh;
-	&__item {
-		padding-top: 1.5vh;
-		.feedback-form {
-			display: flex;
-			flex-direction: column;
-			margin: 0 auto;
-			margin-bottom: 2.7778vh;
-			width: 100%;
-			position: relative;
-			&__label {
-				font-family: 'Segoe UI';
-				font-style: normal;
-				font-weight: normal;
-				font-size: 1.8519vh;
-				line-height: 1.4815vh;
-				color: #666666;
-				margin-bottom: 1.0185vh;
-			}
-			&__input {
-				height: 5vh;
-				width: 37.3148vh;
-				background: #F8F8F8;
-				border: 1px solid #DFDFDF;
-				padding-left: 1vh;
-				font-size: 2vh;
-				-moz-appearance: textfield;
-				&::-webkit-inner-spin-button { 
-					display: none;
-				}
-				&::placeholder {
-					font-size: 1.8667vh;
-					line-height: 2.2222vh;
-					color: #D9D9D9;
-				}
-			}
-			&__btn {
-				width: 19.3519vh;
-				height: 5.5556vh;
-				border: 2px solid #B72126;
-				text-transform: uppercase;
-				background-color: transparent;
-				font-family: 'Montserrat', sans-serif;
-				font-weight: bold;
-				font-size: 1.6667vh;
-				line-height: 1.6667vh;
-				text-align: center;
-				letter-spacing: 0.5px;
-				color: #B72126;
-				&:hover {
-					color: #fff;
-					background-color: #B72126;
-					cursor: pointer;
-					transition: all 1s ease;
-				}
-			}
-		}
-	}
-}
-
-.footer {
-	margin-top: 8.1481vh;
-	background: #DADADA;
-	&-info {
-		display: flex;
-		justify-content: space-between;
-		padding-top: 3.0556vh;
-		&__item {
-			display: flex;
-			flex-direction: column;
-			&--new {
-				margin-left: -15vh;
-					h3 {
-					display: flex;
-				}
-			}
-			h3, a {
-				font-family: 'Segoe UI';
-				margin-bottom: 1.6667vh;
-				line-height: 1.8519vh;
-				letter-spacing: 0.5px;
-			}
-			h3 {
-				font-style: normal;
-				font-weight: 600;
-				font-size: 1.6667vh;
-				text-transform: uppercase;
-				color: #303030;
-			}
-			a {
-				color: #666666;
-				font-size: 1.2963vh;
-				&:hover {
-					opacity: .6;
-				}
-			}
-		}
-		&__btn {
-			width: 31.4815vh;
-			height: 5.5556vh;
-			margin-top: 4.1667vh;
-			border: 2px solid #B72126;
-			text-transform: uppercase;
-			background-color: transparent;
-			font-family: 'Montserrat', sans-serif;
-			font-weight: bold;
-			font-size: 1.6667vh;
-			line-height: 1.6667vh;
-			text-align: center;
-			letter-spacing: 0.5px;
-			color: #B72126;
-			&:hover {
-				color: #fff;
-				background-color: #B72126;
-				cursor: pointer;
-				transition: all 1s ease;
-			}
-		}
-	}
-	&-adress {
-		padding-bottom: 3.2407vh;
-		p {
-			font-style: normal;
-			font-weight: normal;
-			font-size: 1.2963vh;
-			line-height: 2.8519vh;
-			letter-spacing: 0.0463vh;
-			color: #666666;
-		}
 	}
 }
 
@@ -770,12 +836,363 @@ a, a:focus, a:hover, a:active {
 }
 
 
-// IN DEV
-.in-dev {
-	margin-top: 20vh;
-	h1 {
-		font-size: 5vh;
-		text-align: center;
-		text-transform: uppercase;
+
+
+
+// ==================================================//
+// 		Страница	Послуги/Додаткові послуги		//
+// ================================================//
+
+.info-block {
+	margin-bottom: 4.6296vh;
+	&__title {
+		font-family: 'Segoe UI';
+		font-weight: bold;
+		font-size: 2.7778vh;
+		line-height: 3.7037vh;
+		color: #303030;
+		padding-bottom: 1.3889vh;
+		margin-bottom: 2.7778vh;
+		position: relative;
+		&::before {
+			content: ' ';
+			position: absolute;
+			width: 8.6111vh;
+			height: 0.2778vh;
+			left: 0;
+			bottom: 0;
+			background-color: #B72126;
+		}
+	}
+	&__text {
+		font-family: 'Segoe UI';
+		font-weight: normal;
+		font-size: 1.6667vh;
+		line-height: 2.2222vh;
+		color: #303030;
+		margin-left: 11.1111vh;
 	}
 }
+
+
+
+
+.info-block__advantages {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 3vh;
+	.advantages__item {
+		max-width: 62.6852vh;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 4.6296vh;
+	}
+	.advantages__img {
+		width: 12.6852vh;
+		height: 12.6852vh;
+		margin-right: 2vh;
+		background: #FFFFFF;
+		border-radius: 50%;
+		box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 5.0926vh;
+			height: 5.0926vh;
+		}
+	}
+	.advantages__info {
+		width: 48.1481vh;
+		.advantages__title {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			font-size: 1.6667vh;
+			line-height: 2.037vh;
+			text-transform: uppercase;
+			color: #303030;
+
+			margin-bottom: 1.8519vh;
+		}
+		.advantages__text {
+			font-family: 'Segoe UI';
+			font-weight: normal;
+			font-size: 1.6667vh;
+			line-height: 2.2222vh;
+			color: #303030;
+		}
+	}
+}
+
+
+
+.del-group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	img {
+		width: 39.7222vh;
+		height: 15.7407vh;
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.del-group--documentation {
+	margin-top: 8.3333vh;
+}
+
+
+.documentation {
+	ul {
+		list-style-type: none;
+		img {
+			width: 2.7778vh;
+			height: 2.7778vh;
+			margin-right: 0.9259vh;
+		}
+	}
+	li {
+		display: flex;
+		align-items: center;
+
+		margin-bottom: 2.7778vh;
+	}
+	a {
+		display: flex;
+		align-items: center;
+
+		font-family: 'Segoe UI';
+		font-weight: normal;
+		font-size: 1.6667vh;
+		line-height: 2.2222vh;
+		color: #303030;
+		&:hover {
+			color: #B72126;
+		}
+	}
+}
+
+
+.tariff {
+	.table {
+		width: 83%;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
+		border-radius: 3px;
+		padding: 2.7778vh 0 2.7778vh 0;
+		margin: 7.6852vh auto 0 auto;
+		&__item {
+			width: 96%;
+			margin: 0 auto;
+		}
+		
+	}
+	table.table__inner {
+		text-decoration: none;
+		border-collapse: collapse;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 2.7778vh;
+		
+	}
+	table.table__inner:last-child {
+		margin-bottom: 0;
+	}
+	table.table__inner th, table.table__inner td   {
+		color: #303030;
+		background-color:#fff;
+		font-family: 'Segoe UI';
+		font-weight: normal;
+		font-size: 1.3889vh;
+		line-height: 1.8519vh;
+	}
+	table.table__inner td, table.table__inner th {
+		white-space:pre-wrap;
+		padding: 1.6667vh 0.463vh;
+		line-height: 1.5037vh;
+		vertical-align: middle;
+		border: 1px solid rgba(102, 102, 102, 0.16);
+		border-bottom: none;
+	}
+	table.table__inner th {
+		border: none;
+		background-color:#F8F8F8;
+	}
+	.th--border-all {
+		border: 1px solid rgba(102, 102, 102, 0.16) !important;
+	}
+	.th--border {
+		border-right: 1px solid rgba(102, 102, 102, 0.16) !important;
+	}
+	.td--no-left-border {
+		border-left: none !important;
+	}
+	.td--no-right-border {
+		border-right: none !important;
+	}
+	table.table__inner th span {
+		color: #B72126;
+		font-weight: bold;
+	}	
+	table.table__inner td:hover {
+		background-color: #F9F9F9;
+	}
+	table.table__inner tr:hover td { 
+		color:#354251;
+		cursor:default;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.subs {
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
+	min-height: 15.7407vh;
+	&__title {
+		font-family: 'Segoe UI';
+		font-weight: normal;
+		font-size: 1.6667vh;
+		line-height: 2.2222vh;
+		color: #303030;
+		max-width: 38.8889vh;
+	}
+	&__btn {
+		width: 19.9074vh;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		margin-top: -2vh;
+	}
+	&__label {
+		font-family: 'Segoe UI';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6667vh;
+		line-height: 1.4815vh;
+		margin-bottom: 1.0185vh;
+		color: #666666;
+	}
+	&__input {
+		height: 5.0926vh;
+		width: 37.3148vh;
+		border: 1px solid #DFDFDF;
+		background: #F8F8F8;
+		padding-left: 1vh;
+		font-size: 1.6667vh;
+		line-height: 2.2222vh;
+		-moz-appearance: textfield;
+		&::-webkit-inner-spin-button { 
+			display: none;
+		}
+		&::placeholder {
+			font-size: 1.6667vh;
+			line-height: 2.2222vh;
+			color: #D9D9D9;
+		}
+	}
+}
+
+
+
+.date-wrap {
+	display: flex;
+	height: 2vh;
+	align-items: center;
+	time {
+		font-family: 'Segoe UI';
+		font-weight: normal;
+		font-size: 1.2963vh;
+		line-height: 1.4815vh;
+		color: #666666;
+	}
+}
+.point {
+	width: 1.2963vh;
+	height: 1.2963vh;
+	background: #B72126;
+	margin-right: 0.7037vh;
+}
+
+
+
+.ac-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.ac-container label{
+    font-family: 'Segoe UI';
+    font-weight: normal;
+	font-size: 1.8519vh;
+	line-height: 2.5vh;
+	color: #000000;
+    // background: #ffffff;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+}
+.ac-container label:hover{
+    color: #B72126;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+    color: #303030;
+}
+
+.ac-container input{
+    display: none;
+}
+.ac-container article {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    // transition: height 0.3s ease-in-out;
+	margin: 2vh 2vh 2vh 0;
+}
+.ac-container article p {
+	font-family: 'Segoe UI';
+	font-weight: normal;
+	font-size: 1.6667vh;
+	line-height: 2.2222vh;
+	color: #303033;
+
+	margin-left: 10.6481vh;
+}
+.ac-container article img {
+	max-width: 65.463vh;
+	max-height: 38.2407vh;
+	margin-bottom: 2vh;
+}
+.ac-container input:checked ~ article {
+    // transition: height 0.3s ease-in-out;
+	height: auto;
+}
+.ac-container input:checked ~ .date-wrap .point {
+	background: #666;
+}
+
+
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Segoe UI';
