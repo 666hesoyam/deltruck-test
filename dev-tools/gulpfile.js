@@ -21,8 +21,7 @@ function sass_css(done) {
 		}))
 		.on('error', console.error.bind(console))
 		.pipe (autoprefixer ({
-			browsers:  'last 4 versions, > 1%',
-			cascade: true
+			overrideBrowserslist: ['last 4 versions', 'ie 11', 'Android >= 4.1', 'Safari >= 8', 'iOS >= 8']
 		}))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(sourcemaps.write('./'))
