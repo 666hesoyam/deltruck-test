@@ -145,7 +145,7 @@ a, a:focus, a:hover, a:active {
     .nav__li--long {
       width: 124%; }
   .nav__li:hover {
-    background: #B72126;
+    background-color: #B72126;
     cursor: pointer; }
   .nav__li:hover .new {
     background-color: #fff;
@@ -165,7 +165,7 @@ a, a:focus, a:hover, a:active {
   .nav__li:hover .nav__title {
     color: #fff; }
   .nav .drop__ul {
-    background: #E6E6E6;
+    background-color: #E6E6E6;
     min-width: 29.8148vh;
     padding: 0;
     position: absolute;
@@ -194,7 +194,7 @@ a, a:focus, a:hover, a:active {
   .nav .drop__li:hover a {
     color: #fff; }
   .nav .drop__li:hover {
-    background: #B72126; }
+    background-color: #B72126; }
   .nav .nav__ul .nav__li:hover .drop__ul {
     display: block;
     opacity: 1;
@@ -212,7 +212,7 @@ a, a:focus, a:hover, a:active {
   text-align: center;
   letter-spacing: 0.0463vh;
   text-transform: uppercase;
-  background: #B72126;
+  background-color: #B72126;
   border-radius: 1000px;
   width: 5.5556vh;
   height: 2.2222vh;
@@ -248,7 +248,7 @@ a, a:focus, a:hover, a:active {
       .about .news-block__item:hover .title {
         color: #B72126; }
       .about .news-block__item:hover .point {
-        background: #666; }
+        background-color: #666; }
     .about .news-block .date-wrap {
       display: flex;
       height: 2vh;
@@ -262,7 +262,7 @@ a, a:focus, a:hover, a:active {
     .about .news-block .point {
       width: 1.2963vh;
       height: 1.2963vh;
-      background: #B72126;
+      background-color: #B72126;
       margin-right: 0.7037vh; }
     .about .news-block .title {
       font-family: 'Segoe UI';
@@ -279,7 +279,7 @@ a, a:focus, a:hover, a:active {
       margin-top: 1.1vh;
       width: 13.9815vh;
       height: 3.1481vh;
-      background: #F8F8F8;
+      background-color: #F8F8F8;
       border-radius: 0.2778vh; }
       .about .news-block .news-block__btn p {
         display: flex;
@@ -293,7 +293,7 @@ a, a:focus, a:hover, a:active {
         width: 1.6vh;
         margin-left: 0.5vh; }
       .about .news-block .news-block__btn:hover {
-        background: rgba(248, 248, 248, 0.5); }
+        background-color: rgba(248, 248, 248, 0.5); }
       .about .news-block .news-block__btn:hover p {
         color: #B72126; }
   .about .advantages-block {
@@ -342,7 +342,7 @@ a, a:focus, a:hover, a:active {
         .about .feedback-block__item .feedback-form__input {
           height: 5vh;
           width: 37.3148vh;
-          background: #F8F8F8;
+          background-color: #F8F8F8;
           border: 1px solid #DFDFDF;
           padding-left: 1vh;
           font-size: 2vh;
@@ -374,7 +374,7 @@ a, a:focus, a:hover, a:active {
 
 .footer {
   margin-top: 8.1481vh;
-  background: #DADADA; }
+  background-color: #DADADA; }
   .footer-info {
     display: flex;
     justify-content: space-between;
@@ -454,16 +454,16 @@ a, a:focus, a:hover, a:active {
     margin: 0; }
   .heading--transit {
     height: 56.2037vh;
-    background: url("../img/haeding-truck.jpg"); }
+    background-image: url("../img/haeding-truck.jpg"); }
   .heading--additional-services {
     height: 28.2407vh;
-    background: url("../img/heading__additional-services.jpg"); }
+    background-image: url("../img/heading__additional-services.jpg"); }
     .heading--additional-services .heading__title {
       max-width: 111vh;
       padding: 5vh 0 6.5vh 11.1111vh; }
   .heading--news {
     height: 28.2407vh;
-    background: url("../img/heading__news.jpg"); }
+    background-image: url("../img/heading__news.jpg"); }
     .heading--news .heading__title {
       max-width: 111vh;
       padding: 5vh 0 2.5vh 11.1111vh; }
@@ -489,7 +489,7 @@ a, a:focus, a:hover, a:active {
 
 .order {
   display: flex;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
   border-radius: 3px;
   width: 100%;
@@ -621,7 +621,7 @@ a, a:focus, a:hover, a:active {
   width: 100%;
   height: 95.3704vh;
   margin: 3vh auto 0 auto;
-  background: transparent;
+  background-color: transparent;
   position: relative;
   display: flex;
   justify-content: center; }
@@ -644,7 +644,7 @@ a, a:focus, a:hover, a:active {
     text-transform: uppercase;
     color: #666666;
     margin-bottom: 6.4815vh;
-    background: #F8F8F8;
+    background-color: #F8F8F8;
     border-radius: 3px 3px 0px 0px;
     display: flex;
     justify-content: center;
@@ -718,7 +718,7 @@ a, a:focus, a:hover, a:active {
     width: 12.6852vh;
     height: 12.6852vh;
     margin-right: 2vh;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 50%;
     box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.1);
     display: flex;
@@ -782,7 +782,7 @@ a, a:focus, a:hover, a:active {
 
 .tariff .table {
   width: 83%;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
   border-radius: 3px;
   padding: 2.7778vh 0 2.7778vh 0;
@@ -848,7 +848,7 @@ a, a:focus, a:hover, a:active {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
   min-height: 15.7407vh; }
   .subs__title {
@@ -876,7 +876,7 @@ a, a:focus, a:hover, a:active {
     height: 5.0926vh;
     width: 37.3148vh;
     border: 1px solid #DFDFDF;
-    background: #F8F8F8;
+    background-color: #F8F8F8;
     padding-left: 1vh;
     font-size: 1.6667vh;
     line-height: 2.2222vh;
@@ -902,7 +902,7 @@ a, a:focus, a:hover, a:active {
 .point {
   width: 1.2963vh;
   height: 1.2963vh;
-  background: #B72126;
+  background-color: #B72126;
   margin-right: 0.7037vh; }
 
 .ac-container {
@@ -933,7 +933,7 @@ a, a:focus, a:hover, a:active {
   display: none; }
 
 .ac-container article {
-  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   margin-top: -1px;
   overflow: hidden;
   height: 0px;
@@ -958,4 +958,4 @@ a, a:focus, a:hover, a:active {
   height: auto; }
 
 .ac-container input:checked ~ .date-wrap .point {
-  background: #666; }
+  background-color: #666; }
