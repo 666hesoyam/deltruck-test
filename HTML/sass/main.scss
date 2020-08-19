@@ -1183,6 +1183,7 @@ a, a:focus, a:hover, a:active {
 	max-width: 65.463vh;
 	max-height: 38.2407vh;
 	margin-bottom: 2vh;
+	margin-left: 10.6481vh;
 }
 .ac-container input:checked ~ article {
     // transition: height 0.3s ease-in-out;
@@ -1192,6 +1193,149 @@ a, a:focus, a:hover, a:active {
 	background-color: #666;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Форма заявки
+.form-news {
+	display: flex;
+	align-items: flex-end;
+	margin: 0 auto;
+	margin-bottom: 2.1296vh;
+	width: 100%;
+	position: relative;
+	&__label {
+		width: 13.8889vh;
+		font-family: 'Segoe UI';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6667vh;
+		line-height: 2.2222vh;
+		margin-bottom: 1.0185vh;
+		color: #000000;
+	}
+	&__label--border {
+		color: #666666;
+		width: 1vh;
+		margin-left: 1vh;
+	}
+	&__select {
+		height: 3.8889vh;
+		width: 11.2593vh;
+		font-size: 1.6667vh;
+		padding-left: 1vh;
+		line-height: 2.2222vh;
+		border: none;
+		background: url('../img/icon/Arrow-select.svg') no-repeat center;
+		background-size: 1.8519vh 0.8333vh;
+		-webkit-appearance: none;
+		background-position-x: 97%;
+		cursor: pointer;
+		color: #666666;
+		&::-ms-expand {
+			display: none;
+		}
+	}
+	&__select--year {
+		width: 8vh;
+	}
+	option,
+	option:hover,
+	option:focus {
+	border:none;
+	outline:none;
+	font-size: 1.3667vh;
+	box-shadow: none;
+	color: #666666;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.pagination {
+	height: 3vh;
+	margin-bottom: 3vh;
+}
+#pagination-digg {
+	display: flex;
+	& ul {
+		height: 100%;
+	}
+	& li {
+		font-size: 1.0185vh;
+		list-style: none;
+		font-family: 'Segoe UI';
+		font-weight: normal;
+		font-size: 1.2963vh;
+		color: #666666;
+	}
+	&  a {
+		margin: 0 0.5vh;
+	}
+	& .previous-off,
+	& .next-off {
+		color:#888888;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 2.3148vh;
+		height: 2.3148vh;
+	}
+	& .next a,
+	& .previous a {
+		font-weight:bold;
+	}
+	& .active{
+		background-color: #C61B1B;
+		border-radius: 100%;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2.3148vh;
+		height: 2.3148vh;
+	}
+	& a:link,
+	& a:visited {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2.3148vh;
+		height: 2.3148vh;
+		color: #666666;
+		text-decoration:none;
+	}
+	& .previous-off img,
+	& .next img {
+		width: .8vh;
+	}
+	& a:hover{
+		background-color: #C61B1B;
+		border-radius: 100%;
+		color: #fff;
+	}
+}
 
 
 // font-family: 'Montserrat', sans-serif;
