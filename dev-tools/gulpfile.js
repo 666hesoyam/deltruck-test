@@ -21,7 +21,8 @@ function sass_css(done) {
 		}))
 		.on('error', console.error.bind(console))
 		.pipe (autoprefixer ({
-			cascade: false
+			browsers:  'last 4 versions, > 1%',
+			cascade: true
 		}))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(sourcemaps.write('./'))

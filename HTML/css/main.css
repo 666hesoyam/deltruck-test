@@ -272,30 +272,6 @@ a, a:focus, a:hover, a:active {
       line-height: 2.2vh;
       margin-left: 1.5vh;
       margin-top: 1.1111vh; }
-    .about .news-block .news-block__btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 1.1vh;
-      width: 13.9815vh;
-      height: 3.1481vh;
-      background-color: #F8F8F8;
-      border-radius: 0.2778vh; }
-      .about .news-block .news-block__btn p {
-        display: flex;
-        align-items: center;
-        color: #666666;
-        font-family: 'Segoe UI';
-        text-align: center;
-        font-size: 1.2963vh;
-        height: 100%; }
-      .about .news-block .news-block__btn img {
-        width: 1.6vh;
-        margin-left: 0.5vh; }
-      .about .news-block .news-block__btn:hover {
-        background-color: rgba(248, 248, 248, 0.5); }
-      .about .news-block .news-block__btn:hover p {
-        color: #B72126; }
   .about .advantages-block {
     margin-top: 2.037vh; }
     .about .advantages-block__item {
@@ -371,6 +347,34 @@ a, a:focus, a:hover, a:active {
             background-color: #B72126;
             cursor: pointer;
             transition: all 1s ease; }
+
+.news-block__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.1vh;
+  width: 13.9815vh;
+  height: 3.1481vh;
+  background-color: #F8F8F8;
+  border-radius: 0.2778vh; }
+  .news-block__btn p {
+    display: flex;
+    align-items: center;
+    color: #666666;
+    font-family: 'Segoe UI';
+    text-align: center;
+    font-size: 1.2963vh;
+    height: 100%; }
+  .news-block__btn img {
+    width: 1.6vh;
+    margin-left: 0.5vh;
+    transition: all .2s ease-in-out; }
+  .news-block__btn:hover {
+    background-color: #EFEFEF; }
+  .news-block__btn:hover p {
+    color: #B72126; }
+  .news-block__btn:hover img {
+    margin-left: 1vh; }
 
 .footer {
   margin-top: 8.1481vh;
@@ -750,9 +754,11 @@ a, a:focus, a:hover, a:active {
   flex-wrap: wrap; }
   .del-group img {
     width: 39.7222vh;
-    height: 15.7407vh; }
+    height: 15.7407vh;
+    border: 0.2778vh solid #fff;
+    background-color: #fff; }
     .del-group img:hover {
-      opacity: .7; }
+      border: 0.2778vh solid #B72126; }
 
 .del-group--documentation {
   margin-top: 8.3333vh; }
@@ -1060,3 +1066,208 @@ a, a:focus, a:hover, a:active {
     background-color: #C61B1B;
     border-radius: 100%;
     color: #fff; }
+
+.banners {
+  margin-top: 5.5556vh; }
+
+.slider img {
+  max-width: 133.3333vh;
+  max-height: 56.4815vh; }
+
+.slick-dots li {
+  width: 5vh !important;
+  height: 0.1852vh !important;
+  background: #C2C2C2;
+  margin: 0 !important; }
+
+.slick-active {
+  background: #B72126 !important;
+  border-radius: 0.2778vh; }
+
+.slick-dots li button {
+  display: none !important; }
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+  padding: 5vh 0; }
+  .benefits__item {
+    width: 21.2963vh;
+    height: 21.2963vh;
+    background-color: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
+    border-radius: 3px;
+    transition: ease .5s all; }
+    .benefits__item .item__img, .benefits__item .item__info {
+      width: 80%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; }
+      .benefits__item .item__img img, .benefits__item .item__info img {
+        width: 5.2778vh;
+        height: 5.2778vh; }
+    .benefits__item .item__info {
+      border-top: 1px solid #E7E7E7; }
+      .benefits__item .item__info h5 {
+        font-family: 'Segoe UI';
+        font-weight: normal;
+        font-size: 1.6667vh;
+        line-height: 2.1296vh;
+        color: #303030; }
+  .benefits__item:hover {
+    margin-top: -2vh;
+    border: 1px solid rgba(183, 33, 38, 0.19);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px rgba(236, 0, 8, 0.05);
+    cursor: pointer;
+    transition: ease .5s all; }
+
+.application {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
+  min-height: 51.4815vh;
+  margin-bottom: 10vh; }
+  .application .right-block, .application .left-block {
+    width: 50%; }
+  .application .left-block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 11.3889vh;
+    margin-top: -7vh; }
+    .application .left-block__title {
+      max-width: 46.1111vh;
+      font-family: 'Segoe UI';
+      font-weight: bold;
+      font-size: 2.7778vh;
+      line-height: 3.7037vh;
+      color: #303030;
+      margin-bottom: 4.6296vh; }
+    .application .left-block__btn {
+      width: 31.2037vh;
+      height: 5.5556vh;
+      border: 2px solid #B72126;
+      text-transform: uppercase;
+      background-color: transparent;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 1.6667vh;
+      line-height: 1.6667vh;
+      text-align: center;
+      letter-spacing: 0.5px;
+      color: #B72126;
+      margin-bottom: 4.6296vh; }
+      .application .left-block__btn:hover {
+        color: #fff;
+        background-color: #B72126;
+        cursor: pointer;
+        transition: all 1s ease; }
+    .application .left-block__btn--grey {
+      border: 2px solid #666;
+      color: #666; }
+      .application .left-block__btn--grey:hover {
+        background-color: #666; }
+  .application .right-block {
+    padding-left: 7.963vh;
+    position: relative; }
+    .application .right-block::before {
+      content: ' ';
+      position: absolute;
+      top: 19vh;
+      left: -16vh;
+      transform: rotate(90deg);
+      width: 32.4074vh;
+      height: 0.0926vh;
+      background-color: #DFDFDF; }
+    .application .right-block__text {
+      font-family: 'Segoe UI';
+      font-weight: normal;
+      font-size: 1.8519vh;
+      line-height: 2.5vh;
+      color: #303030;
+      margin-bottom: 4.6296vh; }
+    .application .right-block__form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2.7778vh; }
+    .application .right-block__label {
+      font-family: 'Segoe UI';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.6667vh;
+      line-height: 1.4815vh;
+      margin-bottom: 1.0185vh;
+      color: #666666; }
+    .application .right-block__input {
+      height: 5.0926vh;
+      width: 37.3148vh;
+      border: 1px solid #DFDFDF;
+      background-color: #F8F8F8;
+      padding-left: 1vh;
+      font-size: 1.6667vh;
+      line-height: 2.2222vh;
+      -moz-appearance: textfield; }
+      .application .right-block__input::-webkit-inner-spin-button {
+        display: none; }
+      .application .right-block__input::placeholder {
+        font-size: 1.6667vh;
+        line-height: 2.2222vh;
+        color: #D9D9D9; }
+    .application .right-block__btn {
+      margin-top: 2.7778vh;
+      width: 19.3519vh; }
+
+.news-home {
+  display: flex;
+  margin-top: 2.037vh;
+  margin-bottom: 5vh; }
+  .news-home__item {
+    border-right: 1px solid #ECECEC;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 32.0074vh;
+    position: relative;
+    margin-right: 1vh; }
+    .news-home__item:hover .title {
+      color: #B72126; }
+    .news-home__item:hover .point {
+      background-color: #666; }
+    .news-home__item:hover img {
+      right: 1vh; }
+    .news-home__item img {
+      width: 1.2963vh;
+      position: absolute;
+      right: 2vh;
+      bottom: .5vh;
+      transition: all .2s ease-in-out; }
+  .news-home .date-wrap {
+    display: flex;
+    height: 2vh;
+    align-items: center; }
+    .news-home .date-wrap time {
+      font-family: 'Segoe UI';
+      font-weight: normal;
+      font-size: 1.2963vh;
+      line-height: 1.4815vh;
+      color: #666666; }
+  .news-home .point {
+    width: 1.2963vh;
+    height: 1.2963vh;
+    background-color: #B72126;
+    margin-right: 0.7037vh; }
+  .news-home .title {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    color: #303030;
+    font-size: 1.6667vh;
+    line-height: 2.2vh;
+    margin-left: 1.5vh;
+    margin-top: 1.1111vh; }
