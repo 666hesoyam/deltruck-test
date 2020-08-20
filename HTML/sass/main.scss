@@ -1,16 +1,8 @@
 /*-------------------------------------------------------------
-
     Project:        X
     Author:         Anton Shaposhnikov
 	Telegram:		https://t.me/hesoyam_666
-    Website:        https://666hesoyam.github.io/portfolio/
-
 --------------------------------------------------------------*/
-
-
-// default
-// ============================================================
-
 @import 'mixins'; // Mixins
 @import 'variables'; // Variables
 
@@ -38,20 +30,21 @@ a, a:focus, a:hover, a:active {
 	text-decoration: none;
 }
 
-:active, :focus {outline: none;}
-
-.container {
-	margin: 0 auto;
-	height: 100%;
-	max-width: 133.3333vh;
-	padding: 0 1vh;
+option,
+option:hover,
+option:focus {
+border:none;
+outline:none;
+box-shadow: none;
+color: #666666;
+font-size: 1.2667vh;
 }
 
-// ==============================//
-// 			Общие стили 		//
-// ============================//
+:active, :focus {outline: none;}
 
-// IN DEV PAGE
+// ==============================//
+// 			in-dev.html 		//
+// ============================//
 .in-dev {
 	margin-top: 20vh;
 	h1 {
@@ -59,6 +52,18 @@ a, a:focus, a:hover, a:active {
 		text-align: center;
 		text-transform: uppercase;
 	}
+}
+
+
+// ==============================//
+// 			Общие стили 		//
+// ============================//
+
+.container {
+	margin: 0 auto;
+	height: 100%;
+	max-width: 133.3333vh;
+	padding: 0 1vh;
 }
 
 //  Header
@@ -232,7 +237,7 @@ a, a:focus, a:hover, a:active {
 		height: 100%;
 		width: 100%;
 		text-transform: none;
-		font-family: 'Segoe UI';
+		// // // font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.6667vh;
 		line-height: 1.8519vh;
@@ -272,8 +277,10 @@ a, a:focus, a:hover, a:active {
 	margin-left: 0.4vh;
 }
 
-// Блок Новости/Преймущестава/Обратная связь
-// (используеться на многих страницах)
+// =======================================================//
+// 		 Блок Новости/Преймущестава/Обратная связь		 //
+// 		(используеться на многих страницах)				//
+// ====================================================//
 .about-block{
 	margin-top: 8.3333vh;
 }
@@ -317,7 +324,7 @@ a, a:focus, a:hover, a:active {
 			height: 2vh;
 			align-items: center;
 			time {
-				font-family: 'Segoe UI';
+				// // font-family: 'Segoe UI';
 				font-weight: normal;
 				font-size: 1.2963vh;
 				line-height: 1.4815vh;
@@ -331,7 +338,7 @@ a, a:focus, a:hover, a:active {
 			margin-right: 0.7037vh;
 		}
 		.title {
-			font-family: 'Segoe UI';
+			// // font-family: 'Segoe UI';
 			font-weight: normal;
 			color: #303030;
 			font-size: 1.6667vh;
@@ -351,7 +358,7 @@ a, a:focus, a:hover, a:active {
 			justify-content: flex-start;
 			min-height: 10.3704vh;
 			.title {
-				font-family: 'Segoe UI';
+				// // // font-family: 'Segoe UI';
 				font-weight: normal;
 				color: #000;
 				margin-left: 6.0185vh;
@@ -381,7 +388,7 @@ a, a:focus, a:hover, a:active {
 				width: 100%;
 				position: relative;
 				&__label {
-					font-family: 'Segoe UI';
+					// // font-family: 'Segoe UI';
 					font-style: normal;
 					font-weight: normal;
 					font-size: 1.8519vh;
@@ -444,7 +451,7 @@ a, a:focus, a:hover, a:active {
 		display: flex;
 		align-items: center;
 		color: #666666;
-		font-family: 'Segoe UI';
+		// // font-family: 'Segoe UI';
 		text-align: center;
 		font-size: 1.2963vh;
 		height: 100%;
@@ -482,7 +489,7 @@ a, a:focus, a:hover, a:active {
 				}
 			}
 			h3, a {
-				font-family: 'Segoe UI';
+				// // font-family: 'Segoe UI';
 				margin-bottom: 1.6667vh;
 				line-height: 1.8519vh;
 				letter-spacing: 0.5px;
@@ -595,7 +602,6 @@ a, a:focus, a:hover, a:active {
 		display: flex;
 		height: 100%;
 		align-items: center;
-
 		font-weight: normal;
 		font-size: 1.1111vh;
 		line-height: 1.4815vh;
@@ -610,9 +616,6 @@ a, a:focus, a:hover, a:active {
 		}
 	}
 }
-
-
-
 
 
 // ==================================================//
@@ -632,7 +635,7 @@ a, a:focus, a:hover, a:active {
 	width: 50%;
 	padding: 4.7222vh 5.5556vh 3.2407vh 5.5556vh;
 	&__sub-title {
-		font-family: 'Segoe UI';
+		// // font-family: 'Segoe UI';
 		font-weight: bold;
 		color: #303030;
 		font-size: 2.7778vh;
@@ -684,7 +687,7 @@ a, a:focus, a:hover, a:active {
 	width: 100%;
 	position: relative;
 	&__label {
-		font-family: 'Segoe UI';
+		// // font-family: 'Segoe UI';
 		font-style: normal;
 		font-weight: normal;
 		font-size: 1.6667vh;
@@ -724,14 +727,6 @@ a, a:focus, a:hover, a:active {
 		&::-ms-expand {
 			display: none;
 		}
-	}
-	option,
-	option:hover,
-	option:focus {
-	border:none;
-	outline:none;
-	font-size: 1.6667vh;
-	box-shadow: none;
 	}
 }
 
@@ -841,9 +836,6 @@ a, a:focus, a:hover, a:active {
 }
 
 
-
-
-
 // ==================================================//
 // 		Страница	Послуги/Додаткові послуги		//
 // ================================================//
@@ -851,7 +843,7 @@ a, a:focus, a:hover, a:active {
 .info-block {
 	margin-bottom: 4.6296vh;
 	&__title {
-		font-family: 'Segoe UI';
+		// // font-family: 'Segoe UI';
 		font-weight: bold;
 		font-size: 2.7778vh;
 		line-height: 3.7037vh;
@@ -870,17 +862,18 @@ a, a:focus, a:hover, a:active {
 		}
 	}
 	&__text {
-		font-family: 'Segoe UI';
+		// // font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.6667vh;
 		line-height: 2.2222vh;
 		color: #303030;
 		margin-left: 11.1111vh;
+		&--car-order p {
+			line-height: 3vh;
+			color: #000000;
+		}
 	}
 }
-
-
-
 
 .info-block__advantages {
 	display: flex;
@@ -918,11 +911,10 @@ a, a:focus, a:hover, a:active {
 			line-height: 2.037vh;
 			text-transform: uppercase;
 			color: #303030;
-
 			margin-bottom: 1.8519vh;
 		}
 		.advantages__text {
-			font-family: 'Segoe UI';
+			// // font-family: 'Segoe UI';
 			font-weight: normal;
 			font-size: 1.6667vh;
 			line-height: 2.2222vh;
@@ -931,8 +923,7 @@ a, a:focus, a:hover, a:active {
 	}
 }
 
-
-
+// Блок с лого компаниями DelGroup
 .del-group {
 	display: flex;
 	justify-content: space-between;
@@ -953,6 +944,10 @@ a, a:focus, a:hover, a:active {
 }
 
 
+// ==================================================//
+// 			Страница	documentation.html			//
+// ================================================//
+
 .documentation {
 	ul {
 		list-style-type: none;
@@ -965,14 +960,12 @@ a, a:focus, a:hover, a:active {
 	li {
 		display: flex;
 		align-items: center;
-
 		margin-bottom: 2.7778vh;
 	}
 	a {
 		display: flex;
 		align-items: center;
-
-		font-family: 'Segoe UI';
+		// // font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.6667vh;
 		line-height: 2.2222vh;
@@ -984,6 +977,9 @@ a, a:focus, a:hover, a:active {
 }
 
 
+// ==================================================//
+// 				Страница	tariff.html				//
+// ================================================//
 .tariff {
 	.table {
 		width: 83%;
@@ -1012,7 +1008,7 @@ a, a:focus, a:hover, a:active {
 	table.table__inner th, table.table__inner td   {
 		color: #303030;
 		background-color:#fff;
-		font-family: 'Segoe UI';
+		// // font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.3889vh;
 		line-height: 1.8519vh;
@@ -1055,14 +1051,7 @@ a, a:focus, a:hover, a:active {
 }
 
 
-
-
-
-
-
-
-
-
+// Блок подписки на рассылку 
 .subs {
 	display: flex;
 	justify-content: space-evenly;
@@ -1071,7 +1060,7 @@ a, a:focus, a:hover, a:active {
 	box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
 	min-height: 15.7407vh;
 	&__title {
-		font-family: 'Segoe UI';
+		// // font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.6667vh;
 		line-height: 2.2222vh;
@@ -1087,7 +1076,7 @@ a, a:focus, a:hover, a:active {
 		margin-top: -2vh;
 	}
 	&__label {
-		font-family: 'Segoe UI';
+		// // font-family: 'Segoe UI';
 		font-style: normal;
 		font-weight: normal;
 		font-size: 1.6667vh;
@@ -1115,14 +1104,17 @@ a, a:focus, a:hover, a:active {
 	}
 }
 
+// ==================================================//
+// 				Страница	news.html				//
+// ================================================//
 
-
+// Заголовок в блоке новостей
 .date-wrap {
 	display: flex;
 	height: 2vh;
 	align-items: center;
 	time {
-		font-family: 'Segoe UI';
+		// font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.2963vh;
 		line-height: 1.4815vh;
@@ -1136,15 +1128,13 @@ a, a:focus, a:hover, a:active {
 	margin-right: 0.7037vh;
 }
 
-
-
-
+// Аккардион в Новостях
 .ac-container{
     width: 100%;
     margin: 0 auto;
 }
 .ac-container label{
-    font-family: 'Segoe UI';
+    // font-family: 'Segoe UI';
     font-weight: normal;
 	font-size: 1.8519vh;
 	line-height: 2.5vh;
@@ -1156,9 +1146,11 @@ a, a:focus, a:hover, a:active {
     height: 30px;
     cursor: pointer;
 }
+
 .ac-container label:hover{
     color: #B72126;
 }
+
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
     color: #303030;
@@ -1167,6 +1159,7 @@ a, a:focus, a:hover, a:active {
 .ac-container input{
     display: none;
 }
+
 .ac-container article {
     background-color: rgba(255, 255, 255, 0.5);
     margin-top: -1px;
@@ -1174,48 +1167,34 @@ a, a:focus, a:hover, a:active {
     height: 0px;
     position: relative;
     z-index: 10;
-    // transition: height 0.3s ease-in-out;
 	margin: 2vh 2vh 2vh 0;
 }
+
 .ac-container article p {
-	font-family: 'Segoe UI';
+	// font-family: 'Segoe UI';
 	font-weight: normal;
 	font-size: 1.6667vh;
 	line-height: 2.2222vh;
 	color: #303033;
-
 	margin-left: 10.6481vh;
 }
+
 .ac-container article img {
 	max-width: 65.463vh;
 	max-height: 38.2407vh;
 	margin-bottom: 2vh;
 	margin-left: 10.6481vh;
 }
+
 .ac-container input:checked ~ article {
-    // transition: height 0.3s ease-in-out;
 	height: auto;
 }
+
 .ac-container input:checked ~ .date-wrap .point {
 	background-color: #666;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Форма заявки
+// Фильтры в блоке новостей
 .form-news {
 	display: flex;
 	align-items: flex-end;
@@ -1225,7 +1204,7 @@ a, a:focus, a:hover, a:active {
 	position: relative;
 	&__label {
 		width: 13.8889vh;
-		font-family: 'Segoe UI';
+		// font-family: 'Segoe UI';
 		font-style: normal;
 		font-weight: normal;
 		font-size: 1.6667vh;
@@ -1258,31 +1237,14 @@ a, a:focus, a:hover, a:active {
 	&__select--year {
 		width: 8vh;
 	}
-	option,
-	option:hover,
-	option:focus {
-	border:none;
-	outline:none;
-	font-size: 1.3667vh;
-	box-shadow: none;
-	color: #666666;
-	}
 }
 
-
-
-
-
-
-
-
-
-
-
+// Постраничная Пагинация в Новостях и Акциях
 .pagination {
 	height: 3vh;
 	margin-bottom: 3vh;
 }
+
 #pagination-digg {
 	display: flex;
 	& ul {
@@ -1291,7 +1253,7 @@ a, a:focus, a:hover, a:active {
 	& li {
 		font-size: 1.0185vh;
 		list-style: none;
-		font-family: 'Segoe UI';
+		// font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.2963vh;
 		color: #666666;
@@ -1305,7 +1267,6 @@ a, a:focus, a:hover, a:active {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 		width: 2.3148vh;
 		height: 2.3148vh;
 	}
@@ -1345,15 +1306,15 @@ a, a:focus, a:hover, a:active {
 }
 
 
-
-
-
-
+// ==================================================//
+// 			Главная	Страница	index.html			//
+// ================================================//
 
 .banners {
 	margin-top: 5.5556vh;
 }
 
+// Slick Slider
 .slider img {
 	max-width: 133.3333vh;
 	max-height: 56.4815vh;
@@ -1375,7 +1336,7 @@ a, a:focus, a:hover, a:active {
 }
 
 
-
+// Переваги DelTruck
 .benefits {
 	display: flex;
     flex-wrap: wrap;
@@ -1405,7 +1366,7 @@ a, a:focus, a:hover, a:active {
 		.item__info {
 			border-top: 1px solid #E7E7E7;
 			h5 {
-				font-family: 'Segoe UI';
+				// font-family: 'Segoe UI';
 				font-weight: normal;
 				font-size: 1.6667vh;
 				line-height: 2.1296vh;
@@ -1423,17 +1384,7 @@ a, a:focus, a:hover, a:active {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
+// Форма обратной связи на Главной Странице
 .application {
 	display: flex;
 	justify-content: space-evenly;
@@ -1452,7 +1403,7 @@ a, a:focus, a:hover, a:active {
 		margin-top: -7vh;
 		&__title {
 			max-width: 46.1111vh;
-			font-family: 'Segoe UI';
+			// font-family: 'Segoe UI';
 			font-weight: bold;
 			font-size: 2.7778vh;
 			line-height: 3.7037vh;
@@ -1502,7 +1453,7 @@ a, a:focus, a:hover, a:active {
 			background-color: #DFDFDF;
 		}
 		&__text {
-			font-family: 'Segoe UI';
+			// font-family: 'Segoe UI';
 			font-weight: normal;
 			font-size: 1.8519vh;
 			line-height: 2.5vh;
@@ -1515,7 +1466,7 @@ a, a:focus, a:hover, a:active {
 			margin-bottom: 2.7778vh;
 		}
 		&__label {
-			font-family: 'Segoe UI';
+			// font-family: 'Segoe UI';
 			font-style: normal;
 			font-weight: normal;
 			font-size: 1.6667vh;
@@ -1548,16 +1499,7 @@ a, a:focus, a:hover, a:active {
 	}  
 }
 
-
-
-
-
-
-
-
-
-
-
+// Горизонтальный блок новостей на главной странице
 .news-home {
 	display: flex;
 	margin-top: 2.037vh;
@@ -1592,7 +1534,7 @@ a, a:focus, a:hover, a:active {
 		height: 2vh;
 		align-items: center;
 		time {
-			font-family: 'Segoe UI';
+			// font-family: 'Segoe UI';
 			font-weight: normal;
 			font-size: 1.2963vh;
 			line-height: 1.4815vh;
@@ -1606,7 +1548,7 @@ a, a:focus, a:hover, a:active {
 		margin-right: 0.7037vh;
 	}
 	.title {
-		font-family: 'Segoe UI';
+		// font-family: 'Segoe UI';
 		font-weight: normal;
 		color: #303030;
 		font-size: 1.6667vh;
@@ -1616,13 +1558,327 @@ a, a:focus, a:hover, a:active {
 	}
 }
 
-
-
-.redddd {
+// ==================================================//
+// 			Страница	action.html					//
+// ================================================//
+.action {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	a {
+		margin-bottom: 4vh;
+	}
+	a:hover .item__btn {
+		background: #DADADA;
+		transition: all .2s linear;
+	}
+	a:hover .item__title h3 {
+		color: #B72126;
+		transition: all .3s linear;
+	}
+	a:hover .item__img {
+		opacity: .8;
+		transition: all .2s linear;
+	}
+	&__item {
+		box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
+		border-radius: 3px;
+		.item__img {
+			width: 54.537vh;
+			height: 31.9444vh;
+			position: relative;
+		}
+		.item__title {
+			width: 54.537vh;
+			height: 11.3889vh;
+			background-color: #FFFFFF;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: -0.5vh;
+			h3 {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				font-size: 1.6667vh;
+				line-height: 2.037vh;
+				text-transform: uppercase;
+				color: #303030;
+				max-width: 42.5vh;
+				margin-left: 2.7778vh;
+			}
+			.item__btn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 4.6296vh;
+				height: 100%;
+				background: linear-gradient(180deg, rgba(236, 0, 8, 0.8) 0%, rgba(183, 33, 38, 0.8) 100%);
+				border-radius: 0px 0px 3px 0px;
+				img {
+					width: 1.3889vh;
+					height: 2.5vh;
+				}
+			}
+		}
+	}
+}
+
+// ===================================================//
+// 			Страница	action-page-1.html		  	 //
+// 			открытая страница Акции					//
+// ================================================//
+.action-page {
+	display: flex;
+	margin-bottom: 8.3333vh;
+	&__img {
+		width: 65.2778vh;
+		height: 38.3333vh;
+		position: relative;
+	}
+	&__info {
+		margin-left: 2.7778vh;
+		.info__title {
+			max-width: 42.5vh;
+			margin-bottom: 1.5vh;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			font-size: 1.6667vh;
+			line-height: 2.037vh;
+			text-transform: uppercase;
+			color: #303030;
+		}
+		.info__text {
+			// font-family: 'Segoe UI';
+			font-weight: normal;
+			font-size: 1.6667vh;
+			line-height: 2.2222vh;
+			color: #000000;
+		}
+	}
+	.info-btn {
+		display: flex;
+		margin-top: 4.6296vh;
+		&__btn {
+			width: 31.2037vh;
+			height: 5.5556vh;
+			border: 2px solid #B72126;
+			text-transform: uppercase;
+			background-color: transparent;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			font-size: 1.6667vh;
+			line-height: 1.6667vh;
+			text-align: center;
+			letter-spacing: 0.5px;
+			color: #B72126;
+			&:hover {
+				color: #fff;
+				background-color: #B72126;
+				cursor: pointer;
+				transition: all 1s ease;
+			}
+		}
+		&__btn--grey {
+			border: 2px solid #666;
+			color: #666;
+			margin-left: 2vh;
+			&:hover {
+				background-color: #666;
+			}
+		}
+	}
+}
+
+
+// ===================================================//
+// 			Страница	car-order.html		  		 //
+// ================================================//
+
+.car-order {
+	width: 85%;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
+	border-radius: 3px;
+	margin: 3vh auto 7vh auto;
+	padding: 2.7778vh 0 2.7778vh 0;
+	&__inner {
+		width: 96%;
+		margin: 0 auto;
+	}
+	&__heading {
+		background: #F8F8F8;
+		border-radius: 3px;
+		margin-bottom: 4.6296vh;
+		margin-top: 2.7778vh;
+		width: 100%;
+		height: 5.5556vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		h2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			font-size: 1.6667vh;
+			line-height: 1.6667vh;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			color: #303030;
+		}
+	}
+	&__heading:first-child {
+		margin-top: 0;
+	}
+	&__heading--no-bg {
+		background-color: transparent;
+	}
+}
+
+// Карта
+.map {
+	display: flex;
+	justify-content: center;
+	width: 87.963vh;
+	height: 46.2963vh;
+	margin: 0 auto 4.6296vh auto;
+}
+
+// Блок Формы заявки
+.car-order__group {
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+    margin: 0 auto 2.2222vh auto;
+
+	.car-order__form--btn {
+		display: flex;
+		justify-content: center;
+	}
+
+	.car-order__form {
+		position: relative;
+		width: 42.5926vh;
+		height: max-content;
+		.form__label {
+			// font-family: 'Segoe UI';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.6667vh;
+			line-height: 2.2222vh;
+			margin-bottom: 0.9259vh;
+			color: #303030;
+		}
+		.form__input {
+			height: 3.8889vh;
+			width: 100%;
+			border: 1px solid #D9D9D9;
+			padding-left: 1vh;
+			margin-top: 0.9259vh;
+			font-size: 1.6667vh;
+			line-height: 2.2222vh;
+			-moz-appearance: textfield;
+			&::-webkit-inner-spin-button { 
+				display: none;
+			}
+			&::placeholder {
+				font-size: 1.6667vh;
+				line-height: 2.2222vh;
+				color: #D9D9D9;
+			}
+		}
+		.form__textarea {
+			padding-top: 0.7vh;
+		}
+		.form__select {
+			height: 3.8889vh;
+			width: 100%;
+			font-size: 1.6667vh;
+			padding-left: 1vh;
+			margin-top: 0.9259vh;
+			line-height: 2.2222vh;
+			border: 1px solid #D9D9D9;
+			background: url('../img/icon/Arrow-select.svg') no-repeat center;
+			background-size: 1.8519vh 0.8333vh;
+			-webkit-appearance: none;
+			background-position-x: 97%;
+			cursor: pointer;
+			&::-ms-expand {
+				display: none;
+			}
+		}
+		.form__link {
+			// font-family: 'Segoe UI';
+			font-weight: bold;
+			font-size: 1.6667vh;
+			line-height: 2.2222vh;
+			color: #B72126;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			margin-top: 3.7vh;
+			&:hover {
+				color: #666;
+			}
+		}
+		.form__btn {
+			width: 31.2037vh;
+			height: 5.5556vh;
+			border: 2px solid #666;
+			color: #666;
+			text-transform: uppercase;
+			background-color: transparent;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			font-size: 1.6667vh;
+			line-height: 1.6667vh;
+			text-align: center;
+			letter-spacing: 0.5px;
+			&:hover {
+				color: #fff;
+				background-color: #666;
+				cursor: pointer;
+				transition: all 1s ease;
+			}
+		}
+	}
+	.form-small-wrap {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.form--small {
+		width: 20.1074vh;
+		margin: 0;
+		.form__select {
+			background-position-x: 92%;
+		}
+	}
+	.form--small-center {
+		width: 20.1074vh;
+		margin: 0 auto 3vh auto;
+	}
+}
+
+.car-order--add {
+	width: 85%;
+	margin: 0 auto 2.7778vh auto;
+	label {
+		margin: 0 0 1.8519vh 1vh;
+	}
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
 // font-family: 'Montserrat', sans-serif;
-// font-family: 'Segoe UI';
+// // font-family: 'Segoe UI';
