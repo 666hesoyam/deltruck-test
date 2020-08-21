@@ -44,19 +44,19 @@
                 <h3 class="info-block__title">Замовлення авто</h3>
                 <div class="info-block__text info-block__text--car-order">
                     <p>Якщо Ви зацікавлені в замовленні автомобіля для перевезення Вашого вантажу, заповніть заявку.</p>
-
                     <p>Ми зв'яжемося з Вами в максимально короткі терміни і надамо варіанти перевезень.</p>
-
                     <p>«DelTruck» - це завжди надійна і своєчасна доставка вантажу по Україні!</p>
                 </div>
 
                 <div class="car-order">
                     <div class="car-order__inner">
 
+                        <!-- Heading section -->
                         <div class="car-order__heading">
                             <h2>Інформація по автомобілю</h2>
                         </div>
 
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form form--small">
                                 <label class="form__label">Дата подачі</label>
@@ -134,6 +134,7 @@
                             </form>
                         </div>
 
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form form--small">
                                 <label class="form__label">Вантажопідйомність, тонн</label>
@@ -156,7 +157,7 @@
                             </form>
                         </div>
 
-
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form">
                                 <label class="form__label">Тип вантажу</label>
@@ -313,25 +314,24 @@
                             </form>
 
                             <form class="car-order__form">
-                                <a href="#" class="form__link">Коефіцієнти страхування</a>
+                                <a href="coefficient.html" class="form__link">Коефіцієнти страхування</a>
                             </form>
-                            
                         </div>
-
+                        
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form">
                                 <label class="form__label">Опис вантажу і упаковки</label>
-                                <textarea class="form__input form__textarea" name="" id="" rows="1"></textarea>
+                                <textarea class="form__input form__textarea" rows="1"></textarea>
                             </form>
                         </div>
 
-
-
-
+                        <!-- Heading section -->
                         <div class="car-order__heading">
                             <h2>Точки маршруту</h2>
                         </div>
 
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form">
                                 <label class="form__label">Точка виїзду</label>
@@ -339,10 +339,11 @@
                             </form>
 
                             <form class="car-order__form car-order__form--btn">
-                                <button class="form__btn ">Додати точку</button>
+                                <button class="form__btn form__btn--grey">Додати точку</button>
                             </form>
                         </div>
 
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form">
                                 <label class="form__label">Точка виїзду</label>
@@ -351,23 +352,26 @@
 
                             <form class="car-order__form form--small-center">
                                 <label class="form__label">Довжина маршруту, км</label>
-                                <input class="form__input" type="text" placeholder=" ">
+                                <input class="form__input" type="number" placeholder=" ">
                             </form>
                         </div>
 
+                        <!-- Heading section -->
                         <div class="car-order__heading car-order__heading--no-bg">
                             <h2>побудувати маршрут</h2>
                         </div>
-                        
+
+                        <!-- Next row -->
                         <div class="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2541.053351304863!2d30.519480358999633!3d50.440106904366296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefee7040109%3A0x8c77c4dd773d01c!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JLQsNGB0LjQu9GM0LrQvtCy0YHQutCw0Y8sIDE1LzIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1597942948944!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
 
-
+                        <!-- Heading section -->
                         <div class="car-order__heading">
                             <h2>Додаткові послуги</h2>
                         </div>
-                        
+
+                        <!-- Next row -->
                         <div class="car-order--add">
                             <div class="car-order__form">
                                 <input id="check" type="checkbox">
@@ -383,10 +387,12 @@
                             </div>
                         </div>
 
+                        <!-- Heading section -->
                         <div class="car-order__heading">
                             <h2>Контактна інформація</h2>
                         </div>
 
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form">
                                 <label class="form__label">Назва платника (організація)</label>
@@ -399,18 +405,20 @@
                             </form>
                         </div>
 
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form">
                                 <label class="form__label">Телефон</label>
-                                <input class="form__input" type="text" placeholder=" ">
+                                <input class="form__input" type="tel" placeholder=" " minlength="10" maxlength="13">
                             </form>
 
                             <form class="car-order__form">
                                 <label class="form__label">Електронна адреса</label>
-                                <input class="form__input" type="text" placeholder=" ">
+                                <input class="form__input" type="email" placeholder=" ">
                             </form>
                         </div>
 
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form">
                                 <label class="form__label">Спiвробiтник Делiверi (П.I.Б.)</label>
@@ -418,6 +426,7 @@
                             </form>
                         </div>
 
+                        <!-- Next row -->
                         <div class="car-order__group">
                             <form class="car-order__form">
                                 <button class="form__btn">Відправити заявку</button>

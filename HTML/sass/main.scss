@@ -237,7 +237,6 @@ font-size: 1.2667vh;
 		height: 100%;
 		width: 100%;
 		text-transform: none;
-		// // // font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.6667vh;
 		line-height: 1.8519vh;
@@ -324,7 +323,6 @@ font-size: 1.2667vh;
 			height: 2vh;
 			align-items: center;
 			time {
-				// // font-family: 'Segoe UI';
 				font-weight: normal;
 				font-size: 1.2963vh;
 				line-height: 1.4815vh;
@@ -338,7 +336,6 @@ font-size: 1.2667vh;
 			margin-right: 0.7037vh;
 		}
 		.title {
-			// // font-family: 'Segoe UI';
 			font-weight: normal;
 			color: #303030;
 			font-size: 1.6667vh;
@@ -358,7 +355,6 @@ font-size: 1.2667vh;
 			justify-content: flex-start;
 			min-height: 10.3704vh;
 			.title {
-				// // // font-family: 'Segoe UI';
 				font-weight: normal;
 				color: #000;
 				margin-left: 6.0185vh;
@@ -388,7 +384,6 @@ font-size: 1.2667vh;
 				width: 100%;
 				position: relative;
 				&__label {
-					// // font-family: 'Segoe UI';
 					font-style: normal;
 					font-weight: normal;
 					font-size: 1.8519vh;
@@ -451,7 +446,6 @@ font-size: 1.2667vh;
 		display: flex;
 		align-items: center;
 		color: #666666;
-		// // font-family: 'Segoe UI';
 		text-align: center;
 		font-size: 1.2963vh;
 		height: 100%;
@@ -489,7 +483,6 @@ font-size: 1.2667vh;
 				}
 			}
 			h3, a {
-				// // font-family: 'Segoe UI';
 				margin-bottom: 1.6667vh;
 				line-height: 1.8519vh;
 				letter-spacing: 0.5px;
@@ -635,7 +628,6 @@ font-size: 1.2667vh;
 	width: 50%;
 	padding: 4.7222vh 5.5556vh 3.2407vh 5.5556vh;
 	&__sub-title {
-		// // font-family: 'Segoe UI';
 		font-weight: bold;
 		color: #303030;
 		font-size: 2.7778vh;
@@ -687,7 +679,6 @@ font-size: 1.2667vh;
 	width: 100%;
 	position: relative;
 	&__label {
-		// // font-family: 'Segoe UI';
 		font-style: normal;
 		font-weight: normal;
 		font-size: 1.6667vh;
@@ -843,7 +834,6 @@ font-size: 1.2667vh;
 .info-block {
 	margin-bottom: 4.6296vh;
 	&__title {
-		// // font-family: 'Segoe UI';
 		font-weight: bold;
 		font-size: 2.7778vh;
 		line-height: 3.7037vh;
@@ -862,7 +852,6 @@ font-size: 1.2667vh;
 		}
 	}
 	&__text {
-		// // font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.6667vh;
 		line-height: 2.2222vh;
@@ -914,7 +903,6 @@ font-size: 1.2667vh;
 			margin-bottom: 1.8519vh;
 		}
 		.advantages__text {
-			// // font-family: 'Segoe UI';
 			font-weight: normal;
 			font-size: 1.6667vh;
 			line-height: 2.2222vh;
@@ -965,7 +953,6 @@ font-size: 1.2667vh;
 	a {
 		display: flex;
 		align-items: center;
-		// // font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.6667vh;
 		line-height: 2.2222vh;
@@ -991,64 +978,63 @@ font-size: 1.2667vh;
 		&__item {
 			width: 96%;
 			margin: 0 auto;
+			table.table__inner {
+				text-decoration: none;
+				border-collapse: collapse;
+				width: 100%;
+				text-align: center;
+				margin-bottom: 2.7778vh;
+				
+			}
+			table.table__inner:last-child {
+				margin-bottom: 0;
+			}
+			table.table__inner th, table.table__inner td   {
+				color: #303030;
+				background-color:#fff;
+				font-weight: normal;
+				font-size: 1.3889vh;
+				line-height: 1.8519vh;
+			}
+			table.table__inner td, table.table__inner th {
+				white-space:pre-wrap;
+				padding: 1.6667vh 0.463vh;
+				line-height: 1.5037vh;
+				vertical-align: middle;
+				border: 1px solid rgba(102, 102, 102, 0.16);
+				border-bottom: none;
+			}
+			table.table__inner th {
+				border: none;
+				background-color:#F8F8F8;
+			}
+			.th--border-all {
+				border: 1px solid rgba(102, 102, 102, 0.16) !important;
+			}
+			.th--border {
+				border-right: 1px solid rgba(102, 102, 102, 0.16) !important;
+			}
+			.td--no-left-border {
+				border-left: none !important;
+			}
+			.td--no-right-border {
+				border-right: none !important;
+			}
+			table.table__inner th span {
+				color: #B72126;
+				font-weight: bold;
+			}	
+			table.table__inner td:hover {
+				background-color: #F9F9F9;
+			}
+			table.table__inner tr:hover td { 
+				color:#354251;
+				cursor:default;
+			}
 		}
-		
-	}
-	table.table__inner {
-		text-decoration: none;
-		border-collapse: collapse;
-		width: 100%;
-		text-align: center;
-		margin-bottom: 2.7778vh;
-		
-	}
-	table.table__inner:last-child {
-		margin-bottom: 0;
-	}
-	table.table__inner th, table.table__inner td   {
-		color: #303030;
-		background-color:#fff;
-		// // font-family: 'Segoe UI';
-		font-weight: normal;
-		font-size: 1.3889vh;
-		line-height: 1.8519vh;
-	}
-	table.table__inner td, table.table__inner th {
-		white-space:pre-wrap;
-		padding: 1.6667vh 0.463vh;
-		line-height: 1.5037vh;
-		vertical-align: middle;
-		border: 1px solid rgba(102, 102, 102, 0.16);
-		border-bottom: none;
-	}
-	table.table__inner th {
-		border: none;
-		background-color:#F8F8F8;
-	}
-	.th--border-all {
-		border: 1px solid rgba(102, 102, 102, 0.16) !important;
-	}
-	.th--border {
-		border-right: 1px solid rgba(102, 102, 102, 0.16) !important;
-	}
-	.td--no-left-border {
-		border-left: none !important;
-	}
-	.td--no-right-border {
-		border-right: none !important;
-	}
-	table.table__inner th span {
-		color: #B72126;
-		font-weight: bold;
-	}	
-	table.table__inner td:hover {
-		background-color: #F9F9F9;
-	}
-	table.table__inner tr:hover td { 
-		color:#354251;
-		cursor:default;
 	}
 }
+
 
 
 // Блок подписки на рассылку 
@@ -1060,7 +1046,6 @@ font-size: 1.2667vh;
 	box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
 	min-height: 15.7407vh;
 	&__title {
-		// // font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.6667vh;
 		line-height: 2.2222vh;
@@ -1076,7 +1061,6 @@ font-size: 1.2667vh;
 		margin-top: -2vh;
 	}
 	&__label {
-		// // font-family: 'Segoe UI';
 		font-style: normal;
 		font-weight: normal;
 		font-size: 1.6667vh;
@@ -1114,7 +1098,6 @@ font-size: 1.2667vh;
 	height: 2vh;
 	align-items: center;
 	time {
-		// font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.2963vh;
 		line-height: 1.4815vh;
@@ -1134,7 +1117,6 @@ font-size: 1.2667vh;
     margin: 0 auto;
 }
 .ac-container label{
-    // font-family: 'Segoe UI';
     font-weight: normal;
 	font-size: 1.8519vh;
 	line-height: 2.5vh;
@@ -1171,7 +1153,6 @@ font-size: 1.2667vh;
 }
 
 .ac-container article p {
-	// font-family: 'Segoe UI';
 	font-weight: normal;
 	font-size: 1.6667vh;
 	line-height: 2.2222vh;
@@ -1204,7 +1185,6 @@ font-size: 1.2667vh;
 	position: relative;
 	&__label {
 		width: 13.8889vh;
-		// font-family: 'Segoe UI';
 		font-style: normal;
 		font-weight: normal;
 		font-size: 1.6667vh;
@@ -1253,7 +1233,6 @@ font-size: 1.2667vh;
 	& li {
 		font-size: 1.0185vh;
 		list-style: none;
-		// font-family: 'Segoe UI';
 		font-weight: normal;
 		font-size: 1.2963vh;
 		color: #666666;
@@ -1366,7 +1345,6 @@ font-size: 1.2667vh;
 		.item__info {
 			border-top: 1px solid #E7E7E7;
 			h5 {
-				// font-family: 'Segoe UI';
 				font-weight: normal;
 				font-size: 1.6667vh;
 				line-height: 2.1296vh;
@@ -1403,7 +1381,6 @@ font-size: 1.2667vh;
 		margin-top: -7vh;
 		&__title {
 			max-width: 46.1111vh;
-			// font-family: 'Segoe UI';
 			font-weight: bold;
 			font-size: 2.7778vh;
 			line-height: 3.7037vh;
@@ -1453,7 +1430,6 @@ font-size: 1.2667vh;
 			background-color: #DFDFDF;
 		}
 		&__text {
-			// font-family: 'Segoe UI';
 			font-weight: normal;
 			font-size: 1.8519vh;
 			line-height: 2.5vh;
@@ -1466,7 +1442,6 @@ font-size: 1.2667vh;
 			margin-bottom: 2.7778vh;
 		}
 		&__label {
-			// font-family: 'Segoe UI';
 			font-style: normal;
 			font-weight: normal;
 			font-size: 1.6667vh;
@@ -1534,7 +1509,6 @@ font-size: 1.2667vh;
 		height: 2vh;
 		align-items: center;
 		time {
-			// font-family: 'Segoe UI';
 			font-weight: normal;
 			font-size: 1.2963vh;
 			line-height: 1.4815vh;
@@ -1548,7 +1522,6 @@ font-size: 1.2667vh;
 		margin-right: 0.7037vh;
 	}
 	.title {
-		// font-family: 'Segoe UI';
 		font-weight: normal;
 		color: #303030;
 		font-size: 1.6667vh;
@@ -1648,7 +1621,6 @@ font-size: 1.2667vh;
 			color: #303030;
 		}
 		.info__text {
-			// font-family: 'Segoe UI';
 			font-weight: normal;
 			font-size: 1.6667vh;
 			line-height: 2.2222vh;
@@ -1748,18 +1720,15 @@ font-size: 1.2667vh;
 	justify-content: space-between;
 	width: 85%;
     margin: 0 auto 2.2222vh auto;
-
 	.car-order__form--btn {
 		display: flex;
 		justify-content: center;
 	}
-
 	.car-order__form {
 		position: relative;
 		width: 42.5926vh;
 		height: max-content;
 		.form__label {
-			// font-family: 'Segoe UI';
 			font-style: normal;
 			font-weight: normal;
 			font-size: 1.6667vh;
@@ -1806,7 +1775,6 @@ font-size: 1.2667vh;
 			}
 		}
 		.form__link {
-			// font-family: 'Segoe UI';
 			font-weight: bold;
 			font-size: 1.6667vh;
 			line-height: 2.2222vh;
@@ -1821,10 +1789,10 @@ font-size: 1.2667vh;
 			}
 		}
 		.form__btn {
+			margin-top: 3vh;
 			width: 31.2037vh;
 			height: 5.5556vh;
-			border: 2px solid #666;
-			color: #666;
+			border: 2px solid #B72126;
 			text-transform: uppercase;
 			background-color: transparent;
 			font-family: 'Montserrat', sans-serif;
@@ -1833,11 +1801,20 @@ font-size: 1.2667vh;
 			line-height: 1.6667vh;
 			text-align: center;
 			letter-spacing: 0.5px;
+			color: #B72126;
 			&:hover {
 				color: #fff;
-				background-color: #666;
+				background-color: #B72126;
 				cursor: pointer;
 				transition: all 1s ease;
+			}
+		}
+		.form__btn--grey {
+			border: 2px solid #666;
+			color: #666;
+			margin: 2vh 0 0 5vh;
+			&:hover {
+				background-color: #666;
 			}
 		}
 	}
@@ -1860,9 +1837,10 @@ font-size: 1.2667vh;
 	}
 }
 
+// Секция "Додаткові послуги"
 .car-order--add {
 	width: 85%;
-	margin: 0 auto 2.7778vh auto;
+	margin: 0 auto 4.6296vh auto;
 	label {
 		margin: 0 0 1.8519vh 1vh;
 	}
@@ -1871,14 +1849,80 @@ font-size: 1.2667vh;
 
 
 
+.coef {
+	.table-coef {
+		width: 83%;
+		background-color: #FFFFFF;
+		box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
+		border-radius: 3px;
+		padding: 2.7778vh 0 2.7778vh 0;
+		margin: 7.6852vh auto 0 auto;
+		.table__heading th {
+			width: 33.3%;
+			height: 5.5556vh;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			font-size: 1.6667vh;
+			line-height: 1.6667vh;
+			text-align: center;
+			letter-spacing: 0.0463vh;
+			text-transform: uppercase;
+			color: #303030;
+			background-color:#F8F8F8;
+		}
+		.table__info td {
+			width: 33.3%;
+		}
+		.table__item {
+			width: 96%;
+			margin: 0 auto;
+			table.table__inner {
+				text-decoration: none;
+				border-collapse: collapse;
+				width: 100%;
+				text-align: center;
+				margin-bottom: 2.7778vh;
+			}
+			table.table__inner:last-child {
+				margin-bottom: 0;
+			}
+			table.table__inner td   {
+				font-weight: normal;
+				font-size: 1.6667vh;
+				color: #000000;
+				background-color:#fff;
+				line-height: 1.8519vh;
+				height: 4.7037vh;
+			}
+			.th--border-no-top-down {
+				border-top: none !important;
+				border-bottom: none !important;
+				border-right:  1px solid #B4B4B4!important;
+				border-left:  1px solid #B4B4B4 !important;
+			}
+			.td--grey {
+				background-color: #F8F8F8 !important;
+			}
+			.td--right {
+				text-align: right;
+				padding-right: 2.7778vh;
+			}
+			.td--left {
+				text-align: left;
+				padding-left: 2.7778vh;
+			}
+			table.table__inner td:hover {
+				background-color: #B72126 !important;
+				color: #fff !important;
+			}
+		}
+	}
 
-
-
-
+}
 
 
 
 
 
 // font-family: 'Montserrat', sans-serif;
-// // font-family: 'Segoe UI';
+//  font-family: 'Segoe UI';

@@ -785,58 +785,46 @@ option:focus {
   .tariff .table__item {
     width: 96%;
     margin: 0 auto; }
-
-.tariff table.table__inner {
-  text-decoration: none;
-  border-collapse: collapse;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 2.7778vh; }
-
-.tariff table.table__inner:last-child {
-  margin-bottom: 0; }
-
-.tariff table.table__inner th, .tariff table.table__inner td {
-  color: #303030;
-  background-color: #fff;
-  font-weight: normal;
-  font-size: 1.3889vh;
-  line-height: 1.8519vh; }
-
-.tariff table.table__inner td, .tariff table.table__inner th {
-  white-space: pre-wrap;
-  padding: 1.6667vh 0.463vh;
-  line-height: 1.5037vh;
-  vertical-align: middle;
-  border: 1px solid rgba(102, 102, 102, 0.16);
-  border-bottom: none; }
-
-.tariff table.table__inner th {
-  border: none;
-  background-color: #F8F8F8; }
-
-.tariff .th--border-all {
-  border: 1px solid rgba(102, 102, 102, 0.16) !important; }
-
-.tariff .th--border {
-  border-right: 1px solid rgba(102, 102, 102, 0.16) !important; }
-
-.tariff .td--no-left-border {
-  border-left: none !important; }
-
-.tariff .td--no-right-border {
-  border-right: none !important; }
-
-.tariff table.table__inner th span {
-  color: #B72126;
-  font-weight: bold; }
-
-.tariff table.table__inner td:hover {
-  background-color: #F9F9F9; }
-
-.tariff table.table__inner tr:hover td {
-  color: #354251;
-  cursor: default; }
+    .tariff .table__item table.table__inner {
+      text-decoration: none;
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2.7778vh; }
+    .tariff .table__item table.table__inner:last-child {
+      margin-bottom: 0; }
+    .tariff .table__item table.table__inner th, .tariff .table__item table.table__inner td {
+      color: #303030;
+      background-color: #fff;
+      font-weight: normal;
+      font-size: 1.3889vh;
+      line-height: 1.8519vh; }
+    .tariff .table__item table.table__inner td, .tariff .table__item table.table__inner th {
+      white-space: pre-wrap;
+      padding: 1.6667vh 0.463vh;
+      line-height: 1.5037vh;
+      vertical-align: middle;
+      border: 1px solid rgba(102, 102, 102, 0.16);
+      border-bottom: none; }
+    .tariff .table__item table.table__inner th {
+      border: none;
+      background-color: #F8F8F8; }
+    .tariff .table__item .th--border-all {
+      border: 1px solid rgba(102, 102, 102, 0.16) !important; }
+    .tariff .table__item .th--border {
+      border-right: 1px solid rgba(102, 102, 102, 0.16) !important; }
+    .tariff .table__item .td--no-left-border {
+      border-left: none !important; }
+    .tariff .table__item .td--no-right-border {
+      border-right: none !important; }
+    .tariff .table__item table.table__inner th span {
+      color: #B72126;
+      font-weight: bold; }
+    .tariff .table__item table.table__inner td:hover {
+      background-color: #F9F9F9; }
+    .tariff .table__item table.table__inner tr:hover td {
+      color: #354251;
+      cursor: default; }
 
 .subs {
   display: flex;
@@ -1445,10 +1433,10 @@ option:focus {
       .car-order__group .car-order__form .form__link:hover {
         color: #666; }
     .car-order__group .car-order__form .form__btn {
+      margin-top: 3vh;
       width: 31.2037vh;
       height: 5.5556vh;
-      border: 2px solid #666;
-      color: #666;
+      border: 2px solid #B72126;
       text-transform: uppercase;
       background-color: transparent;
       font-family: 'Montserrat', sans-serif;
@@ -1456,12 +1444,19 @@ option:focus {
       font-size: 1.6667vh;
       line-height: 1.6667vh;
       text-align: center;
-      letter-spacing: 0.5px; }
+      letter-spacing: 0.5px;
+      color: #B72126; }
       .car-order__group .car-order__form .form__btn:hover {
         color: #fff;
-        background-color: #666;
+        background-color: #B72126;
         cursor: pointer;
         transition: all 1s ease; }
+    .car-order__group .car-order__form .form__btn--grey {
+      border: 2px solid #666;
+      color: #666;
+      margin: 2vh 0 0 5vh; }
+      .car-order__group .car-order__form .form__btn--grey:hover {
+        background-color: #666; }
   .car-order__group .form-small-wrap {
     display: flex;
     justify-content: space-between;
@@ -1478,6 +1473,62 @@ option:focus {
 
 .car-order--add {
   width: 85%;
-  margin: 0 auto 2.7778vh auto; }
+  margin: 0 auto 4.6296vh auto; }
   .car-order--add label {
     margin: 0 0 1.8519vh 1vh; }
+
+.coef .table-coef {
+  width: 83%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
+  border-radius: 3px;
+  padding: 2.7778vh 0 2.7778vh 0;
+  margin: 7.6852vh auto 0 auto; }
+  .coef .table-coef .table__heading th {
+    width: 33.3%;
+    height: 5.5556vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.6667vh;
+    line-height: 1.6667vh;
+    text-align: center;
+    letter-spacing: 0.0463vh;
+    text-transform: uppercase;
+    color: #303030;
+    background-color: #F8F8F8; }
+  .coef .table-coef .table__info td {
+    width: 33.3%; }
+  .coef .table-coef .table__item {
+    width: 96%;
+    margin: 0 auto; }
+    .coef .table-coef .table__item table.table__inner {
+      text-decoration: none;
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2.7778vh; }
+    .coef .table-coef .table__item table.table__inner:last-child {
+      margin-bottom: 0; }
+    .coef .table-coef .table__item table.table__inner td {
+      font-weight: normal;
+      font-size: 1.6667vh;
+      color: #000000;
+      background-color: #fff;
+      line-height: 1.8519vh;
+      height: 4.7037vh; }
+    .coef .table-coef .table__item .th--border-no-top-down {
+      border-top: none !important;
+      border-bottom: none !important;
+      border-right: 1px solid #B4B4B4 !important;
+      border-left: 1px solid #B4B4B4 !important; }
+    .coef .table-coef .table__item .td--grey {
+      background-color: #F8F8F8 !important; }
+    .coef .table-coef .table__item .td--right {
+      text-align: right;
+      padding-right: 2.7778vh; }
+    .coef .table-coef .table__item .td--left {
+      text-align: left;
+      padding-left: 2.7778vh; }
+    .coef .table-coef .table__item table.table__inner td:hover {
+      background-color: #B72126 !important;
+      color: #fff !important; }
