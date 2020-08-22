@@ -584,6 +584,14 @@ font-size: 1.2667vh;
 			padding: 5vh 0 2.5vh 11.1111vh;
 		}
 	}
+	&--flight-search {
+		height: 28.2407vh;
+		background-image: url('../img/heading__flight-search.jpg');
+		.heading__title {
+			max-width: 111vh;
+			padding: 5vh 0 4.5vh 11.1111vh;
+		}
+	}
 }
 
 // Хлебные крошки
@@ -784,7 +792,7 @@ font-size: 1.2667vh;
 		text-align: center;
 		letter-spacing: 0.0463vh;
 		text-transform: uppercase;
-		color: #666666;
+		color: #303030;
 		margin-bottom: 6.4815vh;
 		background-color: #F8F8F8;
 		border-radius: 3px 3px 0px 0px;
@@ -795,11 +803,27 @@ font-size: 1.2667vh;
 		height: 8.3333vh;
 		position: relative;
 		top: -3.6vh;
-		transition: .3s width ease-in-out; 
+		& h3 {
+			-webkit-animation: pulses 2.5s infinite ease-in-out;
+			-o-animation: pulses 2.5s infinite ease-in-out;
+			-ms-animation: pulses 2.5s infinite ease-in-out; 
+			-moz-animation: pulses 2.5s infinite ease-in-out; 
+			animation: pulses 2.5s infinite ease-in-out;
+		} 
 		&:hover {
 			cursor: pointer;
 			color: #B72126;
 		}
+	}
+	@-webkit-keyframes pulses {
+		0% { -webkit-transform: scale(0.91); opacity: 0.7; }
+		50% { -webkit-transform: scale(1); opacity: 1; }
+		100% { -webkit-transform: scale(0.91); opacity: 0.7; }
+	}
+	@keyframes pulses {
+		0% { transform: scale(0.91); opacity: 0.7; }
+		50% { transform: scale(1); opacity: 1; }
+		100% { transform: scale(0.91); opacity: 0.7; }
 	}
 	.tab-content{
 		z-index: 2;
@@ -817,7 +841,9 @@ font-size: 1.2667vh;
 	[id^="tab"]:checked + .tabs__label { 
 		color: #B72126;
 		background-color: transparent;
-		
+	}
+	[id^="tab"]:checked + .tabs__label h3 { 
+		animation: none;
 	}
 	[id^="tab"]:checked ~ [id^="tab-content"] {
 		visibility: visible;
@@ -825,6 +851,8 @@ font-size: 1.2667vh;
 		display: flex;
 	}
 }
+
+
 
 
 // ==================================================//
@@ -1146,10 +1174,12 @@ font-size: 1.2667vh;
     background-color: rgba(255, 255, 255, 0.5);
     margin-top: -1px;
     overflow: hidden;
-    height: 0px;
+    max-height: 0px;
     position: relative;
     z-index: 10;
 	margin: 2vh 2vh 2vh 0;
+
+	transition: max-height 0.15s ease-out;
 }
 
 .ac-container article p {
@@ -1168,7 +1198,8 @@ font-size: 1.2667vh;
 }
 
 .ac-container input:checked ~ article {
-	height: auto;
+	max-height: 99vh;
+	transition: max-height 0.25s ease-in;
 }
 
 .ac-container input:checked ~ .date-wrap .point {
@@ -1352,12 +1383,50 @@ font-size: 1.2667vh;
 			}
 		}
 	}
+	&__item--flight-search {
+		width: 21.2963vh;
+		height: 23.1481vh;
+		position: relative;
+		background-color: transparent;
+		.item__img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			position: relative;
+			z-index: 30;
+			img {
+				height: auto;
+			}
+		}
+		.item__info {
+			background-color: #fff;
+			h5 {
+				font-size: 1.4815vh;
+				line-height: 1.9444vh;
+			}
+		}
+		.item__number {
+			position: absolute;
+			z-index: 2;
+			top: -2.1vh;
+			left: 2vh;
+			font-weight: bold;
+			font-size: 4.1667vh;
+			line-height: 1.4815vh;
+			color: rgba(0, 0, 0, 0.04);
+		}
+	}
 	&__item:hover {
 		margin-top: -2vh;
 		border: 1px solid rgba(183, 33, 38, 0.19);
 		box-sizing: border-box;
 		box-shadow: 0px 0px 40px rgba(236, 0, 8, 0.05);
 		cursor: pointer;
+		transition: ease .5s all;
+	}
+	&__item:hover .item__number {
+		color: rgba(183, 33, 38, 0.39);
 		transition: ease .5s all;
 	}
 }
@@ -1922,6 +1991,38 @@ font-size: 1.2667vh;
 
 
 
+// Корисні посилання в flight-search.html
+.useful-links {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 85%;
+    margin: 0 auto;
+	img {
+		width: 33.3333vh;
+		height: 21.7593vh;
+		border: 0.2778vh solid #fff;
+		background-color: #fff;
+		&:hover {
+			border: 0.2778vh solid #B72126;
+		}
+	}
+}
+
+
+
+
+
+.flight {
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		font-weight: normal;
+		font-size: 1.4815vh;
+		line-height: 1.9444vh;
+		color: #666666;
+	}
+}
 
 
 // font-family: 'Montserrat', sans-serif;
