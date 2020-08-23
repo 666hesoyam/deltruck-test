@@ -114,32 +114,181 @@
 
                 <h3 class="info-block__title">Пошук рейсу</h3>
                 <div class="flight">
+                    
+                    <form class="flight__form">
+                        <div class="form__item">
+                            <label class="form__label">звідки</label>
+                            <select class="form__select">
+                                    <option style="display:none;"></option>
+                                    <option value="Задня">Задня</option>
+                                    <option value="Бокова">Бокова</option>
+                                    <option value="Верхня">Верхня</option>
+                                </select>
+                        </div>
+
+                        <div class="form__item">
+                            <label class="form__label">Куди</label>
+                            <select class="form__select">
+                                    <option style="display:none;"></option>
+                                    <option value="Задня">Задня</option>
+                                    <option value="Бокова">Бокова</option>
+                                    <option value="Верхня">Верхня</option>
+                                </select>
+                        </div>
+
+                        <button class="form__btn">пошук рейсу</button>
+                    </form>
+
                     <div class="car-order__heading">
-                        <h2>Контактна інформація</h2>
+                        <h2>Діючі маршрути</h2>
                     </div>
 
-                    <section class="ac-container">
+
+                    <div class="flight__heading">
+                        <p class="city--width">Напрямок/ Маршрут</p>
+                        <p class="date--width">Дата і час відправлення</p>
+                        <p class="free-place--width ">Вільно палетомісць</p>
+                        <p class="price--width"><strong>Вартість </strong>палетомісця, від</p>
+                    </div>
+
+                    <!-- Блок одного СЕРОГО рейста -->
+                    <section class="ac-flight">
                         <div>
                             <input id="ac-1" name="accordion-1" type="checkbox" />
-                            <div class="flight__heading">
-                                <p>Напрямок/ Маршрут</p>
-                                <p>Дата і час відправлення</p>
-                                <p>Вільно палетомісць</p>
-                                <p>Вартість палетомісця, від</p>
-                            </div>
-                            <label for="ac-1">Делтрак дарує подарунки за відправку палет за трьома маршрутами</label>
+                            <label for="ac-1" class="ac-label">
+                                <div class="city city--width">Київ - Львів</div>
+                                <div class="date date--width">
+                                    <date>13.08.202</date>
+                                    <time>0:00</time>
+                                </div>
+                                <div class="free-place free-place--width">
+                                    <p>22</p>
+                                </div>
+                                <div class="price price--width">
+                                    <p><strong>500 </strong>грн.</p>
+                                </div>
+                            </label>
                             <article>
-                                <p>З 1 серпня по 31 вересня приймайте участь в акції від DelTruck.</p>
-                                <br>
-                                <p>Надсилайте вантаж послугою Online-викупу палетомісць в авто за трьома напрямками, і ви автоматично станете учасником розіграшу подарунків.</p>
-                                <br>
+                                <div class="flight-info">
+                                    <div class="flight-info__name">
+                                        <h3 class="flight-info__title">Тип паллети:</h3>
+                                        <p>Европаллета 0,8м х 1,2м х 2м - max 700кг</p>
+                                        <p>Европаллета 0,8м х 1,2м х 2м - max 700кг</p>
+                                    </div>
+                                    <div class="flight-info__place">
+                                        <h3 class="flight-info__title">Кіл-ть місць <span>зі знижкою:</span></h3>
+                                        <p>16 - 32</p>
+                                        <p>5 - 15</p>
+                                    </div>
+                                    <div class="flight-info__price">
+                                        <h3 class="flight-info__title">Вартість палетомісця:</h3>
+                                        <p>500 грн.</p>
+                                        <p>940 грн.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flight-time">
+                                    <h3 class="flight-info__title">До закриття рейсу залишилось: <span>1д. 7 г. 15 хв.</span></h3>
+                                    <button class="main__btn">замовити авто</button>
+                                </div>
                             </article>
                         </div>
                     </section>
+                    <!-- Конец СЕРОГО Блока рейста -->
+
+
+
+                    <!-- Блок одного БЕЛОГО рейста -->
+                    <section class="ac-flight">
+                        <div>
+                            <input id="ac-2" name="accordion-1" type="checkbox" />
+                            <label for="ac-2" class="ac-label--white">
+                                <div class="city city--width">Львів - Одеса</div>
+                                <div class="date date--width">
+                                    <date>14.08.202</date>
+                                    <time>0:00</time>
+                                </div>
+                                <div class="free-place free-place--width">
+                                    <p>13</p>
+                                </div>
+                                <div class="price price--width">
+                                    <p><strong>700 </strong>грн.</p>
+                                </div>
+                            </label>
+                            <article>
+                                <div class="flight-info">
+                                    <div class="flight-info__name">
+                                        <h3 class="flight-info__title">Тип паллети:</h3>
+                                        <p>Европаллета 0,8м х 1,2м х 2м - max 700кг</p>
+                                        <p>Европаллета 0,8м х 1,2м х 2м - max 700кг</p>
+                                    </div>
+                                    <div class="flight-info__place">
+                                        <h3 class="flight-info__title">Кіл-ть місць <span>зі знижкою:</span></h3>
+                                        <p>16 - 32</p>
+                                        <p>5 - 15</p>
+                                    </div>
+                                    <div class="flight-info__price">
+                                        <h3 class="flight-info__title">Вартість палетомісця:</h3>
+                                        <p>700 грн.</p>
+                                        <p>950 грн.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flight-time">
+                                    <h3 class="flight-info__title">До закриття рейсу залишилось: <span>2д. 7 г. 15 хв.</span></h3>
+                                    <button class="main__btn">замовити авто</button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <!-- Конец БЕЛОГО Блока рейста -->
+
+
+                    <!-- Блок одного СЕРОГО рейста -->
+                    <section class="ac-flight">
+                        <div>
+                            <input id="ac-3" name="accordion-1" type="checkbox" />
+                            <label for="ac-3" class="ac-label">
+                                <div class="city city--width">Київ - Харків</div>
+                                <div class="date date--width">
+                                    <date>15.08.202</date>
+                                    <time>0:00</time>
+                                </div>
+                                <div class="free-place free-place--width">
+                                    <p>9</p>
+                                </div>
+                                <div class="price price--width">
+                                    <p><strong>600 </strong>грн.</p>
+                                </div>
+                            </label>
+                            <article>
+                                <div class="flight-info">
+                                    <div class="flight-info__name">
+                                        <h3 class="flight-info__title">Тип паллети:</h3>
+                                        <p>Европаллета 0,8м х 1,2м х 2м - max 700кг</p>
+                                        <p>Европаллета 0,8м х 1,2м х 2м - max 700кг</p>
+                                    </div>
+                                    <div class="flight-info__place">
+                                        <h3 class="flight-info__title">Кіл-ть місць <span>зі знижкою:</span></h3>
+                                        <p>16 - 32</p>
+                                        <p>5 - 15</p>
+                                    </div>
+                                    <div class="flight-info__price">
+                                        <h3 class="flight-info__title">Вартість палетомісця:</h3>
+                                        <p>600 грн.</p>
+                                        <p>840 грн.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flight-time">
+                                    <h3 class="flight-info__title">До закриття рейсу залишилось: <span>3д. 7 г. 15 хв.</span></h3>
+                                    <button class="main__btn">замовити авто</button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <!-- Конец СЕРОГО Блока рейста -->
                 </div>
-
-
-
             </div>
         </main>
 

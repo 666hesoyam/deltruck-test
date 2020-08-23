@@ -1601,6 +1601,176 @@ option:focus {
       background-color: #B72126 !important;
       color: #fff !important; }
 
+.flight {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
+  border-radius: 3px;
+  padding: 4.6296vh 2.7778vh;
+  margin-bottom: 9.0741vh; }
+  .flight__heading {
+    display: flex;
+    font-weight: normal;
+    font-size: 1.4815vh;
+    line-height: 1.9444vh;
+    color: #666666;
+    margin-bottom: 1.6667vh; }
+  .flight .date, .flight .free-place, .flight .price {
+    display: flex;
+    justify-content: center;
+    height: 3vh;
+    align-items: center;
+    border-left: 1px solid black;
+    transition: all 0.15s ease-out; }
+  .flight .city {
+    font-weight: bold;
+    padding-left: 8.7037vh; }
+    .flight .city--width {
+      width: 40%; }
+  .flight .date {
+    width: 31.2037vh; }
+    .flight .date time {
+      color: #B72126;
+      padding-left: 0.9259vh; }
+    .flight .date--width {
+      width: 31.2037vh;
+      text-align: center; }
+  .flight .free-place {
+    width: 25.3704vh; }
+    .flight .free-place--width {
+      width: 25.3704vh;
+      text-align: center; }
+  .flight .price {
+    color: #B72126;
+    width: 22.6852vh; }
+    .flight .price--width {
+      width: 22.6852vh;
+      text-align: center; }
+  .flight .ac-label--white:hover .date, .flight .ac-label--white:hover .free-place, .flight .ac-label--white:hover .price {
+    height: 4vh;
+    border-left: 1.5px solid #B72126;
+    transition: all 0.25s ease-out; }
+  .flight .ac-label:hover .date, .flight .ac-label:hover .free-place, .flight .ac-label:hover .price {
+    height: 4vh;
+    border-left: 1.5px solid #B72126;
+    transition: all 0.25s ease-out; }
+
+.flight__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.6296vh; }
+  .flight__form .form__label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.6667vh;
+    line-height: 1.6667vh;
+    margin-bottom: 0.9259vh;
+    color: #303030;
+    text-transform: uppercase; }
+  .flight__form .form__select {
+    height: 5.5556vh;
+    width: 45.5556vh;
+    font-size: 1.6667vh;
+    padding-left: 1vh;
+    margin-top: 0.9259vh;
+    line-height: 2.2222vh;
+    border: 1px solid #D9D9D9;
+    background: url("../img/icon/Arrow-select.svg") no-repeat center;
+    background-size: 1.8519vh 0.8333vh;
+    -webkit-appearance: none;
+    background-position-x: 97%;
+    cursor: pointer; }
+    .flight__form .form__select::-ms-expand {
+      display: none; }
+    .flight__form .form__select option,
+    .flight__form .form__select option:hover,
+    .flight__form .form__select option:focus {
+      color: #666666;
+      font-size: 1.6667vh; }
+  .flight__form .form__btn {
+    margin-top: 2.2vh;
+    width: 31.2037vh;
+    height: 5.5556vh;
+    border: 2px solid #B72126;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.6667vh;
+    line-height: 1.6667vh;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #B72126; }
+    .flight__form .form__btn:hover {
+      color: #fff;
+      background-color: #B72126;
+      cursor: pointer;
+      transition: all 1s ease; }
+
+.ac-flight {
+  width: 100%;
+  margin: 0 auto; }
+  .ac-flight .ac-label--white {
+    background-color: #fff; }
+  .ac-flight .ac-label {
+    background-color: #F8F8F8; }
+  .ac-flight label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    font-weight: normal;
+    font-size: 1.6667vh;
+    line-height: 2.2222vh;
+    color: #303030;
+    height: 5.5556vh;
+    cursor: pointer; }
+  .ac-flight input:checked + label,
+  .ac-flight input:checked + label:hover {
+    color: #303030; }
+  .ac-flight input {
+    display: none; }
+  .ac-flight article {
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    max-height: 0px;
+    position: relative;
+    z-index: 10;
+    transition: max-height 0.15s ease-out; }
+    .ac-flight article .flight-info {
+      display: flex;
+      margin-top: 2vh; }
+    .ac-flight article .flight-info__title {
+      font-weight: bold;
+      font-size: 1.4815vh;
+      line-height: 1.9444vh;
+      color: #666666;
+      margin-bottom: 0.5vh; }
+      .ac-flight article .flight-info__title span {
+        color: #B72126; }
+    .ac-flight article .flight-info__name {
+      width: 65%; }
+    .ac-flight article .flight-info__place {
+      text-align: center;
+      width: 25.3704vh; }
+    .ac-flight article .flight-info__price {
+      text-align: center;
+      width: 22.6852vh; }
+    .ac-flight article p {
+      font-weight: normal;
+      font-size: 1.4815vh;
+      line-height: 2.7vh;
+      color: #666666; }
+    .ac-flight article .flight-time {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3.7778vh;
+      margin-bottom: 2vh; }
+  .ac-flight input:checked ~ article {
+    max-height: 99vh;
+    transition: max-height 0.25s ease-in; }
+
 .useful-links {
   display: flex;
   justify-content: space-between;
@@ -1615,10 +1785,21 @@ option:focus {
     .useful-links img:hover {
       border: 0.2778vh solid #B72126; }
 
-.flight__heading {
-  display: flex;
-  justify-content: space-between;
-  font-weight: normal;
-  font-size: 1.4815vh;
-  line-height: 1.9444vh;
-  color: #666666; }
+.main__btn {
+  width: 31.2037vh;
+  height: 5.5556vh;
+  border: 2px solid #B72126;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.6667vh;
+  line-height: 1.6667vh;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #B72126; }
+  .main__btn:hover {
+    color: #fff;
+    background-color: #B72126;
+    cursor: pointer;
+    transition: all 1s ease; }
