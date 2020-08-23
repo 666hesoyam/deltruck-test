@@ -780,10 +780,10 @@ option:focus {
   .del-group img {
     width: 39.7222vh;
     height: 15.7407vh;
-    border: 0.2778vh solid #fff;
-    background-color: #fff; }
+    transition: all .2s ease; }
     .del-group img:hover {
-      border: 0.2778vh solid #B72126; }
+      transform: scale(1.02);
+      transition: all .3s ease; }
 
 .del-group--documentation {
   margin-top: 8.3333vh; }
@@ -962,6 +962,9 @@ option:focus {
   color: #303033;
   margin-left: 10.6481vh; }
 
+.ac-container article a {
+  color: #C61B1B; }
+
 .ac-container article img {
   max-width: 65.463vh;
   max-height: 38.2407vh;
@@ -1036,6 +1039,17 @@ option:focus {
     align-items: center;
     width: 2.3148vh;
     height: 2.3148vh; }
+  #pagination-digg .next,
+  #pagination-digg .previous {
+    font-weight: bold;
+    color: #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #pagination-digg .next {
+    margin-left: -0.5vh; }
+  #pagination-digg .previous {
+    margin-right: -0.5vh; }
   #pagination-digg .next a,
   #pagination-digg .previous a {
     font-weight: bold; }
@@ -1298,7 +1312,9 @@ option:focus {
 .action {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto; }
   .action a {
     margin-bottom: 4vh; }
   .action a:hover .item__btn {
@@ -1307,8 +1323,9 @@ option:focus {
   .action a:hover .item__title h3 {
     color: #B72126;
     transition: all .3s linear; }
-  .action a:hover .item__img {
-    opacity: .8;
+  .action__item:hover {
+    opacity: .9;
+    transform: scale(1.01);
     transition: all .2s linear; }
   .action__item {
     box-shadow: 0px 0px 50px rgba(133, 133, 133, 0.14);
@@ -1780,10 +1797,10 @@ option:focus {
   .useful-links img {
     width: 33.3333vh;
     height: 21.7593vh;
-    border: 0.2778vh solid #fff;
-    background-color: #fff; }
+    transition: all .2s ease; }
     .useful-links img:hover {
-      border: 0.2778vh solid #B72126; }
+      transform: scale(1.02);
+      transition: all .3s ease; }
 
 .main__btn {
   width: 31.2037vh;

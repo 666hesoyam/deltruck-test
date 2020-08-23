@@ -947,10 +947,10 @@ font-size: 1.2667vh;
 	img {
 		width: 39.7222vh;
 		height: 15.7407vh;
-		border: 0.2778vh solid #fff;
-		background-color: #fff;
+		transition: all .2s ease;
 		&:hover {
-			border: 0.2778vh solid #B72126;
+			transform: scale(1.02);
+			transition: all .3s ease;
 		}
 	}
 }
@@ -1189,6 +1189,9 @@ font-size: 1.2667vh;
 	color: #303033;
 	margin-left: 10.6481vh;
 }
+.ac-container article a {
+	color: #C61B1B;
+}
 
 .ac-container article img {
 	max-width: 65.463vh;
@@ -1279,6 +1282,20 @@ font-size: 1.2667vh;
 		align-items: center;
 		width: 2.3148vh;
 		height: 2.3148vh;
+	}
+	& .next,
+	& .previous {
+		font-weight:bold;
+		color:#888888;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	& .next {
+		margin-left: -0.5vh;
+	}
+	& .previous {
+		margin-right: -0.5vh;
 	}
 	& .next a,
 	& .previous a {
@@ -1606,7 +1623,10 @@ font-size: 1.2667vh;
 .action {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	// justify-content: space-evenly;
+	justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 	a {
 		margin-bottom: 4vh;
 	}
@@ -1618,8 +1638,9 @@ font-size: 1.2667vh;
 		color: #B72126;
 		transition: all .3s linear;
 	}
-	a:hover .item__img {
-		opacity: .8;
+	&__item:hover {
+		opacity: .9;
+		transform: scale(1.01);
 		transition: all .2s linear;
 	}
 	&__item {
@@ -2215,10 +2236,10 @@ font-size: 1.2667vh;
 	img {
 		width: 33.3333vh;
 		height: 21.7593vh;
-		border: 0.2778vh solid #fff;
-		background-color: #fff;
+		transition: all .2s ease;
 		&:hover {
-			border: 0.2778vh solid #B72126;
+			transform: scale(1.02);
+			transition: all .3s ease;
 		}
 	}
 }
