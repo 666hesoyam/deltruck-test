@@ -66,8 +66,8 @@
                             <p>Плануйте власні відправки за допомогою Online-табло рейсів, оптимізуйте свою логістику і беріть участь в акції!</p>
                             <br>
                             <div class="info-btn">
-                                <button class="info-btn__btn">Замовити авто</button> 
-                                <button class="info-btn__btn info-btn__btn--grey">Переглянути тарифи</button> 
+                                <a href="car-order.html" class="info-btn__btn">Замовити авто</a> 
+                                <a href="tariff.html" class="info-btn__btn info-btn__btn--grey">Переглянути тарифи</a> 
                             </div>
                         </div>
                     </div>
@@ -75,12 +75,12 @@
 
                 <!-- Subs -->
                 <div class="subs">
-                    <h5 class="subs__title">Отримайте можливість дізнаватися про останні новини та акції DelTruck. Введіть інформацію, щоб почати отримувати нашу розсилку</h5>
+                    <h5 class="subs__title">Отримайте можливість дізнаватися про останні <strong>новини та акції DelTruck.</strong> Введіть інформацію, щоб почати отримувати нашу розсилку</h5>
                     <form class="subs__form">
                         <label class="subs__label">Ваш e-mail</label>
                         <input class="subs__input" type="email" placeholder=" ">
                     </form>
-                    <button class="request__btn subs__btn">Підписатись</button>
+                    <button class="request__btn subs__btn" onclick='throw_message_subscribe(" "); return false;'>Підписатись</button>
                 </div>
             </div>
         </main>
@@ -103,6 +103,15 @@
         <footer id="included__footer" class="footer"></footer>
         <!--========== \END FOOTER ==========-->
 
+        <!-- POP UP Subscribe-->
+        <div id='subscribe__box'>
+            <div id='box_text'>
+                <img src="img/icon/pop-up__icon.png" alt="">
+                <p>Вітаємо! Ви успішно підписалися на розсилку.</p>
+                <p>Ми будемо повідомляті Вам тільки найактуальніші <br> та цікаві новини та акції.</p>
+            </div>
+        </div>
+        <!-- \POP UP -->
 
         <!-- ADD JQUERY HERE -->
         <script src="js/components/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
