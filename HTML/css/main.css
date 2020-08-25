@@ -224,6 +224,9 @@ option:focus {
   height: 2.2222vh;
   margin-left: 0.4vh; }
 
+.footer .new p {
+  margin-bottom: 0.4vh; }
+
 .about-block {
   margin-top: 8.3333vh; }
 
@@ -353,7 +356,7 @@ option:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.1vh;
+  margin-top: 2.7778vh;
   width: 13.9815vh;
   height: 3.1481vh;
   background-color: #F8F8F8;
@@ -777,7 +780,8 @@ option:focus {
 .del-group {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 8.3333vh; }
   .del-group img {
     width: 39.7222vh;
     height: 15.7407vh;
@@ -790,6 +794,7 @@ option:focus {
   margin-top: 8.3333vh; }
 
 .documentation ul {
+  margin-top: 4.6296vh;
   list-style-type: none; }
   .documentation ul img {
     width: 2.7778vh;
@@ -817,7 +822,7 @@ option:focus {
   box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
   border-radius: 0.2778vh;
   padding: 2.7778vh 0 2.7778vh 0;
-  margin: 7.6852vh auto 0 auto; }
+  margin: 4.1667vh auto 0 auto; }
   .tariff .table__item {
     width: 96%;
     margin: 0 auto; }
@@ -977,8 +982,8 @@ option:focus {
 .form-news {
   display: flex;
   align-items: flex-end;
-  margin: 0 auto;
-  margin-bottom: 2.1296vh;
+  margin: 0 auto 4.6296vh auto;
+  margin-bottom: 4.6296vh;
   width: 100%;
   position: relative; }
   .form-news__label {
@@ -1012,7 +1017,7 @@ option:focus {
 
 .pagination {
   height: 3vh;
-  margin-bottom: 3vh; }
+  margin-bottom: 7.4074vh; }
 
 #pagination-digg {
   display: flex; }
@@ -1394,7 +1399,7 @@ option:focus {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 91%;
-  margin: 0 auto; }
+  margin: 0 auto 3.4074vh auto; }
   .action a {
     margin-bottom: 4vh; }
   .action a:hover .item__btn {
@@ -1574,7 +1579,8 @@ option:focus {
         line-height: 2.2222vh;
         color: #D9D9D9; }
     .car-order__group .car-order__form .form__textarea {
-      padding-top: 0.7vh; }
+      padding-top: 0.7vh;
+      margin-bottom: 2.4296vh; }
     .car-order__group .car-order__form .form__select {
       height: 3.8889vh;
       width: 100%;

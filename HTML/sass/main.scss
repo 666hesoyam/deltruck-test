@@ -273,6 +273,11 @@ font-size: 1.2667vh;
 	width: 5.5556vh;
 	height: 2.2222vh;
 	margin-left: 0.4vh;
+
+}
+
+.footer .new p {
+	margin-bottom: 0.4vh;
 }
 
 // =======================================================//
@@ -435,7 +440,7 @@ font-size: 1.2667vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 1.1vh;
+	margin-top: 2.7778vh;
 	width: 13.9815vh;
 	height: 3.1481vh;
 	background-color: #F8F8F8;
@@ -944,6 +949,7 @@ font-size: 1.2667vh;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-bottom: 8.3333vh;
 	img {
 		width: 39.7222vh;
 		height: 15.7407vh;
@@ -966,6 +972,7 @@ font-size: 1.2667vh;
 
 .documentation {
 	ul {
+		margin-top: 4.6296vh;
 		list-style-type: none;
 		img {
 			width: 2.7778vh;
@@ -1002,7 +1009,7 @@ font-size: 1.2667vh;
 		box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
 		border-radius: 0.2778vh;
 		padding: 2.7778vh 0 2.7778vh 0;
-		margin: 7.6852vh auto 0 auto;
+		margin: 4.1667vh auto 0 auto;
 		&__item {
 			width: 96%;
 			margin: 0 auto;
@@ -1222,8 +1229,8 @@ font-size: 1.2667vh;
 .form-news {
 	display: flex;
 	align-items: flex-end;
-	margin: 0 auto;
-	margin-bottom: 2.1296vh;
+	margin: 0 auto 4.6296vh auto;
+	margin-bottom: 4.6296vh;
 	width: 100%;
 	position: relative;
 	&__label {
@@ -1264,7 +1271,7 @@ font-size: 1.2667vh;
 // Постраничная Пагинация в Новостях и Акциях
 .pagination {
 	height: 3vh;
-	margin-bottom: 3vh;
+	margin-bottom: 7.4074vh;
 }
 
 #pagination-digg {
@@ -1740,7 +1747,7 @@ font-size: 1.2667vh;
 	flex-wrap: wrap;
 	justify-content: space-between;
     width: 91%;
-    margin: 0 auto;
+    margin: 0 auto 3.4074vh auto;
 	a {
 		margin-bottom: 4vh;
 	}
@@ -1967,6 +1974,7 @@ font-size: 1.2667vh;
 		}
 		.form__textarea {
 			padding-top: 0.7vh;
+			margin-bottom: 2.4296vh;
 		}
 		.form__select {
 			height: 3.8889vh;
