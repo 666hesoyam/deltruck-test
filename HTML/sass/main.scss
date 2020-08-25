@@ -1114,6 +1114,17 @@ font-size: 1.2667vh;
 	}
 }
 
+// Хак для IE
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+	.subs {
+		&__title {
+			margin-left: 7vh;
+		}
+		&__form {
+			margin: -2vh 8vh 0 8vh;
+		}
+	}
+}
 
 // ==================================================//
 // 				Страница	news.html				//

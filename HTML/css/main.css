@@ -903,6 +903,12 @@ option:focus {
       line-height: 2.2222vh;
       color: #D9D9D9; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .subs__title {
+    margin-left: 7vh; }
+  .subs__form {
+    margin: -2vh 8vh 0 8vh; } }
+
 .date-wrap {
   display: flex;
   height: 2vh;
