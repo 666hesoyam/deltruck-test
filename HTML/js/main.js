@@ -5,6 +5,7 @@ $(function(){
     $("#included__footer").load("template/footer.html"); 
 });
 
+
 // Pop up
 
 // subscribe
