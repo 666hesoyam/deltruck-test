@@ -1165,7 +1165,7 @@ option:focus {
   align-items: center;
   background-color: #FFFFFF;
   box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
-  min-height: 51.4815vh;
+  height: 51.4815vh;
   margin-bottom: 10vh; }
   .application .right-block, .application .left-block {
     width: 50%; }
