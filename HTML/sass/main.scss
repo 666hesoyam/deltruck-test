@@ -1009,7 +1009,7 @@ font-size: 1.2667vh;
 		box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
 		border-radius: 0.2778vh;
 		padding: 2.7778vh 0 2.7778vh 0;
-		margin: 4.1667vh auto 0 auto;
+		margin: 4.1667vh auto 8.9815vh auto;
 		&__item {
 			width: 96%;
 			margin: 0 auto;
@@ -1051,6 +1051,9 @@ font-size: 1.2667vh;
 				padding-left: 2vh !important;
 				width: 29vh;
 			}
+			.th--heading {
+				text-transform: uppercase;
+			}
 			.th--border-all {
 				border: 0.0926vh solid rgba(102, 102, 102, 0.16) !important;
 			}
@@ -1062,6 +1065,12 @@ font-size: 1.2667vh;
 			}
 			.td--no-right-border {
 				border-right: none !important;
+			}
+			.td--top-border {
+				border-top: 0.0926vh solid rgba(102, 102, 102, 0.16) !important;;
+			}
+			.td--width {
+				width: 33.3%
 			}
 			table.table__inner th span {
 				color: $color-red;
@@ -1638,7 +1647,7 @@ font-size: 1.2667vh;
 	padding-top: 3vh;
 	margin-bottom: 9.2593vh;
 	.results__item {
-		max-width: 32.4074vh;
+		max-width: 33.4074vh;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -1685,6 +1694,10 @@ font-size: 1.2667vh;
 			color: #303030;
 		}
 	}
+}
+.results--tariff {
+	margin-top: 2vh;
+	margin-bottom: 4.1667vh;
 }
 
 // Горизонтальный блок новостей на главной странице
