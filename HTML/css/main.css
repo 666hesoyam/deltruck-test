@@ -36,7 +36,7 @@ option:focus {
   outline: none;
   box-shadow: none;
   color: #666;
-  font-size: 1.2667vh; }
+  font-size: 1.3667vh; }
 
 .in-dev {
   margin-top: 20vh; }
@@ -486,7 +486,7 @@ option:focus {
     height: 100%;
     align-items: center;
     font-weight: normal;
-    font-size: 1.1111vh;
+    font-size: 1.2963vh;
     line-height: 1.4815vh;
     color: #666;
     cursor: pointer; }
@@ -731,6 +731,20 @@ option:focus {
     .info-block__text--car-order p {
       line-height: 3vh;
       color: #000000; }
+  .info-block__list {
+    list-style-type: none; }
+    .info-block__list li {
+      margin-left: 2vh;
+      position: relative; }
+      .info-block__list li:before {
+        content: " ";
+        position: absolute;
+        top: 41%;
+        left: -1vh;
+        width: 0.4167vh;
+        height: 0.4167vh;
+        border-radius: 50%;
+        background-color: #B72126; }
 
 .info-block__advantages {
   display: flex;
@@ -868,18 +882,37 @@ option:focus {
       border-left: none !important; }
     .tariff .table__item .td--no-right-border {
       border-right: none !important; }
+    .tariff .table__item .td--both-side-border {
+      border: none !important;
+      border-right: 0.0926vh solid rgba(102, 102, 102, 0.16) !important;
+      border-left: 0.0926vh solid rgba(102, 102, 102, 0.16) !important; }
     .tariff .table__item .td--top-border {
       border-top: 0.0926vh solid rgba(102, 102, 102, 0.16) !important; }
+    .tariff .table__item .td--down-border {
+      border-bottom: 0.0926vh solid rgba(102, 102, 102, 0.16) !important; }
+    .tariff .table__item .td--no-border-all {
+      border: none !important; }
     .tariff .table__item .td--width {
       width: 33.3%; }
+    .tariff .table__item .td--grey-bg {
+      background-color: #F8F8F8 !important; }
     .tariff .table__item table.table__inner th span {
       color: #B72126;
       font-weight: bold; }
+    .tariff .table__item .table__start-tariff td:hover {
+      background-color: #C61B1B !important;
+      color: #fff !important; }
     .tariff .table__item table.table__inner td:hover {
       background-color: #F9F9F9; }
     .tariff .table__item table.table__inner tr:hover td {
       color: #354251;
       cursor: default; }
+
+.tariff .table--consal {
+  margin-bottom: 0; }
+
+.info-block--tariff {
+  margin: 4.6296vh 0 4.6296vh 11.1111vh; }
 
 .subs {
   display: flex;
@@ -1359,10 +1392,6 @@ option:focus {
       font-size: 1.6667vh;
       line-height: 2.2222vh;
       color: #303030; }
-
-.results--tariff {
-  margin-top: 2vh;
-  margin-bottom: 4.1667vh; }
 
 .news-home {
   display: flex;

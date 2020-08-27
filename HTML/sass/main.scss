@@ -37,7 +37,7 @@ border:none;
 outline:none;
 box-shadow: none;
 color: #666;
-font-size: 1.2667vh;
+font-size: 1.3667vh;
 }
 
 
@@ -604,7 +604,7 @@ font-size: 1.2667vh;
 		height: 100%;
 		align-items: center;
 		font-weight: normal;
-		font-size: 1.1111vh;
+		font-size: 1.2963vh;
 		line-height: 1.4815vh;
 		color: #666;
 		cursor: pointer;
@@ -889,6 +889,23 @@ font-size: 1.2667vh;
 			color: #000000;
 		}
 	}
+	&__list {
+		list-style-type: none;
+		li {
+			margin-left: 2vh;
+			position: relative;
+			&:before {
+				content: " ";
+				position: absolute;
+				top: 41%;
+				left: -1vh;
+				width: 0.4167vh;
+				height: 0.4167vh;
+				border-radius: 50%;
+				background-color: #B72126;
+			}
+		}
+	}
 }
 
 .info-block__advantages {
@@ -1066,16 +1083,34 @@ font-size: 1.2667vh;
 			.td--no-right-border {
 				border-right: none !important;
 			}
+			.td--both-side-border {
+				border: none !important;
+				border-right: 0.0926vh solid rgba(102, 102, 102, 0.16) !important;
+				border-left: 0.0926vh solid rgba(102, 102, 102, 0.16) !important;
+			}
 			.td--top-border {
-				border-top: 0.0926vh solid rgba(102, 102, 102, 0.16) !important;;
+				border-top: 0.0926vh solid rgba(102, 102, 102, 0.16) !important;
+			}
+			.td--down-border {
+				border-bottom: 0.0926vh solid rgba(102, 102, 102, 0.16) !important;
+			}
+			.td--no-border-all {
+				border: none !important;
 			}
 			.td--width {
 				width: 33.3%
 			}
+			.td--grey-bg {
+				background-color: #F8F8F8 !important;
+			}
 			table.table__inner th span {
 				color: $color-red;
 				font-weight: bold;
-			}	
+			}
+			.table__start-tariff td:hover {
+				background-color: #C61B1B !important;
+				color: #fff !important;
+			}
 			table.table__inner td:hover {
 				background-color: #F9F9F9;
 			}
@@ -1085,8 +1120,14 @@ font-size: 1.2667vh;
 			}
 		}
 	}
+	.table--consal {
+		margin-bottom: 0;
+	}
 }
 
+.info-block--tariff{
+	margin: 4.6296vh 0 4.6296vh 11.1111vh;
+}
 
 // Блок подписки на рассылку 
 .subs {
@@ -1137,6 +1178,7 @@ font-size: 1.2667vh;
 		}
 	}
 }
+
 
 // Хак для IE
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
@@ -1695,11 +1737,6 @@ font-size: 1.2667vh;
 		}
 	}
 }
-.results--tariff {
-	margin-top: 2vh;
-	margin-bottom: 4.1667vh;
-}
-
 // Горизонтальный блок новостей на главной странице
 .news-home {
 	display: flex;
