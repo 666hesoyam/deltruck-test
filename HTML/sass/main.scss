@@ -1004,7 +1004,7 @@ font-size: 1.2667vh;
 // ================================================//
 .tariff {
 	.table {
-		width: 83%;
+		width: 100%;
 		background-color: #FFFFFF;
 		box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
 		border-radius: 0.2778vh;
@@ -1019,7 +1019,6 @@ font-size: 1.2667vh;
 				width: 100%;
 				text-align: center;
 				margin-bottom: 2.7778vh;
-				
 			}
 			table.table__inner:last-child {
 				margin-bottom: 0;
@@ -1028,8 +1027,8 @@ font-size: 1.2667vh;
 				color: #303030;
 				background-color:#fff;
 				font-weight: normal;
-				font-size: 1.3889vh;
-				line-height: 1.8519vh;
+				font-size: 1.6667vh;
+				line-height: 2.037vh;
 			}
 			table.table__inner td, table.table__inner th {
 				white-space:pre-wrap;
@@ -1042,6 +1041,13 @@ font-size: 1.2667vh;
 			table.table__inner th {
 				border: none;
 				background-color:#F8F8F8;
+			}
+			.th--title {
+				font-weight: bold !important;
+				text-transform: uppercase;
+				line-height: 2.2222vh !important;
+				text-align: left;
+				padding-left: 2vh !important;
 			}
 			.th--border-all {
 				border: 0.0926vh solid rgba(102, 102, 102, 0.16) !important;
