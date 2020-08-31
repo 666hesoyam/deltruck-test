@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------
-    Project:        DelTruck
-    Author:         Anton Shaposhnikov
-	Telegram:		https://t.me/hesoyam_666
+		Project:        DelTruck
+		Author:         Anton Shaposhnikov
+		Telegram:				https://t.me/hesoyam_666
 --------------------------------------------------------------*/
 @import 'variables'; // Variables
 
@@ -42,8 +42,9 @@ font-size: 1.4667vh;
 
 
 // ==============================//
-// 			in-dev.html 		//
+// 			in-dev.html							
 // ============================//
+
 .in-dev {
 	margin-top: 20vh;
 	h1 {
@@ -55,7 +56,7 @@ font-size: 1.4667vh;
 
 
 // ==============================//
-// 			Общие стили 		//
+// 			Общие стили							
 // ============================//
 
 .container {
@@ -63,6 +64,30 @@ font-size: 1.4667vh;
 	height: 100%;
 	max-width: 133.3333vh;
 	padding: 0 1vh;
+}
+
+// Общие стили кнопки
+.main__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 31.2037vh;
+	height: 5.5556vh;
+	border: 0.1852vh solid $color-red;
+	text-transform: uppercase;
+	background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 1.6667vh;
+	line-height: 1.6667vh;
+	letter-spacing: 0.0463vh;
+	color: $color-red;
+	&:hover {
+		color: #fff;
+		background-color: $color-red;
+		cursor: pointer;
+		transition: all 1s ease;
+	}
 }
 
 //  Header
@@ -281,9 +306,10 @@ font-size: 1.4667vh;
 }
 
 // =======================================================//
-// 		 Блок Новости/Преймущестава/Обратная связь		 //
-// 		(используеться на многих страницах)				//
+// 		 Блок Новости/Преймущестава/Обратная связь		 
+// 		(используеться на многих страницах)				
 // ====================================================//
+
 .about-block{
 	margin-top: 8.3333vh;
 }
@@ -344,8 +370,9 @@ font-size: 1.4667vh;
 			color: #303030;
 			font-size: 1.6667vh;
 			line-height: 2.2vh;
-			margin-left: 1.5vh;
-			margin-top: 1.1111vh;
+			// margin-left: 1.5vh;
+			// margin-top: 1.1111vh;
+			margin: 1.1111vh 0 0 1.5vh;
 		}
 	}
 	.advantages-block {
@@ -383,8 +410,8 @@ font-size: 1.4667vh;
 			.feedback-form {
 				display: flex;
 				flex-direction: column;
-				margin: 0 auto;
-				margin-bottom: 2.7778vh;
+				margin: 0 auto 2.7778vh auto;
+				// margin-bottom: 2.7778vh;
 				width: 100%;
 				position: relative;
 				&__label {
@@ -413,23 +440,6 @@ font-size: 1.4667vh;
 				}
 				&__btn {
 					width: 19.3519vh;
-					height: 5.5556vh;
-					border: 0.1852vh solid $color-red;
-					text-transform: uppercase;
-					background-color: transparent;
-					font-family: 'Montserrat', sans-serif;
-					font-weight: bold;
-					font-size: 1.6667vh;
-					line-height: 1.6667vh;
-					text-align: center;
-					letter-spacing: 0.0463vh;
-					color: $color-red;
-					&:hover {
-						color: #fff;
-						background-color: $color-red;
-						cursor: pointer;
-						transition: all 1s ease;
-					}
 				}
 			}
 		}
@@ -460,12 +470,12 @@ font-size: 1.4667vh;
 	}
 	&:hover {
 		background-color: #EFEFEF;
-	}
-	&:hover p {
-		color: $color-red;
-	}
-	&:hover img {
-		margin-left: 1vh;
+		p {
+			color: $color-red;
+		}
+		img {
+			margin-left: 1vh;
+		}
 	}
 }
 
@@ -505,25 +515,7 @@ font-size: 1.4667vh;
 			}
 		}
 		&__btn {
-			width: 31.4815vh;
-			height: 5.5556vh;
 			margin-top: 8.3333vh;
-			border: 0.1852vh solid $color-red;
-			text-transform: uppercase;
-			background-color: transparent;
-			font-family: 'Montserrat', sans-serif;
-			font-weight: bold;
-			font-size: 1.6667vh;
-			line-height: 1.6667vh;
-			text-align: center;
-			letter-spacing: 0.0463vh;
-			color: $color-red;
-			&:hover {
-				color: #fff;
-				background-color: $color-red;
-				cursor: pointer;
-				transition: all 1s ease;
-			}
 		}
 	}
 	&-adress {
@@ -609,8 +601,9 @@ font-size: 1.4667vh;
 		color: #666;
 		cursor: pointer;
 		p {
-			margin-right: 0.9259vh;
-			margin-left: 0.9259vh;
+			// margin-right: 0.9259vh;
+			// margin-left: 0.9259vh;
+			margin: 0 0.9259vh 0 0.9259vh;
 		}
 		a:hover {
 			color: $color-red;
@@ -620,7 +613,7 @@ font-size: 1.4667vh;
 
 
 // ==================================================//
-// 			Страница	Послуги/перевезення			//
+// 			Страница	Послуги/перевезення		
 // ================================================//
 
 .order {
@@ -683,8 +676,8 @@ font-size: 1.4667vh;
 .form {
 	display: flex;
     flex-direction: column;
-	margin: 0 auto;
-	margin-bottom: 2.1296vh;
+	margin: 0 auto 2.1296vh auto;
+	// margin-bottom: 2.1296vh;
 	width: 100%;
 	position: relative;
 	&__label {
@@ -718,7 +711,7 @@ font-size: 1.4667vh;
 		padding-left: 1vh;
 		line-height: 2.2222vh;
 		border: 0.0926vh solid #D9D9D9;
-		background: url('../img/icon/Arrow-select.svg') no-repeat center;
+		background: url('../img/icon/system/arrow-select.svg') no-repeat center;
 		background-size: 1.8519vh 0.8333vh;
 		-webkit-appearance: none;
 		background-position-x: 97%;
@@ -741,27 +734,6 @@ font-size: 1.4667vh;
 	margin: 0 0 3vh 0;
 	.form__select {
 		background-position-x: 92%;
-	}
-}
-
-.request__btn {
-	width: 31.4815vh;
-	height: 5.5556vh;
-	border: 0.1852vh solid $color-red;
-	text-transform: uppercase;
-	background-color: transparent;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	font-size: 1.6667vh;
-	line-height: 1.6667vh;
-	text-align: center;
-	letter-spacing: 0.0463vh;
-	color: $color-red;
-	&:hover {
-		color: #fff;
-		background-color: $color-red;
-		cursor: pointer;
-		transition: all 1s ease;
 	}
 }
 
@@ -855,7 +827,7 @@ font-size: 1.4667vh;
 
 
 // ==================================================//
-// 		Страница	Послуги/Додаткові послуги		//
+// 		Страница	Послуги/Додаткові послуги		
 // ================================================//
 
 .info-block {
@@ -966,7 +938,7 @@ font-size: 1.4667vh;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-bottom: 8.3333vh;
+	margin: 8.3333vh 0;
 	img {
 		width: 39.7222vh;
 		height: 15.7407vh;
@@ -978,13 +950,9 @@ font-size: 1.4667vh;
 	}
 }
 
-.del-group--documentation {
-	margin-top: 8.3333vh;
-}
-
 
 // ==================================================//
-// 			Страница	documentation.html			//
+// 			Страница	documentation.html			
 // ================================================//
 
 .documentation {
@@ -993,7 +961,7 @@ font-size: 1.4667vh;
 		list-style-type: none;
 		img {
 			width: 2.7778vh;
-			height: 2.7778vh;
+			height: 3.1vh;
 			margin-right: 0.9259vh;
 		}
 	}
@@ -1017,8 +985,9 @@ font-size: 1.4667vh;
 
 
 // ==================================================//
-// 				Страница	tariff.html				//
+// 				Страница	tariff.html				
 // ================================================//
+
 .tariff {
 	.table {
 		width: 100%;
@@ -1193,7 +1162,7 @@ font-size: 1.4667vh;
 }
 
 // ==================================================//
-// 				Страница	news.html				//
+// 				Страница	news.html				
 // ================================================//
 
 // Заголовок в блоке новостей
@@ -1231,23 +1200,18 @@ font-size: 1.4667vh;
 		height: 2.7778vh;
 		cursor: pointer;
 	}
-
 	& label:hover{
 		color: $color-red;
 	}
-
 	& input:checked + label,
 	& input:checked + label:hover{
 		color: green;
 	}
-
 	& input{
 		display: none;
 	}
-
 	& article {
 		background-color: rgba(255, 255, 255, 0.5);
-		margin-top: -0.0926vh;
 		overflow: hidden;
 		max-height: 0vh;
 		position: relative;
@@ -1255,7 +1219,6 @@ font-size: 1.4667vh;
 		margin: 2vh 2vh 2vh 0;
 		transition: max-height 0.15s ease-out;
 	}
-
 	& article p {
 		font-weight: normal;
 		font-size: 1.6667vh;
@@ -1266,19 +1229,17 @@ font-size: 1.4667vh;
 	& article a {
 		color: #C61B1B;
 	}
-
 	& article img {
 		max-width: 65.463vh;
 		max-height: 38.2407vh;
-		margin-bottom: 2vh;
-		margin-left: 10.6481vh;
+		// margin-bottom: 2vh;
+		// margin-left: 10.6481vh;
+		margin: 0 0 2vh 10.6481vh;
 	}
-
 	& input:checked ~ article {
 		max-height: 99vh;
 		transition: max-height 0.25s ease-in;
 	}
-
 	& input:checked ~ .date-wrap .point {
 		background-color: #666;
 	}
@@ -1289,7 +1250,7 @@ font-size: 1.4667vh;
 	display: flex;
 	align-items: flex-end;
 	margin: 0 auto 4.6296vh auto;
-	margin-bottom: 4.6296vh;
+	// margin-bottom: 4.6296vh;
 	width: 100%;
 	position: relative;
 	&__label {
@@ -1312,7 +1273,7 @@ font-size: 1.4667vh;
 		padding-left: 1vh;
 		line-height: 2.2222vh;
 		border: none;
-		background: url('../img/icon/Arrow-select.svg') no-repeat center;
+		background: url('../img/icon/system/arrow-select.svg') no-repeat center;
 		background-size: 1.8519vh 0.8333vh;
 		-webkit-appearance: none;
 		background-position-x: 97%;
@@ -1408,7 +1369,7 @@ font-size: 1.4667vh;
 
 
 // ==================================================//
-// 			Главная	Страница	index.html			//
+// 			Главная	Страница	index.html			
 // ================================================//
 
 .banners {
@@ -1422,9 +1383,9 @@ font-size: 1.4667vh;
 	margin: 0 auto;
 }
 .slick-dots li {
-    width: 5vh !important;
-    height: 0.25vh !important;
-    background: #C2C2C2;
+	width: 5vh !important;
+	height: 0.25vh !important;
+	background: #C2C2C2;
 	margin: 0 !important;
 }
 
@@ -1441,8 +1402,8 @@ font-size: 1.4667vh;
 // Переваги DelTruck
 .benefits {
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin-bottom: 3vh;
 	padding: 5vh 0;
 	&__item {
@@ -1487,9 +1448,6 @@ font-size: 1.4667vh;
 			background-color: #fff;
 			position: relative;
 			z-index: 30;
-			img {
-				height: auto;
-			}
 		}
 		.item__info {
 			background-color: #fff;
@@ -1549,27 +1507,7 @@ font-size: 1.4667vh;
 			margin-bottom: 4.6296vh;
 		}
 		&__btn {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 31.2037vh;
-			height: 5.5556vh;
-			border: 0.1852vh solid $color-red;
-			text-transform: uppercase;
-			background-color: transparent;
-			font-family: 'Montserrat', sans-serif;
-			font-weight: bold;
-			font-size: 1.6667vh;
-			line-height: 1.6667vh;
-			letter-spacing: 0.0463vh;
-			color: $color-red;
 			margin-bottom: 4.6296vh;
-			&:hover {
-				color: #fff;
-				background-color: $color-red;
-				cursor: pointer;
-				transition: all 1s ease;
-			}
 		}
 		&__btn--grey {
 			border: 0.1852vh solid #666;
@@ -1714,8 +1652,8 @@ font-size: 1.4667vh;
 		img {
 			height: 4.6296vh;
 		}
-		#img--large {
-			height: 6.0185vh;
+		#img--small {
+			height: 4.0185vh;
 		}
 	}
 	.results__info {
@@ -1740,8 +1678,9 @@ font-size: 1.4667vh;
 // Горизонтальный блок новостей на главной странице
 .news-home {
 	display: flex;
-	margin-top: 2.037vh;
-	margin-bottom: 5vh;
+	// margin-top: 2.037vh;
+	// margin-bottom: 5vh;
+	margin: 2.037vh 0 5vh 0;
 	a {
 		margin-right: 1vh;
 		padding-right: 0.5vh;
@@ -1792,14 +1731,16 @@ font-size: 1.4667vh;
 		color: #303030;
 		font-size: 1.6667vh;
 		line-height: 2.2vh;
-		margin-left: 1.5vh;
-		margin-top: 1.1111vh;
+		// margin-left: 1.5vh;
+		// margin-top: 1.1111vh;
+		margin: 1.1111vh 0 0 1.5vh;
 	}
 }
 
 // ==================================================//
-// 			Страница	action.html					//
+// 			Страница	action.html					
 // ================================================//
+
 .action {
 	display: flex;
 	flex-wrap: wrap;
@@ -1810,7 +1751,7 @@ font-size: 1.4667vh;
 		margin-bottom: 4vh;
 	}
 	a:hover .item__btn {
-		background: #DADADA;
+		background-color: #DADADA;
 		transition: all .2s linear;
 	}
 	a:hover .item__title h3 {
@@ -1866,8 +1807,8 @@ font-size: 1.4667vh;
 }
 
 // ===================================================//
-// 			Страница	action-page-1.html		  	 //
-// 			открытая страница Акции					//
+// 			Страница	action-page-1.html		  	
+// 			открытая страница Акции					
 // ================================================//
 
 .action-page {
@@ -1901,29 +1842,6 @@ font-size: 1.4667vh;
 	.info-btn {
 		display: flex;
 		margin-top: 4.6296vh;
-		&__btn {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 31.2037vh;
-			height: 5.5556vh;
-			border: 0.1852vh solid $color-red;
-			text-transform: uppercase;
-			background-color: transparent;
-			font-family: 'Montserrat', sans-serif;
-			font-weight: bold;
-			font-size: 1.6667vh;
-			line-height: 1.6667vh;
-			text-align: center;
-			letter-spacing: 0.0463vh;
-			color: $color-red;
-			&:hover {
-				color: #fff;
-				background-color: $color-red;
-				cursor: pointer;
-				transition: all 1s ease;
-			}
-		}
 		&__btn--grey {
 			border: 0.1852vh solid #666;
 			color: #666;
@@ -1937,12 +1855,12 @@ font-size: 1.4667vh;
 
 
 // ===================================================//
-// 			Страница	car-order.html		  		 //
+// 			Страница	car-order.html										
 // ================================================//
 
 .car-order {
 	width: 85%;
-	background: #FFFFFF;
+	background-color: #FFFFFF;
 	box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
 	border-radius: 0.2778vh;
 	margin: 3vh auto 7vh auto;
@@ -1952,10 +1870,11 @@ font-size: 1.4667vh;
 		margin: 0 auto;
 	}
 	&__heading {
-		background: #F8F8F8;
+		background-color: #F8F8F8;
 		border-radius: 0.2778vh;
-		margin-bottom: 4.6296vh;
-		margin-top: 2.7778vh;
+		// margin-bottom: 4.6296vh;
+		// margin-top: 2.7778vh;
+		margin: 2.7778vh 0 4.6296vh 0;
 		width: 100%;
 		height: 5.5556vh;
 		display: flex;
@@ -1993,7 +1912,7 @@ font-size: 1.4667vh;
 	display: flex;
 	justify-content: space-between;
 	width: 85%;
-    margin: 0 auto 2.2222vh auto;
+  margin: 0 auto 2.2222vh auto;
 	.car-order__form--btn {
 		display: flex;
 		justify-content: center;
@@ -2042,7 +1961,7 @@ font-size: 1.4667vh;
 			margin-top: 0.9259vh;
 			line-height: 2.2222vh;
 			border: 0.0926vh solid #D9D9D9;
-			background: url('../img/icon/Arrow-select.svg') no-repeat center;
+			background: url('../img/icon/system/arrow-select.svg') no-repeat center;
 			background-size: 1.8519vh 0.8333vh;
 			-webkit-appearance: none;
 			background-position-x: 97%;
@@ -2067,24 +1986,6 @@ font-size: 1.4667vh;
 		}
 		.form__btn {
 			margin-top: 3vh;
-			width: 31.2037vh;
-			height: 5.5556vh;
-			border: 0.1852vh solid $color-red;
-			text-transform: uppercase;
-			background-color: transparent;
-			font-family: 'Montserrat', sans-serif;
-			font-weight: bold;
-			font-size: 1.6667vh;
-			line-height: 1.6667vh;
-			text-align: center;
-			letter-spacing: 0.0463vh;
-			color: $color-red;
-			&:hover {
-				color: #fff;
-				background-color: $color-red;
-				cursor: pointer;
-				transition: all 1s ease;
-			}
 		}
 		.form__btn--grey {
 			border: 0.1852vh solid #666;
@@ -2125,7 +2026,7 @@ font-size: 1.4667vh;
 
 
 // ===================================================//
-// 		Страница	coefficient.html		  		 //
+// 		Страница	coefficient.html		  		 
 // ================================================//
 
 .coef {
@@ -2208,11 +2109,11 @@ font-size: 1.4667vh;
 
 
 // ===================================================//
-// 		Страница	flight-search.html		  		 //
+// 		Страница	flight-search.html		  		 
 // ================================================//
 
 .flight {
-	background: #FFFFFF;
+	background-color: #FFFFFF;
 	box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
 	border-radius: 0.2778vh;
 	padding: 4.6296vh 2.7778vh;
@@ -2301,7 +2202,7 @@ font-size: 1.4667vh;
 		margin-top: 0.9259vh;
 		line-height: 2.2222vh;
 		border: 0.0926vh solid #D9D9D9;
-		background: url('../img/icon/Arrow-select.svg') no-repeat center;
+		background: url('../img/icon/system/arrow-select.svg') no-repeat center;
 		background-size: 1.8519vh 0.8333vh;
 		-webkit-appearance: none;
 		background-position-x: 97%;
@@ -2318,24 +2219,6 @@ font-size: 1.4667vh;
 	}
 	.form__btn {
 		margin-top: 2.2vh;
-		width: 31.2037vh;
-		height: 5.5556vh;
-		border: 0.1852vh solid $color-red;
-		text-transform: uppercase;
-		background-color: transparent;
-		font-family: 'Montserrat', sans-serif;
-		font-weight: bold;
-		font-size: 1.6667vh;
-		line-height: 1.6667vh;
-		text-align: center;
-		letter-spacing: 0.0463vh;
-		color: $color-red;
-		&:hover {
-			color: #fff;
-			background-color: $color-red;
-			cursor: pointer;
-			transition: all 1s ease;
-		}
 	}
 }
 
@@ -2365,7 +2248,7 @@ font-size: 1.4667vh;
 	& input:checked + label:hover{
 		color: #303030;
 	}
-	& input{
+	& input {
 		display: none;
 	}
 	& article {
@@ -2410,11 +2293,12 @@ font-size: 1.4667vh;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			margin-top: 3.7778vh;
-			margin-bottom: 2vh;
+			// margin-top: 3.7778vh;
+			// margin-bottom: 2vh;
+			margin: 3.7778vh 0 2vh 0;
 		}
 	}
-	& input:checked ~ article{
+	& input:checked ~ article {
 		max-height: 99vh;
 		transition: max-height 0.25s ease-in;
 	}
@@ -2438,43 +2322,21 @@ font-size: 1.4667vh;
 	}
 }
 
-// Общие стили кнопки
-.main__btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 31.2037vh;
-	height: 5.5556vh;
-	border: 0.1852vh solid $color-red;
-	text-transform: uppercase;
-	background-color: transparent;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	font-size: 1.6667vh;
-	line-height: 1.6667vh;
-	letter-spacing: 0.0463vh;
-	color: $color-red;
-	&:hover {
-		color: #fff;
-		background-color: $color-red;
-		cursor: pointer;
-		transition: all 1s ease;
-	}
-}
 
 // ===================================================//
-// 				Уведомление Pop-Up			  		 //
+// 				Уведомление Pop-Up			  		 
 // ================================================//
 
 #subscribe__box, #order__box {
 	display: none;
-	background: #FFFFFF;
-	border: 0.0926vh solid #26BC0D;
-	position: fixed; 
-	width: 50.8333vh;
-	height: 29.6296vh;
+	position: fixed;
 	right: 2vh; 
 	bottom: 2vh; 
+	z-index: 9999;
+	width: 50.8333vh;
+	height: 29.6296vh;
+	background-color: #FFFFFF;
+	border: 0.0926vh solid #26BC0D;
 	-webkit-box-shadow: 0vh 0.463vh 0.463vh 0.2778vh rgba(0, 0, 0, 0.3); 
 	box-shadow: 0vh 0.463vh 0.463vh 0.2778vh rgba(0, 0, 0, 0.3); 
 	-webkit-border-radius: 0.2778vh; 

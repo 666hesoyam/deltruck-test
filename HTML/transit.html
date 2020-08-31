@@ -21,7 +21,7 @@
         <!-- Calendar -->
         <link href="css/components/datepicker.min.css" rel="stylesheet" type="text/css">
         <!-- Favicon -->
-        <link rel="shortcut icon" href="img/icon/favicon.ico"/>
+        <link rel="shortcut icon" href="img/icon/system/favicon.ico"/>
     </head>
     <!-- BODY -->
     <body>
@@ -76,35 +76,34 @@
                                         <img src="img/order.png" alt="order truck">
                                     </div>
                                 </div>
-
                                 <div class="request">
                                     <div class="request__group">
                                         <form class="form">
                                             <label class="form__label">Ваше прізвище та ім’я</label>
                                             <input class="form__input" type="text" placeholder=" ">
                                         </form>
-
+                                        <!-- next-form -->
                                         <form class="form">
                                             <label class="form__label">Ваш номер</label>
                                             <input class="form__input" type="tel" placeholder="+380" minlength="10" maxlength="13">
                                         </form>
-
+                                        <!-- next-form -->
                                         <form class="form">
                                             <label class="form__label">Звідки</label>
                                             <input class="form__input" type="text" placeholder=" ">
                                         </form>
-
+                                        <!-- next-form -->
                                         <form class="form">
                                             <label class="form__label">Куди</label>
                                             <input class="form__input" type="text" placeholder=" ">
                                         </form>
-
+                                        <!-- next-form -->
                                         <div class="form-small-wrap">
                                             <form class="form form--small">
                                                 <label class="form__label">Дата подачі</label>
                                                 <input type='text' class="datepicker-here form__input" data-position="right top" />
                                             </form>
-
+                                            <!-- next-form -->
                                             <form class="form form--small">
                                                 <label class="form__label">Час подачі</label>
                                                 <select class="form__select">
@@ -159,7 +158,7 @@
                                                 </select>
                                             </form>
                                         </div>
-
+                                        <!-- next-form -->
                                         <form class="form">
                                             <label class="form__label">Вид автомобіля</label>
                                             <select class="form__select">
@@ -175,19 +174,19 @@
                                                 <option value="Бус">Бус</option>
                                             </select>
                                         </form>
-
+                                        <!-- next-form -->
                                         <div class="form-small-wrap">
                                             <form class="form form--small">
                                                 <label class="form__label">Вантажопідйомність</label>
                                                 <input class="form__input" type="number" placeholder=" ">
                                             </form>
-
+                                            <!-- next-form -->
                                             <form class="form form--small">
                                                 <label class="form__label">Об’єм, м3</label>
                                                 <input class="form__input" type="number" placeholder=" ">
                                             </form>
                                         </div>
-
+                                        <!-- next-form -->
                                         <div class="form-small-wrap">
                                             <form class="form form--small">
                                                 <label class="form__label">Тип завантаження</label>
@@ -199,7 +198,7 @@
                                                 </select>
                                             </form>
                                         </div>
-                                        <button class="request__btn" onclick='throw_message_order(" "); return false;'>відправити заявку</button>
+                                        <button class="main__btn" onclick='throw_message_order(" "); return false;'>відправити заявку</button>
                                     </div>
                                 </div>
                             </div>
@@ -230,35 +229,34 @@
                                         <img src="img/order-2.png" alt="order truck">
                                     </div>
                                 </div>
-
                                 <div class="request">
                                     <div class="request__group">
                                         <form class="form">
                                             <label class="form__label">Ваше прізвище та ім’я</label>
                                             <input class="form__input" type="text" placeholder=" ">
                                         </form>
-
+                                        <!-- next-form -->
                                         <form class="form">
                                             <label class="form__label">Ваш номер</label>
                                             <input class="form__input" type="tel" placeholder="+380" minlength="10" maxlength="13">
                                         </form>
-
+                                        <!-- next-form -->
                                         <form class="form">
                                             <label class="form__label">Звідки</label>
                                             <input class="form__input" type="text" placeholder=" ">
                                         </form>
-
+                                        <!-- next-form -->
                                         <form class="form">
                                             <label class="form__label">Куди</label>
                                             <input class="form__input" type="text" placeholder=" ">
                                         </form>
-
+                                        <!-- next-form -->
                                         <div class="form-small-wrap">
                                             <form class="form form--small">
                                                 <label class="form__label pulse">Дата подачі</label>
                                                 <input type='text' class="datepicker-here form__input" data-position="right top" />
                                             </form>
-
+                                            <!-- next-form -->
                                             <form class="form form--small">
                                                 <label class="form__label">Час подачі</label>
                                                 <select class="form__select">
@@ -313,7 +311,7 @@
                                                 </select>
                                             </form>
                                         </div>
-
+                                        <!-- next-form -->
                                         <form class="form">
                                             <label class="form__label">Вид автомобіля</label>
                                             <select class="form__select">
@@ -329,15 +327,15 @@
                                                 <option value="Бус">Бус</option>
                                             </select>
                                         </form>
-
+                                        <!-- next-form -->
                                         <div class="form-small-wrap">
                                             <form class="form form--small">
                                                 <label class="form__label">Кількість палет</label>
                                                 <input class="form__input" type="number" placeholder=" ">
                                             </form>
                                         </div>
-
-                                        <button class="request__btn" onclick='throw_message_order(" "); return false;'>відправити заявку</button>
+                                        <!-- next-form -->
+                                        <button class="main__btn" onclick='throw_message_order(" "); return false;'>відправити заявку</button>
                                     </div>
                                 </div>
                             </div>
@@ -358,7 +356,7 @@
         <!-- POP UP Order-->
         <div id='order__box'>
             <div id='box_text'>
-                <img src="img/icon/pop-up__icon.png" alt="">
+                <img src="img/icon/system/pop-up__icon.svg" alt="Done">
                 <p>Ваша заявка успішно відправлена!</p>
                 <p>Менеджер DelTruck зв’яжется з Вами <br> в найближчий час.</p>
             </div>

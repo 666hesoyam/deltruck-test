@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------
-    Project:        DelTruck
-    Author:         Anton Shaposhnikov
-	Telegram:		https://t.me/hesoyam_666
+		Project:        DelTruck
+		Author:         Anton Shaposhnikov
+		Telegram:				https://t.me/hesoyam_666
 --------------------------------------------------------------*/
 html {
   overflow-x: hidden;
@@ -50,6 +50,27 @@ option:focus {
   height: 100%;
   max-width: 133.3333vh;
   padding: 0 1vh; }
+
+.main__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31.2037vh;
+  height: 5.5556vh;
+  border: 0.1852vh solid #B72126;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.6667vh;
+  line-height: 1.6667vh;
+  letter-spacing: 0.0463vh;
+  color: #B72126; }
+  .main__btn:hover {
+    color: #fff;
+    background-color: #B72126;
+    cursor: pointer;
+    transition: all 1s ease; }
 
 .header {
   width: 100%;
@@ -277,8 +298,7 @@ option:focus {
       color: #303030;
       font-size: 1.6667vh;
       line-height: 2.2vh;
-      margin-left: 1.5vh;
-      margin-top: 1.1111vh; }
+      margin: 1.1111vh 0 0 1.5vh; }
   .about .advantages-block {
     margin-top: 2.037vh; }
     .about .advantages-block__item {
@@ -309,8 +329,7 @@ option:focus {
       .about .feedback-block__item .feedback-form {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
-        margin-bottom: 2.7778vh;
+        margin: 0 auto 2.7778vh auto;
         width: 100%;
         position: relative; }
         .about .feedback-block__item .feedback-form__label {
@@ -334,23 +353,7 @@ option:focus {
             line-height: 2.2222vh;
             color: #D9D9D9; }
         .about .feedback-block__item .feedback-form__btn {
-          width: 19.3519vh;
-          height: 5.5556vh;
-          border: 0.1852vh solid #B72126;
-          text-transform: uppercase;
-          background-color: transparent;
-          font-family: 'Montserrat', sans-serif;
-          font-weight: bold;
-          font-size: 1.6667vh;
-          line-height: 1.6667vh;
-          text-align: center;
-          letter-spacing: 0.0463vh;
-          color: #B72126; }
-          .about .feedback-block__item .feedback-form__btn:hover {
-            color: #fff;
-            background-color: #B72126;
-            cursor: pointer;
-            transition: all 1s ease; }
+          width: 19.3519vh; }
 
 .news-block__btn {
   display: flex;
@@ -374,10 +377,10 @@ option:focus {
     transition: all .2s ease-in-out; }
   .news-block__btn:hover {
     background-color: #EFEFEF; }
-  .news-block__btn:hover p {
-    color: #B72126; }
-  .news-block__btn:hover img {
-    margin-left: 1vh; }
+    .news-block__btn:hover p {
+      color: #B72126; }
+    .news-block__btn:hover img {
+      margin-left: 1vh; }
 
 .footer {
   margin-top: 8.1481vh;
@@ -406,24 +409,7 @@ option:focus {
         .footer-info__item a:hover {
           color: #B72126; }
     .footer-info__btn {
-      width: 31.4815vh;
-      height: 5.5556vh;
-      margin-top: 8.3333vh;
-      border: 0.1852vh solid #B72126;
-      text-transform: uppercase;
-      background-color: transparent;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      font-size: 1.6667vh;
-      line-height: 1.6667vh;
-      text-align: center;
-      letter-spacing: 0.0463vh;
-      color: #B72126; }
-      .footer-info__btn:hover {
-        color: #fff;
-        background-color: #B72126;
-        cursor: pointer;
-        transition: all 1s ease; }
+      margin-top: 8.3333vh; }
   .footer-adress {
     padding-bottom: 3.2407vh; }
     .footer-adress p {
@@ -491,8 +477,7 @@ option:focus {
     color: #666;
     cursor: pointer; }
     .crumbs__inner p {
-      margin-right: 0.9259vh;
-      margin-left: 0.9259vh; }
+      margin: 0 0.9259vh 0 0.9259vh; }
     .crumbs__inner a:hover {
       color: #B72126; }
 
@@ -546,8 +531,7 @@ option:focus {
 .form {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 2.1296vh;
+  margin: 0 auto 2.1296vh auto;
   width: 100%;
   position: relative; }
   .form__label {
@@ -577,7 +561,7 @@ option:focus {
     padding-left: 1vh;
     line-height: 2.2222vh;
     border: 0.0926vh solid #D9D9D9;
-    background: url("../img/icon/Arrow-select.svg") no-repeat center;
+    background: url("../img/icon/system/arrow-select.svg") no-repeat center;
     background-size: 1.8519vh 0.8333vh;
     -webkit-appearance: none;
     background-position-x: 97%;
@@ -596,25 +580,6 @@ option:focus {
   margin: 0 0 3vh 0; }
   .form--small .form__select {
     background-position-x: 92%; }
-
-.request__btn {
-  width: 31.4815vh;
-  height: 5.5556vh;
-  border: 0.1852vh solid #B72126;
-  text-transform: uppercase;
-  background-color: transparent;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1.6667vh;
-  line-height: 1.6667vh;
-  text-align: center;
-  letter-spacing: 0.0463vh;
-  color: #B72126; }
-  .request__btn:hover {
-    color: #fff;
-    background-color: #B72126;
-    cursor: pointer;
-    transition: all 1s ease; }
 
 .tabs {
   width: 100%;
@@ -795,7 +760,7 @@ option:focus {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 8.3333vh; }
+  margin: 8.3333vh 0; }
   .del-group img {
     width: 39.7222vh;
     height: 15.7407vh;
@@ -804,15 +769,12 @@ option:focus {
       transform: scale(1.02);
       transition: all .3s ease; }
 
-.del-group--documentation {
-  margin-top: 8.3333vh; }
-
 .documentation ul {
   margin-top: 4.6296vh;
   list-style-type: none; }
   .documentation ul img {
     width: 2.7778vh;
-    height: 2.7778vh;
+    height: 3.1vh;
     margin-right: 0.9259vh; }
 
 .documentation li {
@@ -1000,7 +962,6 @@ option:focus {
     display: none; }
   .ac-container article {
     background-color: rgba(255, 255, 255, 0.5);
-    margin-top: -0.0926vh;
     overflow: hidden;
     max-height: 0vh;
     position: relative;
@@ -1018,8 +979,7 @@ option:focus {
   .ac-container article img {
     max-width: 65.463vh;
     max-height: 38.2407vh;
-    margin-bottom: 2vh;
-    margin-left: 10.6481vh; }
+    margin: 0 0 2vh 10.6481vh; }
   .ac-container input:checked ~ article {
     max-height: 99vh;
     transition: max-height 0.25s ease-in; }
@@ -1030,7 +990,6 @@ option:focus {
   display: flex;
   align-items: flex-end;
   margin: 0 auto 4.6296vh auto;
-  margin-bottom: 4.6296vh;
   width: 100%;
   position: relative; }
   .form-news__label {
@@ -1051,7 +1010,7 @@ option:focus {
     padding-left: 1vh;
     line-height: 2.2222vh;
     border: none;
-    background: url("../img/icon/Arrow-select.svg") no-repeat center;
+    background: url("../img/icon/system/arrow-select.svg") no-repeat center;
     background-size: 1.8519vh 0.8333vh;
     -webkit-appearance: none;
     background-position-x: 97%;
@@ -1191,8 +1150,6 @@ option:focus {
       background-color: #fff;
       position: relative;
       z-index: 30; }
-      .benefits__item--flight-search .item__img img {
-        height: auto; }
     .benefits__item--flight-search .item__info {
       background-color: #fff; }
       .benefits__item--flight-search .item__info h5 {
@@ -1240,26 +1197,7 @@ option:focus {
       color: #303030;
       margin-bottom: 4.6296vh; }
     .application .left-block__btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 31.2037vh;
-      height: 5.5556vh;
-      border: 0.1852vh solid #B72126;
-      text-transform: uppercase;
-      background-color: transparent;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      font-size: 1.6667vh;
-      line-height: 1.6667vh;
-      letter-spacing: 0.0463vh;
-      color: #B72126;
       margin-bottom: 4.6296vh; }
-      .application .left-block__btn:hover {
-        color: #fff;
-        background-color: #B72126;
-        cursor: pointer;
-        transition: all 1s ease; }
     .application .left-block__btn--grey {
       border: 0.1852vh solid #666;
       color: #666; }
@@ -1375,8 +1313,8 @@ option:focus {
     align-items: center; }
     .results .results__img img {
       height: 4.6296vh; }
-    .results .results__img #img--large {
-      height: 6.0185vh; }
+    .results .results__img #img--small {
+      height: 4.0185vh; }
   .results .results__info {
     display: flex;
     flex-direction: column; }
@@ -1395,8 +1333,7 @@ option:focus {
 
 .news-home {
   display: flex;
-  margin-top: 2.037vh;
-  margin-bottom: 5vh; }
+  margin: 2.037vh 0 5vh 0; }
   .news-home a {
     margin-right: 1vh;
     padding-right: 0.5vh;
@@ -1438,8 +1375,7 @@ option:focus {
     color: #303030;
     font-size: 1.6667vh;
     line-height: 2.2vh;
-    margin-left: 1.5vh;
-    margin-top: 1.1111vh; }
+    margin: 1.1111vh 0 0 1.5vh; }
 
 .action {
   display: flex;
@@ -1450,7 +1386,7 @@ option:focus {
   .action a {
     margin-bottom: 4vh; }
   .action a:hover .item__btn {
-    background: #DADADA;
+    background-color: #DADADA;
     transition: all .2s linear; }
   .action a:hover .item__title h3 {
     color: #B72126;
@@ -1522,27 +1458,6 @@ option:focus {
   .action-page .info-btn {
     display: flex;
     margin-top: 4.6296vh; }
-    .action-page .info-btn__btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 31.2037vh;
-      height: 5.5556vh;
-      border: 0.1852vh solid #B72126;
-      text-transform: uppercase;
-      background-color: transparent;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      font-size: 1.6667vh;
-      line-height: 1.6667vh;
-      text-align: center;
-      letter-spacing: 0.0463vh;
-      color: #B72126; }
-      .action-page .info-btn__btn:hover {
-        color: #fff;
-        background-color: #B72126;
-        cursor: pointer;
-        transition: all 1s ease; }
     .action-page .info-btn__btn--grey {
       border: 0.1852vh solid #666;
       color: #666;
@@ -1552,7 +1467,7 @@ option:focus {
 
 .car-order {
   width: 85%;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
   border-radius: 0.2778vh;
   margin: 3vh auto 7vh auto;
@@ -1561,10 +1476,9 @@ option:focus {
     width: 96%;
     margin: 0 auto; }
   .car-order__heading {
-    background: #F8F8F8;
+    background-color: #F8F8F8;
     border-radius: 0.2778vh;
-    margin-bottom: 4.6296vh;
-    margin-top: 2.7778vh;
+    margin: 2.7778vh 0 4.6296vh 0;
     width: 100%;
     height: 5.5556vh;
     display: flex;
@@ -1636,7 +1550,7 @@ option:focus {
       margin-top: 0.9259vh;
       line-height: 2.2222vh;
       border: 0.0926vh solid #D9D9D9;
-      background: url("../img/icon/Arrow-select.svg") no-repeat center;
+      background: url("../img/icon/system/arrow-select.svg") no-repeat center;
       background-size: 1.8519vh 0.8333vh;
       -webkit-appearance: none;
       background-position-x: 97%;
@@ -1656,24 +1570,7 @@ option:focus {
       .car-order__group .car-order__form .form__link:hover {
         color: #666; }
     .car-order__group .car-order__form .form__btn {
-      margin-top: 3vh;
-      width: 31.2037vh;
-      height: 5.5556vh;
-      border: 0.1852vh solid #B72126;
-      text-transform: uppercase;
-      background-color: transparent;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      font-size: 1.6667vh;
-      line-height: 1.6667vh;
-      text-align: center;
-      letter-spacing: 0.0463vh;
-      color: #B72126; }
-      .car-order__group .car-order__form .form__btn:hover {
-        color: #fff;
-        background-color: #B72126;
-        cursor: pointer;
-        transition: all 1s ease; }
+      margin-top: 3vh; }
     .car-order__group .car-order__form .form__btn--grey {
       border: 0.1852vh solid #666;
       color: #666;
@@ -1764,7 +1661,7 @@ option:focus {
       color: #fff !important; }
 
 .flight {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
   border-radius: 0.2778vh;
   padding: 4.6296vh 2.7778vh;
@@ -1837,7 +1734,7 @@ option:focus {
     margin-top: 0.9259vh;
     line-height: 2.2222vh;
     border: 0.0926vh solid #D9D9D9;
-    background: url("../img/icon/Arrow-select.svg") no-repeat center;
+    background: url("../img/icon/system/arrow-select.svg") no-repeat center;
     background-size: 1.8519vh 0.8333vh;
     -webkit-appearance: none;
     background-position-x: 97%;
@@ -1850,24 +1747,7 @@ option:focus {
       color: #666;
       font-size: 1.6667vh; }
   .flight__form .form__btn {
-    margin-top: 2.2vh;
-    width: 31.2037vh;
-    height: 5.5556vh;
-    border: 0.1852vh solid #B72126;
-    text-transform: uppercase;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 1.6667vh;
-    line-height: 1.6667vh;
-    text-align: center;
-    letter-spacing: 0.0463vh;
-    color: #B72126; }
-    .flight__form .form__btn:hover {
-      color: #fff;
-      background-color: #B72126;
-      cursor: pointer;
-      transition: all 1s ease; }
+    margin-top: 2.2vh; }
 
 .ac-flight {
   width: 100%;
@@ -1927,8 +1807,7 @@ option:focus {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 3.7778vh;
-      margin-bottom: 2vh; }
+      margin: 3.7778vh 0 2vh 0; }
   .ac-flight input:checked ~ article {
     max-height: 99vh;
     transition: max-height 0.25s ease-in; }
@@ -1947,36 +1826,16 @@ option:focus {
       transform: scale(1.02);
       transition: all .3s ease; }
 
-.main__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 31.2037vh;
-  height: 5.5556vh;
-  border: 0.1852vh solid #B72126;
-  text-transform: uppercase;
-  background-color: transparent;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1.6667vh;
-  line-height: 1.6667vh;
-  letter-spacing: 0.0463vh;
-  color: #B72126; }
-  .main__btn:hover {
-    color: #fff;
-    background-color: #B72126;
-    cursor: pointer;
-    transition: all 1s ease; }
-
 #subscribe__box, #order__box {
   display: none;
-  background: #FFFFFF;
-  border: 0.0926vh solid #26BC0D;
   position: fixed;
-  width: 50.8333vh;
-  height: 29.6296vh;
   right: 2vh;
   bottom: 2vh;
+  z-index: 9999;
+  width: 50.8333vh;
+  height: 29.6296vh;
+  background-color: #FFFFFF;
+  border: 0.0926vh solid #26BC0D;
   -webkit-box-shadow: 0vh 0.463vh 0.463vh 0.2778vh rgba(0, 0, 0, 0.3);
   box-shadow: 0vh 0.463vh 0.463vh 0.2778vh rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 0.2778vh;
