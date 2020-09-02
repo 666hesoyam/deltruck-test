@@ -22,10 +22,7 @@ body {
 
 input:invalid { border-color: red !important; }
 
-textarea,
-input[type="text"],
-input[type="button"],
-input[type="submit"] {
+textarea, input {
   -webkit-appearance: none;
   border-radius: 0;
 }
