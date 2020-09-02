@@ -21,7 +21,7 @@ body {
 input:invalid {
   border-color: red !important; }
 
-textarea, input {
+textarea, input, select {
   -webkit-appearance: none;
   border-radius: 0; }
 
