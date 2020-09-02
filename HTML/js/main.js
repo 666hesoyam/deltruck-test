@@ -1,8 +1,10 @@
 // Import HTML template
 $(function(){
     $("#included__header").load("template/header.html");
+    $("#included__header--mobile").load("template/header--mobile.html");
     $("#included__about-block").load("template/about-block.html"); 
     $("#included__footer").load("template/footer.html"); 
+    $("#included__footer--mobile").load("template/footer--mobile.html"); 
 });
 
 

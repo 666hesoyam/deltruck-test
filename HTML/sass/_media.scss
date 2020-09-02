@@ -1,0 +1,318 @@
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+
+}
+
+
+
+@media screen and (orientation: portrait) {
+  // ==============================//
+  // 			in-dev.html							
+  // ============================//
+
+  .in-dev {
+    margin-top: 20vw;
+    h1 {
+      font-size: 5vw;
+    }
+  }
+
+  // ==============================//
+  // 			Общие стили							
+  // ============================//
+
+  .container {
+    max-width: 100%;
+    padding: 0 3vw;
+  }
+
+  // Общие стили кнопки
+  .main__btn {
+    width: 54.2037vw;
+    height: 7.5556vw;
+    font-size: 2.5519vw;
+    line-height: 3.4444vw;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .header--mobile {
+    display: block;
+    height: 13.7778vw;
+  }
+  .header__wrapper {
+    justify-content: flex-end;
+  }
+
+  .header__logo {
+    width: 27.037vw;
+    height: 10.3704vw;
+  }
+
+  .header__hot-line {
+    width: fit-content;
+    margin-right: 8vw;
+  }
+
+  // Mobile Navigation
+  .header__nav {
+    display: none;
+  }
+
+  .mob-nav {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 5vw;
+    position: relative;
+  }
+
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    width: 6vw;
+    height: 6vw;
+    &--open {
+      width: 5.5625vw;
+      height: 2.8333vw;
+    }
+    &--close {
+      width: 7.5625vw;
+      height: 4.8333vw;
+    }
+  }
+
+  #nav {
+    position: fixed;
+    z-index: 100;
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background-color: #7D7D7D;
+    transition: all 1s;
+    &:not(:target) {
+      right: 0;
+      height: 100vw;
+      width: 0;
+    }
+    &:target {
+      right: 0;
+      height: 100%;
+      width: 100%;
+    }
+    ul {
+      padding: 5vw 0 0 10vw;
+    }
+    li { 
+      font-size: 4vw;
+      margin-top: 4vw;
+      transition: all 0.5s;
+      list-style-type: none;
+      color: #fff;
+      text-align: left;
+      text-transform: uppercase;
+      &:first-child {
+        margin: 0 5vw 5vw 0;
+        text-align: right;
+      }
+      &:hover {
+        transform: scale(1.1);
+        backface-visibility: hidden;
+      }
+    }
+  }
+
+
+  .about-block {
+    display: none;
+  }
+
+  // Футер
+  .footer {
+    display: none;
+    margin-top: 8.1481vw;
+    &-info {
+      padding-top: 3.0556vw;
+      flex-direction: column;
+      &__btn {
+        margin: 0 0 4vw 0;
+      }
+    }
+    &-adress {
+      padding-bottom: 5.2407vw;
+      margin-top: 5vw;
+      p {
+        font-size: 2.2963vw;
+        line-height: 3.8519vw;
+      }
+    }
+  }
+
+  .footer--mobile {
+    display: block;
+    .number__num {
+      font-size: 4.2407vw;
+      line-height: 5.963vw;
+    }
+    .number__title {
+      font-size: 2.5vw;
+      line-height: 2.5vw;
+    }
+    .hot-line__alert {
+      margin-left: 8vw;
+      font-size: 2.5vw;
+      line-height: 2.5vw;
+    }
+    .hot-line__icon {
+      width: 6.1963vw;
+      height: 6.1963vw;
+      & img {
+        width: 4.037vw;
+        height: 4.037vw;
+      }
+    }
+  }
+  // Футер end
+
+  // Заголовок страницы
+  .heading-block {
+    margin-bottom: 6.4815vw;
+  }
+
+  .heading {
+    &__title {
+      max-width: 89.2407vw;
+      padding: 2vw 0 4.1852vw 4.1111vw;
+      font-size: 4.6296vw;
+      line-height: 5.6481vw;
+    }
+    &--transit {
+      height: 32.2037vw;
+    }
+    &--additional-services {
+      height: 28.2407vw;
+      .heading__title {
+        max-width: 111vw;
+        padding: 5vw 0 6.5vw 11.1111vw;
+      }
+    }
+    &--news {
+      height: 28.2407vw;
+      .heading__title {
+        max-width: 111vw;
+        padding: 5vw 0 2.5vw 11.1111vw;
+      }
+    }
+    &--flight-search {
+      height: 28.2407vw;
+      .heading__title {
+        max-width: 111vw;
+        padding: 5vw 0 4.5vw 11.1111vw;
+      }
+    }
+  }
+
+  .crumbs {
+    display: none;
+  }
+
+
+  // ==================================================//
+  // 			Страница	Послуги/перевезення		
+  // ================================================//
+
+  .order {
+    margin-top: 8.3333vw;
+  }
+
+  .info {
+    width: 75%;
+    margin: 0 auto;
+    padding: 4.7222vw 5.5556vw 3.2407vw 5.5556vw;
+    &__sub-title {
+      display: none;
+    }
+    &__text {
+      max-width: 60.8519vw;
+      font-size: 3.3519vw;
+      line-height: 3.4444vw;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .request {
+    width: 75%;
+    margin: 0 auto;
+    padding: 4.7222vw 5.5556vw 3.2407vw 5.5556vw;
+    &__group {
+      width: 100%;
+    }
+  }
+
+  // Форма заявки
+  .form {
+    margin: 0 auto 4.1296vw auto;
+    &__label {
+      margin-bottom: 1.0185vw;
+      font-size: 3.1519vw;
+      line-height: 3.4444vw;
+    }
+    &__input {
+      height: 5.8889vw;
+      padding-left: 1vw;
+      border: 0.0926vw solid #D9D9D9;
+      font-size: 3.1519vw;
+      line-height: 3.4444vw;
+      &::placeholder {
+        font-size: 3.1519vw;
+        line-height: 3.4444vw;
+      }
+    }
+    &__select {
+      height: 5.8889vw;
+      padding-left: 1vw;
+      font-size: 1.6667vw;
+      line-height: 2.2222vw;
+      border: 0.0926vw solid #D9D9D9;
+      background-size: 2.8519vw 1.8333vw;
+    }
+  }
+  .form--small {
+    width: 43%;
+    margin: 0 0 4vw 0;
+  }
+
+  .tabs { 
+    height: 190.3704vw;
+    margin: 3vw auto 0 auto;
+    &__li {
+      width: 50%;
+    }
+    &__label {
+      height: 10.3333vw;
+      top: -3.6vw;
+      margin-bottom: 6.4815vw;
+      font-size: 2.3667vw;
+      line-height: 3.2vw;
+      border-radius: 0.2778vw 0.2778vw 0vw 0vw;
+      h3 {
+        max-width: 80%;
+      }
+    }
+    .tab-content{
+      top: 5.3vw;
+      font-size: 1.7vw;
+      line-height: 2.5vw;
+      padding: 0 0.5vw 0.5vw 0.5vw;  
+    }
+    [id^="tab"]:checked ~ [id^="tab-content"] {
+      flex-direction: column;
+    }
+  }
+
+}
