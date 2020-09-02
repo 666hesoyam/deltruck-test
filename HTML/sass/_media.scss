@@ -28,8 +28,8 @@
 
   // Общие стили кнопки
   .main__btn {
-    width: 54.2037vw;
-    height: 7.5556vw;
+    width: 60.2037vw;
+    height: 8.8889vw;
     font-size: 2.5519vw;
     line-height: 3.4444vw;
   }
@@ -107,7 +107,7 @@
       padding: 5vw 0 0 10vw;
     }
     li { 
-      font-size: 4vw;
+      font-size: 3vw;
       margin-top: 4vw;
       transition: all 0.5s;
       list-style-type: none;
@@ -133,9 +133,9 @@
   // Футер
   .footer {
     display: none;
-    margin-top: 8.1481vw;
+    margin-top: 10.1481vw;
     &-info {
-      padding-top: 3.0556vw;
+      padding-top: 6.0556vw;
       flex-direction: column;
       &__btn {
         margin: 0 0 4vw 0;
@@ -229,15 +229,15 @@
   }
 
   .info {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
-    padding: 4.7222vw 5.5556vw 3.2407vw 5.5556vw;
+    padding: 6.7222vw 5.5556vw 3.2407vw 5.5556vw;
     &__sub-title {
       display: none;
     }
     &__text {
-      max-width: 60.8519vw;
-      font-size: 3.3519vw;
+      max-width: 84.8519vw;
+      font-size: 3.1519vw;
       line-height: 3.4444vw;
     }
     &__img {
@@ -246,8 +246,7 @@
   }
 
   .request {
-    width: 75%;
-    margin: 0 auto;
+    width: 80%;
     padding: 4.7222vw 5.5556vw 3.2407vw 5.5556vw;
     &__group {
       width: 100%;
@@ -263,22 +262,20 @@
       line-height: 3.4444vw;
     }
     &__input {
-      height: 5.8889vw;
+      height: 7.8889vw;
       padding-left: 1vw;
-      border: 0.0926vw solid #D9D9D9;
       font-size: 3.1519vw;
       line-height: 3.4444vw;
       &::placeholder {
-        font-size: 3.1519vw;
+        font-size: 3.3519vw;
         line-height: 3.4444vw;
       }
     }
     &__select {
-      height: 5.8889vw;
+      height: 7.8889vw;
       padding-left: 1vw;
-      font-size: 1.6667vw;
-      line-height: 2.2222vw;
-      border: 0.0926vw solid #D9D9D9;
+      font-size: 3.1519vw;
+      line-height: 3.4444vw;
       background-size: 2.8519vw 1.8333vw;
     }
   }
@@ -288,7 +285,7 @@
   }
 
   .tabs { 
-    height: 190.3704vw;
+    height: 199.3704vw;
     margin: 3vw auto 0 auto;
     &__li {
       width: 50%;

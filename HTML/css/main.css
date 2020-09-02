@@ -1887,8 +1887,8 @@ option:focus {
     max-width: 100%;
     padding: 0 3vw; }
   .main__btn {
-    width: 54.2037vw;
-    height: 7.5556vw;
+    width: 60.2037vw;
+    height: 8.8889vw;
     font-size: 2.5519vw;
     line-height: 3.4444vw; }
   .header {
@@ -1943,7 +1943,7 @@ option:focus {
     #nav ul {
       padding: 5vw 0 0 10vw; }
     #nav li {
-      font-size: 4vw;
+      font-size: 3vw;
       margin-top: 4vw;
       transition: all 0.5s;
       list-style-type: none;
@@ -1960,9 +1960,9 @@ option:focus {
     display: none; }
   .footer {
     display: none;
-    margin-top: 8.1481vw; }
+    margin-top: 10.1481vw; }
     .footer-info {
-      padding-top: 3.0556vw;
+      padding-top: 6.0556vw;
       flex-direction: column; }
       .footer-info__btn {
         margin: 0 0 4vw 0; }
@@ -2019,20 +2019,19 @@ option:focus {
   .order {
     margin-top: 8.3333vw; }
   .info {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
-    padding: 4.7222vw 5.5556vw 3.2407vw 5.5556vw; }
+    padding: 6.7222vw 5.5556vw 3.2407vw 5.5556vw; }
     .info__sub-title {
       display: none; }
     .info__text {
-      max-width: 60.8519vw;
-      font-size: 3.3519vw;
+      max-width: 84.8519vw;
+      font-size: 3.1519vw;
       line-height: 3.4444vw; }
     .info__img {
       display: none; }
   .request {
-    width: 75%;
-    margin: 0 auto;
+    width: 80%;
     padding: 4.7222vw 5.5556vw 3.2407vw 5.5556vw; }
     .request__group {
       width: 100%; }
@@ -2043,26 +2042,24 @@ option:focus {
       font-size: 3.1519vw;
       line-height: 3.4444vw; }
     .form__input {
-      height: 5.8889vw;
+      height: 7.8889vw;
       padding-left: 1vw;
-      border: 0.0926vw solid #D9D9D9;
       font-size: 3.1519vw;
       line-height: 3.4444vw; }
       .form__input::placeholder {
-        font-size: 3.1519vw;
+        font-size: 3.3519vw;
         line-height: 3.4444vw; }
     .form__select {
-      height: 5.8889vw;
+      height: 7.8889vw;
       padding-left: 1vw;
-      font-size: 1.6667vw;
-      line-height: 2.2222vw;
-      border: 0.0926vw solid #D9D9D9;
+      font-size: 3.1519vw;
+      line-height: 3.4444vw;
       background-size: 2.8519vw 1.8333vw; }
   .form--small {
     width: 43%;
     margin: 0 0 4vw 0; }
   .tabs {
-    height: 190.3704vw;
+    height: 199.3704vw;
     margin: 3vw auto 0 auto; }
     .tabs__li {
       width: 50%; }
