@@ -1054,8 +1054,18 @@
       max-height: 99vh;
       padding: 3vw;
       border-top: none;
+      border-bottom: 0.0521vw solid rgba(183, 33, 38, 0.19);
     }
   }
+
+
+
+  #th--title {
+    width: 26%;
+    font-weight: normal; 
+    text-transform: none; 
+    text-align: center;
+}
 
   .hide-tablet {
     display: none;
@@ -1072,6 +1082,7 @@
 
 @media screen and (max-width: 568px) and (orientation: portrait) {
 
+
   .hide-mobile {
     display: none;
   }
@@ -1082,6 +1093,12 @@
   // ==============================//
   // 			Общие стили							
   // ============================//
+
+  option,
+  option:hover,
+  option:focus {
+    font-size: 3.8vw;
+  }
 
   .banners {
     margin-bottom: 5vw;
@@ -1100,7 +1117,7 @@
   }
 
   .header__logo {
-    width: 36.037vw;
+    width: 37.037vw;
     height: 16.3704vw;
   }
 
@@ -1278,9 +1295,296 @@
     }
   }
 
+  .tabs {
+    height: 231.3704vw;
+    .main__btn {
+      width: 100%;
+    }
+  }
 
+  .tabs__label {
+    height: 13.3333vw;
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  .info__text {
+    max-width: 100%;
+    font-size: 3.8vw;
+    line-height: 4vw;
+  }
 
+  .form__label {
+    margin-bottom: 2vw;
+    font-size: 3.8vw;
+    line-height: 4vw;
+  }
+  .form__input, .form__select {
+    height: 9vw;
+    padding-left: 1vw;
+    font-size: 3.8vw;
+    line-height: 4vw;
+    &::placeholder {
+      font-size: 3.8vw;
+      line-height: 4vw;
+    }
+  }
 
+  .accordion--mob {
+    label {
+      font-size: 4vw;
+      p {
+        max-width: 100%;
+      }
+    }
+    .content p {
+      font-size: 3.8vw;
+      line-height: 4vw;
+    }
+  } 
 
+  .info-block__text {
+    font-size: 3.8vw;
+    line-height: 4vw;
+  }
+
+  .info-block__advantages {
+    .advantages__item {
+      margin-bottom: 8.6296vw;
+    }
+    .advantages__img {
+      width: 15.7222vw;
+      height: 15.7222vw;
+    }
+    .advantages__info .advantages__title {
+      margin-bottom: 2vw;
+      font-size: 3.6vw;
+      line-height: 4vw;
+    }
+    .advantages__info .advantages__text {
+      font-size: 3.8vw;
+      line-height: 4vw;
+    }
+  }
+
+  .additional-services .del-group img {
+    width: 44.7222vw;
+    height: 19.7407vw;
+  }
+
+  .accordion--mob .arrow img {
+    width: 6vw;
+  }
+
+  .table__inner td, .table__inner th {
+    font-size: 3.4vw;
+    line-height: 3.5vw;
+    padding: 6vw 4vw;
+  }
+
+  #table-title--mobile {
+    font-size: 3.4vw;
+    line-height: 3.5vw;
+  }
+
+  .table__container {
+    width: 100%;
+    margin-bottom: 6vw;
+  }
+
+  .start-tarif__tbody td:first-child {
+    width: 50%;
+    text-align: left;
+  }
+
+  .start-tarif__tbody td {
+    padding: 3vw 2vw;
+  }
+
+  .start-tarif__thead tr:first-child th {
+    height: 11vw;
+  }
+
+  .table--consal thead tr:first-child th {
+    line-height: 5vw;
+  }
+  .table--consal tbody td:first-child {
+    padding: 3vw 4vw;
+  }
+
+  .documentation {
+    a {
+      font-size: 3.5vw;
+      line-height: 3.8vw;
+    }
+    ul img {
+      width: 7.7778vw;
+      height: 8.1vw;
+    }
+    li {
+      margin-bottom: 7vw;
+    }
+  }
+
+  .action {
+    width: 100%;
+  }
+
+  .action__item {
+    .item__img {
+      width: 100%;
+      height: auto;
+    }
+    .item__title {
+      width: 100%;
+    }
+    .item__title h3 {
+      margin-left: 3.7778vw;
+      font-size: 3.6667vw;
+      line-height: 4.5vw;
+    }
+  }
+
+  .subs {
+    padding-right: 5vw;
+    &__title {
+      font-size: 3.8vw;
+      line-height: 4vw;
+      max-width: 100%;
+      margin-bottom: 7vw;
+      margin-top: 5vw;
+    }
+    &__label {
+      font-size: 3.8vw;
+      line-height: 4vw;
+      margin-bottom: 2.0185vw;
+    }
+    &__input {
+      width: 100%;
+      height: 11vw;
+    }
+    &__form {
+      margin-top: 0vh;
+      margin-bottom: 8vw;
+      width: 100%;
+    }
+  }
+
+  .action-page__info {
+    .info__title {
+      max-width: 100%;
+      margin-bottom: 2.5vw;
+      font-size: 3.8vw;
+      line-height: 4.2vw;
+    }
+    .info__text {
+      max-width: 100%;
+      font-size: 3.8vw;
+      line-height: 4.5vw;
+    }
+  }
+
+  .action-page__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .benefits__item--flight-search .item__info p {
+    font-size: 3.8vw;
+    line-height: 4vw;
+  }
+
+  .benefits__item .item__img img, .benefits__item .item__info img {
+    width: 8.2778vw;
+    height: 8.2778vw;
+  }
+
+  .benefits__item--flight-search {
+    margin-bottom: 10vw;
+    .item__number {
+      top: -8.1vw;
+      left: 2vw;
+      font-size: 9.1667vw;
+      line-height: 8.3vw;
+    }
+  }
+
+  .flight__form {
+    .form__item {
+      width: 100%;
+    }
+    .form__label {
+      font-size: 3.8vw;
+      line-height: 4vw;
+    }
+    .form__select {
+      height: 10.0926vw;
+      width: 100%;
+      font-size: 3.8vw;
+      line-height: 4vw;
+      background-size: 2.8519vh 1.8333vh;
+      option,
+      option:hover,
+      option:focus {
+      font-size: 3.8vw;
+      }
+    }
+    .form__btn {
+      width: 85%;
+      margin-top: 8vw;
+    }
+  }
+
+  .car-order__heading h2 {
+    font-size: 3.8vw;
+    line-height: 4vw;
+  }
+
+  .slider img {
+    max-width: 80%;
+  }
+
+  .flight {
+    .ac-label__heading {
+      font-size: 3.8vw;
+      line-height: 4vw;
+    }
+    .ac-label__heading p:first-child {
+      font-size: 3.2vw;
+      line-height: 3.7vw;
+    }
+  }
+
+  .ac-flight article {
+    .flight-info__title {
+      font-size: 3.5vw;
+      line-height: 3.7vw;
+    }
+    p {
+      font-size: 3.2vw;
+      line-height: 3.7vw;
+    }
+    .flight-info__container .flight-info__title {
+      padding: 0px 8vw;
+    }
+  }
+
+  .car-order__heading {
+    height: 11.5556vw;
+    margin: 0 0 4.6296vw 0;
+  }
+
+  .table-coef .table__heading th {
+    font-size: 3.5vw;
+    line-height: 3.7vw;
+  }
+
+  .table-coef .table__info td {
+    font-size: 3.8vw;
+    line-height: 4vw;
+  }
+
+  .table-coef .table__info td {
+    height: 8.7037vw;
+  }
 
 }
