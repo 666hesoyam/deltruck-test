@@ -1057,6 +1057,10 @@
     }
   }
 
+  .hide-tablet {
+    display: none;
+  }
+
 }
 
 // =====================================
@@ -1065,1018 +1069,217 @@
 //
 // =====================================
 
+
 @media screen and (max-width: 568px) and (orientation: portrait) {
 
-  option,
-  option:hover,
-  option:focus {
-    font-size: 1.5vw;
+  .hide-mobile {
+    display: none;
+  }
+  .hide-tablet {
+    display: block;
   }
 
   // ==============================//
   // 			Общие стили							
   // ============================//
 
-  // Общие стили кнопки
-  .main__btn {
-    width: 49.2037vw;
-    height: 8vw;
-    font-size: 2.7vw;
-    line-height: 3.4444vw;
-    border: 0.1042vw solid #B72126;
+  .banners {
+    margin-bottom: 5vw;
   }
 
-  .header {
-    display: none;
+  // Общие стили кнопки
+  .main__btn {
+    width: 80%;
+    height: 11vw;
+    font-size: 3.6vw;
+    line-height: 3.8vw;
   }
 
   .header--mobile {
-    display: block;
-    height: 13.7778vw;
-    margin-bottom: 5vw;
-  }
-  .header__wrapper {
-    justify-content: flex-end;
+    height: 20.7778vw;
   }
 
   .header__logo {
-    width: 27.037vw;
-    height: 10.3704vw;
+    width: 36.037vw;
+    height: 16.3704vw;
   }
 
   .header__hot-line {
-    width: fit-content;
-    margin-right: 8vw;
+    margin-right: 10vw;
   }
 
   // Mobile Navigation
-  .header__nav {
-    display: none;
-  }
 
   .mob-nav {
-    width: 6vw;
-    height: 6vw;
-    margin-right: 5vw;
-    position: relative;
+    width: 8vw;
+    height: 8vw;
+    margin-right: 6vw;
   }
 
   .nav-btn {
-    display: flex;
-    align-items: center;
-    width: 6vw;
-    height: 6vw;
+    width: 8vw;
+    height: 8vw;
     &--open {
-      width: 5.5625vw;
-      height: 2.8333vw;
+      width: 8.5625vw;
+      height: 5.8333vw;
     }
     &--close {
-      width: 7.5625vw;
-      height: 4.8333vw;
+      width: 10.5625vw;
+      height: 7.8333vw;
     }
   }
 
   #nav {
-    position: fixed;
-    z-index: 100;
-    height: 0;
-    width: 0;
-    top: 0;
-    right: 0;
-    text-align: center;
-    background-color: #7D7D7D;
-    transition: all 1s;
-    &:not(:target) {
-      right: 0;
-      height: 100vw;
-      width: 0;
-    }
-    &:target {
-      right: 0;
-      height: 100%;
-      width: 100%;
-    }
-    ul {
-      padding: 5vw 0 0 10vw;
-    }
     li { 
-      font-size: 3vw;
-      margin-top: 4vw;
-      transition: all 0.5s;
-      list-style-type: none;
-      color: #fff;
-      text-align: left;
-      text-transform: uppercase;
+      font-size: 5vw;
+      margin-top: 6vw;
       &:first-child {
-        margin: 0 5vw 5vw 0;
-        text-align: right;
-      }
-      &:hover {
-        transform: scale(1.05);
-        backface-visibility: hidden;
+        margin: 0 7vw 7vw 0;
       }
     }
-  }
-
-  .about-block {
-    display: none;
   }
 
   // Футер
   .footer {
-    display: none;
-    margin-top: 10.1481vw;
+    margin-top: 13.1481vw;
     &-info {
-      padding-top: 6.0556vw;
-      flex-direction: column;
+      padding-top: 9.0556vw;
       &__btn {
-        margin: 0 0 4vw 0;
+        margin: 0 0 7vw 0;
       }
     }
     &-adress {
-      padding-bottom: 5.2407vw;
-      margin-top: 5vw;
+      padding-bottom: 3.2407vw;
+      margin-top: 8vw;
       p {
-        font-size: 2.2963vw;
+        font-size: 3.5vw;
         line-height: 3.8519vw;
       }
     }
   }
 
   .footer--mobile {
-    display: block;
     .number__num {
-      font-size: 4.2407vw;
-      line-height: 5.963vw;
+      font-size: 6.2407vw;
+      line-height: 6.963vw;
     }
     .number__title {
-      font-size: 2.5vw;
-      line-height: 2.5vw;
+      font-size: 3.6vw;
+      line-height: 3.8vw;
     }
     .hot-line__alert {
-      margin-left: 8vw;
-      font-size: 2.5vw;
-      line-height: 2.5vw;
+      margin-left: 10vw;
+      font-size: 3.6vw;
+      line-height: 3.8vw;
     }
     .hot-line__icon {
-      width: 6.1963vw;
-      height: 6.1963vw;
+      width: 8.1963vw;
+      height: 8.1963vw;
       & img {
-        width: 4.037vw;
-        height: 4.037vw;
+        width: 6.037vw;
+        height: 6.037vw;
       }
     }
   }
 
-  // Заголовок страницы
-  .heading-block {
-    margin-bottom: 6.4815vw;
-    .container--mobile {
-      padding: 0;
-    }
+  .info-block__title {
+    font-size: 5.2vw;
+    line-height: 5.7037vw;
   }
 
-  .heading {
-    &__title {
-      max-width: 89.2407vw;
-      padding: 2vw 0 4.1852vw 4.1111vw;
-      font-size: 4.6296vw;
-      line-height: 5.6481vw;
-    }
-    &--transit {
-      height: 36.2037vw;
-    }
-    &--additional-services {
-      height: 25.2407vw;
-      .heading__title {
-        max-width: 111vw;
-        padding: 1vw 0 4.5vw 6.1111vw;
-      }
-    }
-    &--news {
-      height: 25.2407vw;
-      .heading__title {
-        max-width: 111vw;
-        padding: 1vw 0 4.5vw 6.1111vw;
-      }
-    }
-    &--flight-search {
-      height: 25.2407vw;
-      .heading__title {
-        max-width: 111vw;
-        padding: 1vw 0 4.5vw 6.1111vw;
-      }
-    }
-  }
-
-  .crumbs {
-    display: none;
-  }
-
-
-  // ==================================================//
-  // 			Страница	Послуги/перевезення		
-  // ================================================//
-
-  .order {
-    margin-top: 8.3333vw;
-  }
-
-  .info {
+  .benefits__item {
     width: 100%;
-    margin: 0 auto;
-    padding: 6.7222vw 5.5556vw 3.2407vw 5.5556vw;
-    &__sub-title {
-      display: none;
-    }
-    &__text {
-      max-width: 84.8519vw;
-      font-size: 2.8vw;
-      line-height: 3.3vw;
-    }
-    &__img {
-      display: none;
-    }
-  }
-
-  .request {
-    width: 80%;
-    padding: 4.7222vw 5.5556vw 3.2407vw 5.5556vw;
-    &__group {
-      width: 100%;
-    }
-  }
-
-  // Форма заявки
-  .form {
-    margin: 0 auto 4.1296vw auto;
-    &__label {
-      margin-bottom: 1.0185vw;
-      font-size: 2.8vw;
-      line-height: 3.3vw;
-    }
-    &__input {
-      height: 7vw;
-      padding-left: 1vw;
-      font-size: 2.8vw;
-      line-height: 3.3vw;
-      &::placeholder {
-        font-size: 2.8vw;
-        line-height: 3.3vw;
-      }
-    }
-    &__select {
-      height: 7vw;
-      padding-left: 1vw;
-      font-size: 2.8vw;
-      line-height: 3.3vw;
-      background-size: 2.8519vw 1.8333vw;
-    }
-  }
-  .form--small {
-    width: 43%;
-    margin: 0 0 4vw 0;
-  }
-
-  .tabs { 
-    height: 184.3704vw;
-    margin: 3vw auto 0 auto;
-    &__li {
-      width: 50%;
-    }
-    &__label {
-      height: 10.3333vw;
-      top: -3.6vw;
-      margin-bottom: 6.4815vw;
-      font-size: 2.3667vw;
-      line-height: 3.2vw;
-      border-radius: 0.2778vw 0.2778vw 0vw 0vw;
-      h3 {
-        max-width: 80%;
-      }
-    }
-    .tab-content{
-      top: 5.3vw;
-      font-size: 1.7vw;
-      line-height: 2.5vw;
-      padding: 0 0.5vw 0.5vw 0.5vw;  
-    }
-    [id^="tab"]:checked ~ [id^="tab-content"] {
-      flex-direction: column;
-    }
-  }
-
-
-  // ==========================================================//
-  // 		Страница	Послуги / Додаткові послуги	/ Про компанию
-  // =========================================================//
-
-  .info-block {
-    margin-bottom: 0;
-    &__title {
-      padding-bottom: 3.3889vw;
-      margin-bottom: 4.7778vw;
-      font-size: 3.4vw;
-      line-height: 3.7037vw;
-      &::before {
-        width: 12.6111vw;
-        height: 0.2778vw;
-      }
-    }
-    &__text {
-      margin-left: 5.1111vw;
-      font-size: 2.8vw;
-      line-height: 3.3vw;
-      &--car-order p {
-        line-height: 3vw;
-      }
-      #black-span {
-        color: #000;
-        margin-left: 5vw;
-      }
-    }
-    &__list {
-      li {
-        margin-left: 2vw;
-        &:before {
-          top: 41%;
-          left: -1vw;
-          width: 0.4167vw;
-          height: 0.4167vw;
-        }
-      }
-    }
-  }
-
-  .info-block__advantages {
-    padding-top: 3vw;
-    .advantages__item {
-      max-width: 100%;
-      margin-bottom: 4.6296vw;
-      margin-left: 1vw;
-    }
-    .advantages__img {
-      width: 11.7222vw;
-      height: 11.7222vw;
-      margin-right: 2vw;
-      img {
-        width: 5.0926vw;
-        height: 5.0926vw;
-      }
-    }
-    .advantages__info {
-      width: 80%;
-      .advantages__title {
-        margin-bottom: 1.8519vw;
-        font-size: 2.8vw;
-        line-height: 3.3vw;
-      }
-      .advantages__text {
-        font-size: 2.8vw;
-        line-height: 3.3vw;
-      }
-    }
-  }
-  
-  .additional-services {
-    .del-group {
-      display: flex;
-      margin: 6vw auto 0 auto;
-      a {
-        margin: 0 auto 4vw auto;
-        &:last-child {
-          margin: 0 auto;
-        }
-      }
-      img {
-        width: 39.7222vw;
-        height: 15.7407vw;
-      }
-    }
-    .info-block__text {
-      margin: 0 0 6vw 0;
-      
-    }
-  }
-
-  // Блок с лого компаниями DelGroup
-  .del-group {
-    display: none;
-  }
-
-
-  // ==================================================//
-  // 			Страница	documentation.html			
-  // ================================================//
-
-  .documentation {
-    ul {
-      margin-top: 6.6296vw;
-      img {
-        width: 5.7778vw;
-        height: 6.1vw;
-        margin-right: 2.9259vw;
-      }
-    }
-    li {
-      margin-bottom: 3.7778vw;
-    }
-    a {
-      font-size: 2.5vw;
-      line-height: 3.2222vw;
-    }
-  }
-
-  
-  // ==================================================//
-  // 				Страница	tariff.html				
-  // ================================================//
-
-  .tariff {
-    .accordion--mob {
-      width: 100%;
-      padding: 1.5208vw 0;
-    }
-    .accordion--mob .content {
-      padding: 0; 
-    }
-    .info-block__text {
-      margin-left: 2vw;
-      font-size: 2.5vw;
-      line-height: 3.2222vw;
-    }
-  }
-  .table {
-    padding: 2.7778vw 0 2.7778vw 0;
-    margin: 4.1667vw auto 0 auto;
-  }
-
-  .table__container {
-    width: 96%;
-  }
-
-  .table__inner {
-    margin-bottom: 2.7778vw;
-    & td, & th {
-      font-size: 2.4vw;
-      line-height: 2.9vw;
-      padding: 1.6667vw 0.463vw;
-    }
-  }
-
-  .table__inner th {
-    padding-left: 2vw;
-  }
-
-  .start-tarif__thead tr {
-    & th {
-      padding: 1.1667vh 0.463vh;
-    }
-  }
-
-  .start-tarif__tbody {
-    & td {
-      padding: 1.1667vh 0.463vh;
-    }
-  }
-
-  #th--title {
-    width: 26.1458vw;
-  }
-
-  .info-block--tariff {
-    margin: 4.6296vh 0 4.6296vh 3.1111vh;;
-  }
-
-
-  // ==================================================//
-  // 			Главная	Страница	index.html			
-  // ================================================//
-
-  .banners {
-    margin-top: 0;
-  }
-
-  // Slick Slider
-  .slider {
-    & a {
-      background: transparent !important;
-    }
-    & img {
-      max-width: 100%;
-      max-height: max-content;
-      margin: 0 auto;
-    }
-  }
-  .slick-dots li {
-    width: 5vh !important;
-    height: 0.25vh !important;
-  }
-  .slick-active {
-    height: 0.25vh !important;
-  }
-
-  // Переваги DelTruck
-  .benefits {
-    margin-bottom: 3vw;
-    padding: 5vw 0;
-    flex-direction: column;
-    &__item {
-      display: flex;
-      align-items: center;
-      width: 77%;
-      height: 15.2963vw;
-      margin-bottom: 5vw;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      .item__img, .item__info  {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 25%;
-        height: 50%;
-        margin: 0;
-        img {
-          width: 7.2778vw;
-          height: 7.2778vw;
-        }
-      }
-      .item__info {
-        border-top: none;
-        border-left: 0.0926vh solid #E7E7E7;
-        padding-left: 3vw;
-        width: 52%;
-        h5 {
-          font-size: 2.8vw;
-          line-height: 3vw;
-        }
-      }
-    }
-    &__item--flight-search {
-      width: 86%;
-      height: 15.2963vw;
-      margin-bottom: 8vw;
-      .item__img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .item__info {
-        p {
-          font-size: 2.8vw;
-          line-height: 3vw;
-        }
-      }
-      .item__number {
-        top: -5.1vw;
-        left: 2vw;
-        font-size: 7.1667vw;
-        line-height: 3.3vw;
-      }
-    }
-    &__item:hover {
-      margin-top: 0;
-      margin-left: 2vw;
-    }
-  }
-
-  // Форма обратной связи на Главной Странице
-  .application {
-    flex-direction: column;
-    height: auto;
-    margin-bottom: 2vw;
-    .right-block, .left-block {
-      width: 63%;
-      margin-top: 7vw;
-      margin: 7vw auto 0 6vw;
-    }
-    .left-block {
-      padding-left: 0;
-      &__title {
-        max-width: 87%;
-        font-size: 3.4vw;
-        line-height: 4.7037vw;
-        margin-bottom: 4.6296vw;
-      }
-      &__btn {
-        margin-bottom: 4.6296vw;
-      }
-    }
-    .right-block {
-      padding-left: 0;
-      margin-bottom: 7vw;
-      width: 60%;
-      &::before {
-        top: -5vw;
-        left: 23%;
-        width: 100%;
-        transform: rotate(180deg);
-      }
-      &__text {
-        font-size: 2.8vw;
-        line-height: 4.2vw;
-        margin-bottom: 4.6296vw;
-      }
-      &__form {
-        display: flex;
-        flex-direction: column;
-        width: max-content;
-        margin-bottom: 2.7778vw;
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-      &__label {
-        font-size: 2.8vw;
-        line-height: 4.2vw;
-        margin-bottom: 1.0185vw;
-      }
-      &__input {
-        height: 7.0926vw;
-        width: 49.3148vw;
-        padding-left: 1vw;
-        font-size: 2.8vw;
-        line-height: 4.2vw;
-        &::placeholder {
-          font-size: 2.8vw;
-          line-height: 4.2vw;
-        }
-      }
-      &__btn {
-        margin-top: 6.7778vw;
-        width: 34.3519vw;
-      }
-    }  
-  }
-
-  // Блок "Как мы работаем" на index.html
-  .as-we-work {
-    margin-top: 6.6296vw;
-    .ua-map {
-      display: none;
-    }
-    .step {
-      &__item {
-        max-width: 77%;
-        margin-bottom: 5.7778vw;
-      }
-      &__item--center {
-        margin-left: 0;
-      }
-      &__number {
-        margin-right: 2.9259vw;
-        font-size: 7.1667vw;
-        line-height: 3.3vw;
-      }
-      &__text {
-        font-size: 2.8vw;
-        line-height: 4.2vw;
-      }
-    }
-  }
-
-  // Блок "Наши результаты" на index.html
-  .results {
-    flex-direction: column;
-    padding-top: 3vw;
-    margin-bottom: 9.2593vw;
-    .results__item {
+    height: 20.2963vw;
+    margin-bottom: 6vw;
+    & .item__info {
+      padding-left: 5vw;
+      width: 66%;
       justify-content: flex-start;
-      max-width: 77%;
-      margin-bottom: 4vw;
+      & h5 {
+        font-size: 3.8vw;
+        line-height: 4vw;
+      }
+    }
+  }
+
+  .as-we-work {
+    .step__text {
+      font-size: 3.8vw;
+      line-height: 5.2vw;
+    }
+    .step__item {
+      max-width: 100%;
+    }
+    .step__number {
+      margin-right: 5vw;
+      font-size: 10vw;
+      line-height: 10.3vw;
+    }
+  }
+
+  .results {
+    .results__item {
+      max-width: 100%;
+      margin-bottom: 5vw;
     }
     .results__img {
-      width: 13.7222vw;
-      height: 13.7222vw;
-      margin-right: 4vw;
-      img {
-        height: 6.6296vw;
-      }
-      #img--small {
-        height: 6.0185vw;
-      }
+      width: 18.7222vw;
+      height: 18.7222vw;
+      margin-right: 6vw;
     }
-    .results__info {
-      .results__title {
-        margin-bottom: 2vw;
-        font-size: 6.1667vw;
-        line-height: 4.4815vw;
-      }
-      .results__text {
-        font-size: 2.8vw;
-        line-height: 4.2vw;
-      }
-    }
-  }
-
-  // Блок подписки на рассылку 
-  .subs {
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 5vw;
-    &__title {
-      font-size: 2.8vw;
-      line-height: 3vw;
-      max-width: 81%;
-      margin-bottom: 5vw;
-      margin-top: 3vw;
-    }
-    &__btn {
-      width: 34.3519vw;
+    .results__info .results__title {
       margin-bottom: 3vw;
+      font-size: 8vw;
+      line-height: 9.5vw;
     }
-    &__form {
-      margin-top: -2vh;
-      margin-bottom: 3vw;
+    .results__info .results__text {
+      font-size: 3.8vw;
+      line-height: 5.2vw;
     }
-    &__label {
-      font-size: 2.8vw;
-      line-height: 3vw;
-      margin-bottom: 1.0185vw;
+  }
+
+  .application {
+    padding: 5vw;
+    & .right-block, & .left-block {
+      width: 100%;
+      margin: 0 2vw 0 2vw;
     }
-    &__input {
-      height: 7.0926vw;
-      width: 49.3148vw;
+    .left-block {
+      margin-bottom: 8vw;
+    }
+    .right-block::before {
+      top: -6vw;
+      left: 0%;
+    }
+    .right-block__text {
+      font-size: 3.8vw;
+      line-height: 5.2vw;
+      margin-bottom: 4.6296vw;
+    }
+    .right-block__form {
+      width: 100%;
+    }
+    .right-block__label {
+      font-size: 3.8vw;
+      line-height: 5.2vw;
+    }
+    .right-block__input {
+      height: 11vw;
+      width: 100%;
       padding-left: 1vw;
-      font-size: 2.8vw;
-      line-height: 3vw;
-      &::placeholder {
-        font-size: 2.8vw;
-        line-height: 3vw;
-      }
+      font-size: 3.8vw;
+      line-height: 5.2vw;
+    }
+    .right-block__btn {
+      width: 70%;
+    }
+    .left-block__btn--grey {
+      border: 0.1042vw solid #666;
     }
   }
 
 
-  // ===================================================//
-  // 			Страница	action-page-1.html		  	
-  // 			открытая страница Акции					
-  // ================================================//
 
-  .action-page {
-    flex-direction: column;
-    margin-bottom: 8.3333vw;
-    &__img {
-      width: 74.2778vw;
-      height: 44.3333vw;
-    }
-    &__info {
-      margin: 4vw 0 0 4vw;
-      .info__title {
-        max-width: 81%;
-        margin-bottom: 2.5vw;
-        font-size: 2.8vw;
-        line-height: 3.3vw;
-      }
-      .info__text {
-        max-width: 81%;
-        font-size: 2.8vw;
-        line-height: 3.3vw;
-      }
-    }
-    .info-btn {
-      margin-top: 4.6296vw;
-      flex-direction: column;
-      &__btn--grey {
-        margin: 4vw 0 0 0;
-      }
-    }
-  }
-
-
-  // ===================================================//
-  // 		Страница	coefficient.html		  		 
-  // ================================================//
-
-  .coef {
-    padding: 2.7778vw 0 2.7778vw 0;
-    margin: 4.1667vw auto 0 auto;
-  }
-
-  .table-coef {
-    .table__heading {
-      margin-bottom: 2vw;
-      th {
-        width: 30%;
-        height: 9.5556vw;
-        font-weight: normal;
-        font-size: 2.8vw;
-        line-height: 3.3vw;
-        text-transform: none;
-      }
-      th:nth-child(2) {
-        border-right: none;
-        border-left: 1px solid rgba(102, 102, 102, 0.16);
-      }
-      th:first-child {
-        width: 70%;
-        padding-left: 2vw;
-      }
-      th:last-child {
-        display: none;
-      }
-    }
-
-    .table__info {
-      & td {
-        width: 30%;
-        height: 4.7037vw;
-        font-size: 2.8vw;
-        line-height: 3.3vw;
-      }
-      td:first-child {
-        width: 70%;
-        padding-left: 2vw;
-      }
-      td:last-child {
-        display: none;
-      }
-      td:nth-child(2) {
-        border-left: 1px solid rgba(102, 102, 102, 0.16);
-        border-right: none;
-      }
-    }
-  }
-
-
-  // ===================================================//
-  // 		Страница	flight-search.html		  		 
-  // ================================================//
-
-  .car-order__heading {
-    height: 7.5556vw;
-    margin: 0 0 4.6296vw 0;
-    h2 {
-      font-size: 2.8vw;
-      line-height: 3vw;
-    }
-  }
-
-  .ac-label__left, .ac-label__right {
-    width: 50%;
-    flex-direction: column;
-    padding-top: 3vw;
-  }
-
-  .ac-label__right {
-    width: 50%;
-    position: relative;
-    &:before {
-      content: ' ';
-      position: absolute;
-      left: -15%;
-      top: 50%;
-      width: 30%;
-      height: 1px;
-      background-color: #666;
-      transform: rotate(90deg);
-    }
-  }
-
-  .flight {
-    padding: 5vw 4vw;
-    margin-bottom: 5vw;
-    .flight__heading {
-      display: none;
-    }
-    .ac-label__heading {
-      flex-direction: column;
-      height: auto;
-      border-right: none;
-      font-weight: bold;
-      font-size: 2.8vw;
-      line-height: 3vw;
-      margin-bottom: 5vw;
-      & p:first-child {
-        display: flex;
-        margin-bottom: 2vw;
-        font-weight: normal;
-        font-size: 2.5vw; 
-        line-height: 3vw;
-        color: #666;
-      }
-    }
-    .city {
-      justify-content: flex-start;
-      padding-left: 0;
-      width: 100%;
-    }
-    .date {
-      width: 100%;
-      span {
-        padding-left: 0.9259vh;
-      }
-    }
-    .free-place {
-      width: 100%;
-    }
-    .price {
-      border-right: none;
-      width: 100%;
-    }
-  }
-
-  // Форма выбора городов
-  .flight__form {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 4.6296vh;
-    .form__item {
-      display: flex;
-      flex-direction: column;
-      &:first-child {
-        margin-bottom: 3vw;
-      }
-    }
-    .form__label {
-      font-size: 2.8vw;
-      line-height: 3vw;
-      margin-bottom: 0;
-    }
-    .form__select {
-      height: 7.0926vw;
-      width: 49.3148vw;
-      padding-left: 1vw;
-      font-size: 2.8vw;
-      line-height: 3vw;
-      option,
-      option:hover,
-      option:focus {
-        font-size: 1.8vw;
-        line-height: 2vw;
-      }
-    }
-    .form__btn {
-      margin-top: 5vw;
-    }
-  }
-
-  // Аккардион на странице Пошук Рейсу
-  .ac-flight {
-    & label {
-      height: auto;
-      border: 1px solid transparent;
-    }
-    & article {
-      border: 1px solid transparent;
-      transition: ease 0.5s all;
-      .flight-info {
-        flex-direction: column;
-        margin-top: 3vw;
-      }
-      .flight-info__type {
-        width: 100%;
-        margin-bottom: 4vw;
-        padding-bottom: 4vw;
-        border-bottom: 1px solid #E7E7E7;
-      }
-      .flight-info__container {
-        width: 100%;
-        margin-bottom: 4vw;
-        padding-bottom: 4vw;
-        border-bottom: 1px solid #E7E7E7;
-        .flight-info__title {
-          padding: 0 11vw;
-        }
-      }
-      .flight-info__place {
-        width: 50%;
-      }
-      .flight-info__price {
-        width: 50%;
-      }
-      .flight-info__title {
-        font-size: 2.8vw;
-        line-height: 3vw;
-      }
-      .flight-time {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0 0 4vw 0;
-        .main__btn {
-          margin-top: 3vw;
-        }
-      }
-      & p {
-        font-size: 2.8vw;
-        line-height: 3vw;
-        margin-top: 1.5vw;
-      }
-    } 
-    & input:checked ~ article, & input:checked ~ label {
-      box-shadow: 0vh 0vh 3.7037vh rgba(236, 0, 8, 0.05);
-			border: 0.0521vw solid rgba(183, 33, 38, 0.19);
-      border-bottom: none;
-			transition: ease 0.5s all;
-    }
-    & input:checked ~ article {
-      max-height: 99vh;
-      padding: 3vw;
-      border-top: none;
-    }
-  }
 
 
 
