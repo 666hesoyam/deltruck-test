@@ -5,13 +5,20 @@
 --------------------------------------------------------------*/
 html {
   overflow-x: hidden;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100%; }
 
 body {
   font-family: 'Segoe UI';
   background-color: #fff;
   color: #303030;
-  font-style: normal; }
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+main {
+  flex: 1 0 auto; }
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -763,6 +770,64 @@ option:focus {
       transform: scale(1.02);
       transition: all .3s ease; }
 
+.accordion--mob {
+  width: 97%;
+  padding: 1.5208vw;
+  color: #303030; }
+  .accordion--mob ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .accordion--mob li {
+    padding: 0;
+    margin: 0 0 1px; }
+  .accordion--mob [type=radio], .accordion--mob [type=checkbox] {
+    display: none; }
+  .accordion--mob label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3vw;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 3vw;
+    padding: 1.5208vw; }
+    .accordion--mob label:before {
+      content: '';
+      position: absolute;
+      bottom: -2.5vw;
+      left: 8%;
+      width: 85%;
+      height: 0.1042vw;
+      background-color: #DFDFDF; }
+    .accordion--mob label p {
+      max-width: 80%; }
+  .accordion--mob .arrow img {
+    width: 4vw; }
+  .accordion--mob [type=radio]:checked ~ label, .accordion--mob [type=checkbox]:checked ~ label .arrow img {
+    transform: rotate(-180deg); }
+  .accordion--mob [type=checkbox]:checked ~ label:before {
+    bottom: -2.5vw; }
+  .accordion--mob [type=checkbox]:checked ~ label ~ .content {
+    height: auto;
+    margin-top: 5vw; }
+  .accordion--mob .content {
+    height: 0px;
+    padding: 0 1.5208vw;
+    overflow: hidden;
+    transition: all .5s ease-out; }
+    .accordion--mob .content p {
+      font-size: 2.8vw;
+      line-height: 3.3vw;
+      font-weight: normal;
+      margin: 0 0 1.5208vw; }
+    .accordion--mob .content a p {
+      margin-top: 4vw;
+      text-transform: uppercase;
+      color: #B72126;
+      font-weight: bold; }
+
 .documentation ul {
   margin-top: 4.6296vh;
   list-style-type: none; }
@@ -1161,7 +1226,7 @@ option:focus {
       z-index: 30; }
     .benefits__item--flight-search .item__info {
       background-color: #fff; }
-      .benefits__item--flight-search .item__info h5 {
+      .benefits__item--flight-search .item__info p {
         font-size: 1.4815vh;
         line-height: 1.9444vh; }
     .benefits__item--flight-search .item__number {
@@ -1676,58 +1741,56 @@ option:focus {
     .table-coef .table__info tr:hover td {
       color: #fff; }
 
+.ac-label__left, .ac-label__right {
+  display: flex;
+  width: 65%; }
+
+.ac-label__right {
+  width: 35%; }
+
 .flight {
   background-color: #FFFFFF;
   box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
   border-radius: 0.2778vh;
   padding: 4.6296vh 2.7778vh;
   margin-bottom: 9.0741vh; }
-  .flight__heading {
-    display: flex;
-    font-weight: normal;
-    margin-bottom: 1.6667vh;
-    font-size: 1.4815vh;
-    line-height: 1.9444vh;
-    color: #666; }
-  .flight .date, .flight .free-place, .flight .price {
+  .flight .ac-label__heading {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3vh;
-    border-left: 0.0926vh solid black;
+    border-right: 0.0926vh solid black;
     transition: all 0.15s ease-out; }
+    .flight .ac-label__heading p:first-child {
+      display: none; }
   .flight .city {
+    justify-content: flex-start;
     font-weight: bold;
-    padding-left: 8.7037vh; }
-    .flight .city--width {
-      width: 40%; }
+    padding-left: 8.7037vh;
+    width: 65%;
+    text-align: left; }
   .flight .date {
-    width: 31.2037vh; }
-    .flight .date time {
+    width: 35%; }
+    .flight .date span {
       color: #B72126;
       padding-left: 0.9259vh; }
-    .flight .date--width {
-      width: 31.2037vh;
-      text-align: center; }
   .flight .free-place {
-    width: 25.3704vh; }
-    .flight .free-place--width {
-      width: 25.3704vh;
-      text-align: center; }
+    width: 50%; }
   .flight .price {
     color: #B72126;
-    width: 22.6852vh; }
-    .flight .price--width {
-      width: 22.6852vh;
-      text-align: center; }
-  .flight .ac-label--white:hover .date, .flight .ac-label--white:hover .free-place, .flight .ac-label--white:hover .price {
-    height: 4vh;
-    border-left: 0.1389vh solid #B72126;
-    transition: all 0.25s ease-out; }
-  .flight .ac-label:hover .date, .flight .ac-label:hover .free-place, .flight .ac-label:hover .price {
-    height: 4vh;
-    border-left: 0.1389vh solid #B72126;
-    transition: all 0.25s ease-out; }
+    border-right: none;
+    width: 50%; }
+
+.flight__heading {
+  display: flex;
+  font-weight: normal;
+  margin-bottom: 1.6667vh;
+  font-size: 1.4815vh;
+  line-height: 1.9444vh;
+  color: #666;
+  text-align: center; }
+  .flight__heading .city {
+    padding-left: 0; }
 
 .flight__form {
   display: flex;
@@ -1768,10 +1831,10 @@ option:focus {
 .ac-flight {
   width: 100%;
   margin: 0 auto; }
-  .ac-flight .ac-label--white {
-    background-color: #fff; }
   .ac-flight .ac-label {
     background-color: #F8F8F8; }
+  .ac-flight .ac-label--white {
+    background-color: #fff; }
   .ac-flight label {
     display: flex;
     align-items: center;
@@ -1781,8 +1844,14 @@ option:focus {
     font-size: 1.6667vh;
     line-height: 2.2222vh;
     color: #303030;
+    border: 1px solid transparent;
     height: 5.5556vh;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: ease 0.5s all; }
+    .ac-flight label:hover {
+      box-shadow: 0vh 0vh 3.7037vh rgba(236, 0, 8, 0.05);
+      border: 0.0926vh solid rgba(183, 33, 38, 0.19);
+      transition: ease 0.5s all; }
   .ac-flight input:checked + label,
   .ac-flight input:checked + label:hover {
     color: #303030; }
@@ -1798,6 +1867,16 @@ option:focus {
     .ac-flight article .flight-info {
       display: flex;
       margin-top: 2vh; }
+    .ac-flight article .flight-info__type {
+      width: 65%; }
+    .ac-flight article .flight-info__container {
+      width: 35%;
+      display: flex;
+      text-align: center; }
+    .ac-flight article .flight-info__place {
+      width: 50%; }
+    .ac-flight article .flight-info__price {
+      width: 50%; }
     .ac-flight article .flight-info__title {
       font-weight: bold;
       font-size: 1.4815vh;
@@ -1806,14 +1885,6 @@ option:focus {
       margin-bottom: 0.5vh; }
       .ac-flight article .flight-info__title span {
         color: #B72126; }
-    .ac-flight article .flight-info__name {
-      width: 65%; }
-    .ac-flight article .flight-info__place {
-      text-align: center;
-      width: 25.3704vh; }
-    .ac-flight article .flight-info__price {
-      text-align: center;
-      width: 22.6852vh; }
     .ac-flight article p {
       font-weight: normal;
       font-size: 1.4815vh;
@@ -1842,7 +1913,7 @@ option:focus {
       transform: scale(1.02);
       transition: all .3s ease; }
 
-#subscribe__box, #order__box {
+#subscribe__box, #request__box {
   display: none;
   position: fixed;
   right: 2vh;
@@ -1856,7 +1927,7 @@ option:focus {
   box-shadow: 0vh 0.463vh 0.463vh 0.2778vh rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 0.2778vh;
   border-radius: 0.2778vh; }
-  #subscribe__box #box_text, #order__box #box_text {
+  #subscribe__box #box_text, #request__box #box_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1864,21 +1935,39 @@ option:focus {
     height: 100%;
     width: 100%;
     margin-bottom: -2vh; }
-    #subscribe__box #box_text p, #order__box #box_text p {
+    #subscribe__box #box_text p, #request__box #box_text p {
       font-family: 'Segoe UI';
       font-weight: normal;
       font-size: 1.8519vh;
       line-height: 2.5vh;
       text-align: center;
       color: #303030; }
-    #subscribe__box #box_text img, #order__box #box_text img {
+    #subscribe__box #box_text img, #request__box #box_text img {
       margin: -4vh 0 2vh 0;
       width: 6.0185vh; }
 
 .header--mobile, .footer--mobile {
   display: none; }
 
+.desctop-hide {
+  display: none; }
+
+.desctop-hide--fl {
+  display: none; }
+
 @media screen and (orientation: portrait) {
+  .desctop-hide--fl {
+    display: flex; }
+  .desctop-hide {
+    display: block; }
+  .mobile-hide {
+    display: none; }
+  body {
+    overflow-x: hidden; }
+  option,
+  option:hover,
+  option:focus {
+    font-size: 1.5vw; }
   .in-dev {
     margin-top: 20vw; }
     .in-dev h1 {
@@ -1887,15 +1976,17 @@ option:focus {
     max-width: 100%;
     padding: 0 3vw; }
   .main__btn {
-    width: 60.2037vw;
-    height: 8.8889vw;
-    font-size: 2.5519vw;
-    line-height: 3.4444vw; }
+    width: 49.2037vw;
+    height: 8vw;
+    font-size: 2.7vw;
+    line-height: 3.4444vw;
+    border: 0.1042vw solid #B72126; }
   .header {
     display: none; }
   .header--mobile {
     display: block;
-    height: 13.7778vw; }
+    height: 13.7778vw;
+    margin-bottom: 5vw; }
   .header__wrapper {
     justify-content: flex-end; }
   .header__logo {
@@ -1954,7 +2045,7 @@ option:focus {
         margin: 0 5vw 5vw 0;
         text-align: right; }
       #nav li:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         backface-visibility: hidden; }
   .about-block {
     display: none; }
@@ -1992,28 +2083,30 @@ option:focus {
         height: 4.037vw; }
   .heading-block {
     margin-bottom: 6.4815vw; }
+    .heading-block .container--mobile {
+      padding: 0; }
   .heading__title {
     max-width: 89.2407vw;
     padding: 2vw 0 4.1852vw 4.1111vw;
     font-size: 4.6296vw;
     line-height: 5.6481vw; }
   .heading--transit {
-    height: 32.2037vw; }
+    height: 36.2037vw; }
   .heading--additional-services {
-    height: 28.2407vw; }
+    height: 25.2407vw; }
     .heading--additional-services .heading__title {
       max-width: 111vw;
-      padding: 5vw 0 6.5vw 11.1111vw; }
+      padding: 1vw 0 4.5vw 6.1111vw; }
   .heading--news {
-    height: 28.2407vw; }
+    height: 25.2407vw; }
     .heading--news .heading__title {
       max-width: 111vw;
-      padding: 5vw 0 2.5vw 11.1111vw; }
+      padding: 1vw 0 4.5vw 6.1111vw; }
   .heading--flight-search {
-    height: 28.2407vw; }
+    height: 25.2407vw; }
     .heading--flight-search .heading__title {
       max-width: 111vw;
-      padding: 5vw 0 4.5vw 11.1111vw; }
+      padding: 1vw 0 4.5vw 6.1111vw; }
   .crumbs {
     display: none; }
   .order {
@@ -2026,8 +2119,8 @@ option:focus {
       display: none; }
     .info__text {
       max-width: 84.8519vw;
-      font-size: 3.1519vw;
-      line-height: 3.4444vw; }
+      font-size: 2.8vw;
+      line-height: 3.3vw; }
     .info__img {
       display: none; }
   .request {
@@ -2039,27 +2132,27 @@ option:focus {
     margin: 0 auto 4.1296vw auto; }
     .form__label {
       margin-bottom: 1.0185vw;
-      font-size: 3.1519vw;
-      line-height: 3.4444vw; }
+      font-size: 2.8vw;
+      line-height: 3.3vw; }
     .form__input {
-      height: 7.8889vw;
+      height: 7vw;
       padding-left: 1vw;
-      font-size: 3.1519vw;
-      line-height: 3.4444vw; }
+      font-size: 2.8vw;
+      line-height: 3.3vw; }
       .form__input::placeholder {
-        font-size: 3.3519vw;
-        line-height: 3.4444vw; }
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
     .form__select {
-      height: 7.8889vw;
+      height: 7vw;
       padding-left: 1vw;
-      font-size: 3.1519vw;
-      line-height: 3.4444vw;
+      font-size: 2.8vw;
+      line-height: 3.3vw;
       background-size: 2.8519vw 1.8333vw; }
   .form--small {
     width: 43%;
     margin: 0 0 4vw 0; }
   .tabs {
-    height: 199.3704vw;
+    height: 184.3704vw;
     margin: 3vw auto 0 auto; }
     .tabs__li {
       width: 50%; }
@@ -2078,4 +2171,1147 @@ option:focus {
       line-height: 2.5vw;
       padding: 0 0.5vw 0.5vw 0.5vw; }
     .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
-      flex-direction: column; } }
+      flex-direction: column; }
+  .info-block {
+    margin-bottom: 0; }
+    .info-block__title {
+      padding-bottom: 3.3889vw;
+      margin-bottom: 4.7778vw;
+      font-size: 3.4vw;
+      line-height: 3.7037vw; }
+      .info-block__title::before {
+        width: 12.6111vw;
+        height: 0.2778vw; }
+    .info-block__text {
+      margin-left: 5.1111vw;
+      font-size: 2.8vw;
+      line-height: 3.3vw; }
+      .info-block__text--car-order p {
+        line-height: 3vw; }
+      .info-block__text #black-span {
+        color: #000;
+        margin-left: 5vw; }
+    .info-block__list li {
+      margin-left: 2vw; }
+      .info-block__list li:before {
+        top: 41%;
+        left: -1vw;
+        width: 0.4167vw;
+        height: 0.4167vw; }
+  .info-block__advantages {
+    padding-top: 3vw; }
+    .info-block__advantages .advantages__item {
+      max-width: 100%;
+      margin-bottom: 4.6296vw;
+      margin-left: 1vw; }
+    .info-block__advantages .advantages__img {
+      width: 11.7222vw;
+      height: 11.7222vw;
+      margin-right: 2vw; }
+      .info-block__advantages .advantages__img img {
+        width: 5.0926vw;
+        height: 5.0926vw; }
+    .info-block__advantages .advantages__info {
+      width: 80%; }
+      .info-block__advantages .advantages__info .advantages__title {
+        margin-bottom: 1.8519vw;
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
+      .info-block__advantages .advantages__info .advantages__text {
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
+  .additional-services .del-group {
+    display: flex;
+    margin: 6vw auto 0 auto; }
+    .additional-services .del-group a {
+      margin: 0 auto 4vw auto; }
+      .additional-services .del-group a:last-child {
+        margin: 0 auto; }
+    .additional-services .del-group img {
+      width: 39.7222vw;
+      height: 15.7407vw; }
+  .additional-services .info-block__text {
+    margin: 0 0 6vw 0; }
+  .del-group {
+    display: none; }
+  .documentation ul {
+    margin-top: 6.6296vw; }
+    .documentation ul img {
+      width: 5.7778vw;
+      height: 6.1vw;
+      margin-right: 2.9259vw; }
+  .documentation li {
+    margin-bottom: 3.7778vw; }
+  .documentation a {
+    font-size: 2.5vw;
+    line-height: 3.2222vw; }
+  .tariff .accordion--mob {
+    width: 100%;
+    padding: 1.5208vw 0; }
+  .tariff .accordion--mob .content {
+    padding: 0; }
+  .tariff .info-block__text {
+    margin-left: 2vw;
+    font-size: 2.5vw;
+    line-height: 3.2222vw; }
+  .table {
+    padding: 2.7778vw 0 2.7778vw 0;
+    margin: 4.1667vw auto 0 auto; }
+  .table__container {
+    width: 96%; }
+  .table__inner {
+    margin-bottom: 2.7778vw; }
+    .table__inner td, .table__inner th {
+      font-size: 2.4vw;
+      line-height: 2.9vw;
+      padding: 1.6667vw 0.463vw; }
+  .table__inner th {
+    padding-left: 2vw; }
+  .start-tarif__thead tr th {
+    padding: 1.1667vh 0.463vh; }
+  .start-tarif__tbody td {
+    padding: 1.1667vh 0.463vh; }
+  #th--title {
+    width: 26.1458vw; }
+  .info-block--tariff {
+    margin: 4.6296vh 0 4.6296vh 3.1111vh; }
+  .banners {
+    margin-top: 0; }
+  .slider a {
+    background: transparent !important; }
+  .slider img {
+    max-width: 100%;
+    max-height: max-content;
+    margin: 0 auto; }
+  .slick-dots li {
+    width: 5vh !important;
+    height: 0.25vh !important; }
+  .slick-active {
+    height: 0.25vh !important; }
+  .benefits {
+    margin-bottom: 3vw;
+    padding: 5vw 0;
+    flex-direction: column; }
+    .benefits__item {
+      display: flex;
+      align-items: center;
+      width: 77%;
+      height: 15.2963vw;
+      margin-bottom: 5vw; }
+      .benefits__item:last-child {
+        margin-bottom: 0; }
+      .benefits__item .item__img, .benefits__item .item__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 50%;
+        margin: 0; }
+        .benefits__item .item__img img, .benefits__item .item__info img {
+          width: 7.2778vw;
+          height: 7.2778vw; }
+      .benefits__item .item__info {
+        border-top: none;
+        border-left: 0.0926vh solid #E7E7E7;
+        padding-left: 3vw;
+        width: 52%; }
+        .benefits__item .item__info h5 {
+          font-size: 2.8vw;
+          line-height: 3vw; }
+    .benefits__item--flight-search {
+      width: 86%;
+      height: 15.2963vw;
+      margin-bottom: 8vw; }
+      .benefits__item--flight-search .item__img {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .benefits__item--flight-search .item__info p {
+        font-size: 2.8vw;
+        line-height: 3vw; }
+      .benefits__item--flight-search .item__number {
+        top: -5.1vw;
+        left: 2vw;
+        font-size: 7.1667vw;
+        line-height: 3.3vw; }
+    .benefits__item:hover {
+      margin-top: 0;
+      margin-left: 2vw; }
+  .application {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2vw; }
+    .application .right-block, .application .left-block {
+      width: 63%;
+      margin-top: 7vw;
+      margin: 7vw auto 0 6vw; }
+    .application .left-block {
+      padding-left: 0; }
+      .application .left-block__title {
+        max-width: 87%;
+        font-size: 3.4vw;
+        line-height: 4.7037vw;
+        margin-bottom: 4.6296vw; }
+      .application .left-block__btn {
+        margin-bottom: 4.6296vw; }
+    .application .right-block {
+      padding-left: 0;
+      margin-bottom: 7vw;
+      width: 60%; }
+      .application .right-block::before {
+        top: -5vw;
+        left: 23%;
+        width: 100%;
+        transform: rotate(180deg); }
+      .application .right-block__text {
+        font-size: 2.8vw;
+        line-height: 4.2vw;
+        margin-bottom: 4.6296vw; }
+      .application .right-block__form {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        margin-bottom: 2.7778vw; }
+        .application .right-block__form:last-child {
+          margin-bottom: 0; }
+      .application .right-block__label {
+        font-size: 2.8vw;
+        line-height: 4.2vw;
+        margin-bottom: 1.0185vw; }
+      .application .right-block__input {
+        height: 7.0926vw;
+        width: 49.3148vw;
+        padding-left: 1vw;
+        font-size: 2.8vw;
+        line-height: 4.2vw; }
+        .application .right-block__input::placeholder {
+          font-size: 2.8vw;
+          line-height: 4.2vw; }
+      .application .right-block__btn {
+        margin-top: 6.7778vw;
+        width: 34.3519vw; }
+  .as-we-work {
+    margin-top: 6.6296vw; }
+    .as-we-work .ua-map {
+      display: none; }
+    .as-we-work .step__item {
+      max-width: 77%;
+      margin-bottom: 5.7778vw; }
+    .as-we-work .step__item--center {
+      margin-left: 0; }
+    .as-we-work .step__number {
+      margin-right: 2.9259vw;
+      font-size: 7.1667vw;
+      line-height: 3.3vw; }
+    .as-we-work .step__text {
+      font-size: 2.8vw;
+      line-height: 4.2vw; }
+  .results {
+    flex-direction: column;
+    padding-top: 3vw;
+    margin-bottom: 9.2593vw; }
+    .results .results__item {
+      justify-content: flex-start;
+      max-width: 77%;
+      margin-bottom: 4vw; }
+    .results .results__img {
+      width: 13.7222vw;
+      height: 13.7222vw;
+      margin-right: 4vw; }
+      .results .results__img img {
+        height: 6.6296vw; }
+      .results .results__img #img--small {
+        height: 6.0185vw; }
+    .results .results__info .results__title {
+      margin-bottom: 2vw;
+      font-size: 6.1667vw;
+      line-height: 4.4815vw; }
+    .results .results__info .results__text {
+      font-size: 2.8vw;
+      line-height: 4.2vw; }
+  .subs {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw; }
+    .subs__title {
+      font-size: 2.8vw;
+      line-height: 3vw;
+      max-width: 81%;
+      margin-bottom: 5vw;
+      margin-top: 3vw; }
+    .subs__btn {
+      width: 34.3519vw;
+      margin-bottom: 3vw; }
+    .subs__form {
+      margin-top: -2vh;
+      margin-bottom: 3vw; }
+    .subs__label {
+      font-size: 2.8vw;
+      line-height: 3vw;
+      margin-bottom: 1.0185vw; }
+    .subs__input {
+      height: 7.0926vw;
+      width: 49.3148vw;
+      padding-left: 1vw;
+      font-size: 2.8vw;
+      line-height: 3vw; }
+      .subs__input::placeholder {
+        font-size: 2.8vw;
+        line-height: 3vw; }
+  .action-page {
+    flex-direction: column;
+    margin-bottom: 8.3333vw; }
+    .action-page__img {
+      width: 74.2778vw;
+      height: 44.3333vw; }
+    .action-page__info {
+      margin: 4vw 0 0 4vw; }
+      .action-page__info .info__title {
+        max-width: 81%;
+        margin-bottom: 2.5vw;
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
+      .action-page__info .info__text {
+        max-width: 81%;
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
+    .action-page .info-btn {
+      margin-top: 4.6296vw;
+      flex-direction: column; }
+      .action-page .info-btn__btn--grey {
+        margin: 4vw 0 0 0; }
+  .coef {
+    padding: 2.7778vw 0 2.7778vw 0;
+    margin: 4.1667vw auto 0 auto; }
+  .table-coef .table__heading {
+    margin-bottom: 2vw; }
+    .table-coef .table__heading th {
+      width: 30%;
+      height: 9.5556vw;
+      font-weight: normal;
+      font-size: 2.8vw;
+      line-height: 3.3vw;
+      text-transform: none; }
+    .table-coef .table__heading th:nth-child(2) {
+      border-right: none;
+      border-left: 1px solid rgba(102, 102, 102, 0.16); }
+    .table-coef .table__heading th:first-child {
+      width: 70%;
+      padding-left: 2vw; }
+    .table-coef .table__heading th:last-child {
+      display: none; }
+  .table-coef .table__info td {
+    width: 30%;
+    height: 4.7037vw;
+    font-size: 2.8vw;
+    line-height: 3.3vw; }
+  .table-coef .table__info td:first-child {
+    width: 70%;
+    padding-left: 2vw; }
+  .table-coef .table__info td:last-child {
+    display: none; }
+  .table-coef .table__info td:nth-child(2) {
+    border-left: 1px solid rgba(102, 102, 102, 0.16);
+    border-right: none; }
+  .car-order__heading {
+    height: 7.5556vw;
+    margin: 0 0 4.6296vw 0; }
+    .car-order__heading h2 {
+      font-size: 2.8vw;
+      line-height: 3vw; }
+  .ac-label__left, .ac-label__right {
+    width: 50%;
+    flex-direction: column;
+    padding-top: 3vw; }
+  .ac-label__right {
+    width: 50%;
+    position: relative; }
+    .ac-label__right:before {
+      content: ' ';
+      position: absolute;
+      left: -15%;
+      top: 50%;
+      width: 30%;
+      height: 1px;
+      background-color: #666;
+      transform: rotate(90deg); }
+  .flight {
+    padding: 5vw 4vw;
+    margin-bottom: 5vw; }
+    .flight .flight__heading {
+      display: none; }
+    .flight .ac-label__heading {
+      flex-direction: column;
+      height: auto;
+      border-right: none;
+      font-weight: bold;
+      font-size: 2.8vw;
+      line-height: 3vw;
+      margin-bottom: 5vw; }
+      .flight .ac-label__heading p:first-child {
+        display: flex;
+        margin-bottom: 2vw;
+        font-weight: normal;
+        font-size: 2.5vw;
+        line-height: 3vw;
+        color: #666; }
+    .flight .city {
+      justify-content: flex-start;
+      padding-left: 0;
+      width: 100%; }
+    .flight .date {
+      width: 100%; }
+      .flight .date span {
+        padding-left: 0.9259vh; }
+    .flight .free-place {
+      width: 100%; }
+    .flight .price {
+      border-right: none;
+      width: 100%; }
+  .flight__form {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 4.6296vh; }
+    .flight__form .form__item {
+      display: flex;
+      flex-direction: column; }
+      .flight__form .form__item:first-child {
+        margin-bottom: 3vw; }
+    .flight__form .form__label {
+      font-size: 2.8vw;
+      line-height: 3vw;
+      margin-bottom: 0; }
+    .flight__form .form__select {
+      height: 7.0926vw;
+      width: 49.3148vw;
+      padding-left: 1vw;
+      font-size: 2.8vw;
+      line-height: 3vw; }
+      .flight__form .form__select option,
+      .flight__form .form__select option:hover,
+      .flight__form .form__select option:focus {
+        font-size: 1.8vw;
+        line-height: 2vw; }
+    .flight__form .form__btn {
+      margin-top: 5vw; }
+  .ac-flight label {
+    height: auto;
+    border: 1px solid transparent; }
+  .ac-flight article {
+    border: 1px solid transparent;
+    transition: ease 0.5s all; }
+    .ac-flight article .flight-info {
+      flex-direction: column;
+      margin-top: 3vw; }
+    .ac-flight article .flight-info__type {
+      width: 100%;
+      margin-bottom: 4vw;
+      padding-bottom: 4vw;
+      border-bottom: 1px solid #E7E7E7; }
+    .ac-flight article .flight-info__container {
+      width: 100%;
+      margin-bottom: 4vw;
+      padding-bottom: 4vw;
+      border-bottom: 1px solid #E7E7E7; }
+      .ac-flight article .flight-info__container .flight-info__title {
+        padding: 0 11vw; }
+    .ac-flight article .flight-info__place {
+      width: 50%; }
+    .ac-flight article .flight-info__price {
+      width: 50%; }
+    .ac-flight article .flight-info__title {
+      font-size: 2.8vw;
+      line-height: 3vw; }
+    .ac-flight article .flight-time {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 0 4vw 0; }
+      .ac-flight article .flight-time .main__btn {
+        margin-top: 3vw; }
+    .ac-flight article p {
+      font-size: 2.8vw;
+      line-height: 3vw;
+      margin-top: 1.5vw; }
+  .ac-flight input:checked ~ article, .ac-flight input:checked ~ label {
+    box-shadow: 0vh 0vh 3.7037vh rgba(236, 0, 8, 0.05);
+    border: 0.0521vw solid rgba(183, 33, 38, 0.19);
+    border-bottom: none;
+    transition: ease 0.5s all; }
+  .ac-flight input:checked ~ article {
+    max-height: 99vh;
+    padding: 3vw;
+    border-top: none; } }
+
+@media screen and (max-width: 568px) and (orientation: portrait) {
+  option,
+  option:hover,
+  option:focus {
+    font-size: 1.5vw; }
+  .main__btn {
+    width: 49.2037vw;
+    height: 8vw;
+    font-size: 2.7vw;
+    line-height: 3.4444vw;
+    border: 0.1042vw solid #B72126; }
+  .header {
+    display: none; }
+  .header--mobile {
+    display: block;
+    height: 13.7778vw;
+    margin-bottom: 5vw; }
+  .header__wrapper {
+    justify-content: flex-end; }
+  .header__logo {
+    width: 27.037vw;
+    height: 10.3704vw; }
+  .header__hot-line {
+    width: fit-content;
+    margin-right: 8vw; }
+  .header__nav {
+    display: none; }
+  .mob-nav {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 5vw;
+    position: relative; }
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    width: 6vw;
+    height: 6vw; }
+    .nav-btn--open {
+      width: 5.5625vw;
+      height: 2.8333vw; }
+    .nav-btn--close {
+      width: 7.5625vw;
+      height: 4.8333vw; }
+  #nav {
+    position: fixed;
+    z-index: 100;
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background-color: #7D7D7D;
+    transition: all 1s; }
+    #nav:not(:target) {
+      right: 0;
+      height: 100vw;
+      width: 0; }
+    #nav:target {
+      right: 0;
+      height: 100%;
+      width: 100%; }
+    #nav ul {
+      padding: 5vw 0 0 10vw; }
+    #nav li {
+      font-size: 3vw;
+      margin-top: 4vw;
+      transition: all 0.5s;
+      list-style-type: none;
+      color: #fff;
+      text-align: left;
+      text-transform: uppercase; }
+      #nav li:first-child {
+        margin: 0 5vw 5vw 0;
+        text-align: right; }
+      #nav li:hover {
+        transform: scale(1.05);
+        backface-visibility: hidden; }
+  .about-block {
+    display: none; }
+  .footer {
+    display: none;
+    margin-top: 10.1481vw; }
+    .footer-info {
+      padding-top: 6.0556vw;
+      flex-direction: column; }
+      .footer-info__btn {
+        margin: 0 0 4vw 0; }
+    .footer-adress {
+      padding-bottom: 5.2407vw;
+      margin-top: 5vw; }
+      .footer-adress p {
+        font-size: 2.2963vw;
+        line-height: 3.8519vw; }
+  .footer--mobile {
+    display: block; }
+    .footer--mobile .number__num {
+      font-size: 4.2407vw;
+      line-height: 5.963vw; }
+    .footer--mobile .number__title {
+      font-size: 2.5vw;
+      line-height: 2.5vw; }
+    .footer--mobile .hot-line__alert {
+      margin-left: 8vw;
+      font-size: 2.5vw;
+      line-height: 2.5vw; }
+    .footer--mobile .hot-line__icon {
+      width: 6.1963vw;
+      height: 6.1963vw; }
+      .footer--mobile .hot-line__icon img {
+        width: 4.037vw;
+        height: 4.037vw; }
+  .heading-block {
+    margin-bottom: 6.4815vw; }
+    .heading-block .container--mobile {
+      padding: 0; }
+  .heading__title {
+    max-width: 89.2407vw;
+    padding: 2vw 0 4.1852vw 4.1111vw;
+    font-size: 4.6296vw;
+    line-height: 5.6481vw; }
+  .heading--transit {
+    height: 36.2037vw; }
+  .heading--additional-services {
+    height: 25.2407vw; }
+    .heading--additional-services .heading__title {
+      max-width: 111vw;
+      padding: 1vw 0 4.5vw 6.1111vw; }
+  .heading--news {
+    height: 25.2407vw; }
+    .heading--news .heading__title {
+      max-width: 111vw;
+      padding: 1vw 0 4.5vw 6.1111vw; }
+  .heading--flight-search {
+    height: 25.2407vw; }
+    .heading--flight-search .heading__title {
+      max-width: 111vw;
+      padding: 1vw 0 4.5vw 6.1111vw; }
+  .crumbs {
+    display: none; }
+  .order {
+    margin-top: 8.3333vw; }
+  .info {
+    width: 100%;
+    margin: 0 auto;
+    padding: 6.7222vw 5.5556vw 3.2407vw 5.5556vw; }
+    .info__sub-title {
+      display: none; }
+    .info__text {
+      max-width: 84.8519vw;
+      font-size: 2.8vw;
+      line-height: 3.3vw; }
+    .info__img {
+      display: none; }
+  .request {
+    width: 80%;
+    padding: 4.7222vw 5.5556vw 3.2407vw 5.5556vw; }
+    .request__group {
+      width: 100%; }
+  .form {
+    margin: 0 auto 4.1296vw auto; }
+    .form__label {
+      margin-bottom: 1.0185vw;
+      font-size: 2.8vw;
+      line-height: 3.3vw; }
+    .form__input {
+      height: 7vw;
+      padding-left: 1vw;
+      font-size: 2.8vw;
+      line-height: 3.3vw; }
+      .form__input::placeholder {
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
+    .form__select {
+      height: 7vw;
+      padding-left: 1vw;
+      font-size: 2.8vw;
+      line-height: 3.3vw;
+      background-size: 2.8519vw 1.8333vw; }
+  .form--small {
+    width: 43%;
+    margin: 0 0 4vw 0; }
+  .tabs {
+    height: 184.3704vw;
+    margin: 3vw auto 0 auto; }
+    .tabs__li {
+      width: 50%; }
+    .tabs__label {
+      height: 10.3333vw;
+      top: -3.6vw;
+      margin-bottom: 6.4815vw;
+      font-size: 2.3667vw;
+      line-height: 3.2vw;
+      border-radius: 0.2778vw 0.2778vw 0vw 0vw; }
+      .tabs__label h3 {
+        max-width: 80%; }
+    .tabs .tab-content {
+      top: 5.3vw;
+      font-size: 1.7vw;
+      line-height: 2.5vw;
+      padding: 0 0.5vw 0.5vw 0.5vw; }
+    .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+      flex-direction: column; }
+  .info-block {
+    margin-bottom: 0; }
+    .info-block__title {
+      padding-bottom: 3.3889vw;
+      margin-bottom: 4.7778vw;
+      font-size: 3.4vw;
+      line-height: 3.7037vw; }
+      .info-block__title::before {
+        width: 12.6111vw;
+        height: 0.2778vw; }
+    .info-block__text {
+      margin-left: 5.1111vw;
+      font-size: 2.8vw;
+      line-height: 3.3vw; }
+      .info-block__text--car-order p {
+        line-height: 3vw; }
+      .info-block__text #black-span {
+        color: #000;
+        margin-left: 5vw; }
+    .info-block__list li {
+      margin-left: 2vw; }
+      .info-block__list li:before {
+        top: 41%;
+        left: -1vw;
+        width: 0.4167vw;
+        height: 0.4167vw; }
+  .info-block__advantages {
+    padding-top: 3vw; }
+    .info-block__advantages .advantages__item {
+      max-width: 100%;
+      margin-bottom: 4.6296vw;
+      margin-left: 1vw; }
+    .info-block__advantages .advantages__img {
+      width: 11.7222vw;
+      height: 11.7222vw;
+      margin-right: 2vw; }
+      .info-block__advantages .advantages__img img {
+        width: 5.0926vw;
+        height: 5.0926vw; }
+    .info-block__advantages .advantages__info {
+      width: 80%; }
+      .info-block__advantages .advantages__info .advantages__title {
+        margin-bottom: 1.8519vw;
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
+      .info-block__advantages .advantages__info .advantages__text {
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
+  .additional-services .del-group {
+    display: flex;
+    margin: 6vw auto 0 auto; }
+    .additional-services .del-group a {
+      margin: 0 auto 4vw auto; }
+      .additional-services .del-group a:last-child {
+        margin: 0 auto; }
+    .additional-services .del-group img {
+      width: 39.7222vw;
+      height: 15.7407vw; }
+  .additional-services .info-block__text {
+    margin: 0 0 6vw 0; }
+  .del-group {
+    display: none; }
+  .documentation ul {
+    margin-top: 6.6296vw; }
+    .documentation ul img {
+      width: 5.7778vw;
+      height: 6.1vw;
+      margin-right: 2.9259vw; }
+  .documentation li {
+    margin-bottom: 3.7778vw; }
+  .documentation a {
+    font-size: 2.5vw;
+    line-height: 3.2222vw; }
+  .tariff .accordion--mob {
+    width: 100%;
+    padding: 1.5208vw 0; }
+  .tariff .accordion--mob .content {
+    padding: 0; }
+  .tariff .info-block__text {
+    margin-left: 2vw;
+    font-size: 2.5vw;
+    line-height: 3.2222vw; }
+  .table {
+    padding: 2.7778vw 0 2.7778vw 0;
+    margin: 4.1667vw auto 0 auto; }
+  .table__container {
+    width: 96%; }
+  .table__inner {
+    margin-bottom: 2.7778vw; }
+    .table__inner td, .table__inner th {
+      font-size: 2.4vw;
+      line-height: 2.9vw;
+      padding: 1.6667vw 0.463vw; }
+  .table__inner th {
+    padding-left: 2vw; }
+  .start-tarif__thead tr th {
+    padding: 1.1667vh 0.463vh; }
+  .start-tarif__tbody td {
+    padding: 1.1667vh 0.463vh; }
+  #th--title {
+    width: 26.1458vw; }
+  .info-block--tariff {
+    margin: 4.6296vh 0 4.6296vh 3.1111vh; }
+  .banners {
+    margin-top: 0; }
+  .slider a {
+    background: transparent !important; }
+  .slider img {
+    max-width: 100%;
+    max-height: max-content;
+    margin: 0 auto; }
+  .slick-dots li {
+    width: 5vh !important;
+    height: 0.25vh !important; }
+  .slick-active {
+    height: 0.25vh !important; }
+  .benefits {
+    margin-bottom: 3vw;
+    padding: 5vw 0;
+    flex-direction: column; }
+    .benefits__item {
+      display: flex;
+      align-items: center;
+      width: 77%;
+      height: 15.2963vw;
+      margin-bottom: 5vw; }
+      .benefits__item:last-child {
+        margin-bottom: 0; }
+      .benefits__item .item__img, .benefits__item .item__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 50%;
+        margin: 0; }
+        .benefits__item .item__img img, .benefits__item .item__info img {
+          width: 7.2778vw;
+          height: 7.2778vw; }
+      .benefits__item .item__info {
+        border-top: none;
+        border-left: 0.0926vh solid #E7E7E7;
+        padding-left: 3vw;
+        width: 52%; }
+        .benefits__item .item__info h5 {
+          font-size: 2.8vw;
+          line-height: 3vw; }
+    .benefits__item--flight-search {
+      width: 86%;
+      height: 15.2963vw;
+      margin-bottom: 8vw; }
+      .benefits__item--flight-search .item__img {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .benefits__item--flight-search .item__info p {
+        font-size: 2.8vw;
+        line-height: 3vw; }
+      .benefits__item--flight-search .item__number {
+        top: -5.1vw;
+        left: 2vw;
+        font-size: 7.1667vw;
+        line-height: 3.3vw; }
+    .benefits__item:hover {
+      margin-top: 0;
+      margin-left: 2vw; }
+  .application {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2vw; }
+    .application .right-block, .application .left-block {
+      width: 63%;
+      margin-top: 7vw;
+      margin: 7vw auto 0 6vw; }
+    .application .left-block {
+      padding-left: 0; }
+      .application .left-block__title {
+        max-width: 87%;
+        font-size: 3.4vw;
+        line-height: 4.7037vw;
+        margin-bottom: 4.6296vw; }
+      .application .left-block__btn {
+        margin-bottom: 4.6296vw; }
+    .application .right-block {
+      padding-left: 0;
+      margin-bottom: 7vw;
+      width: 60%; }
+      .application .right-block::before {
+        top: -5vw;
+        left: 23%;
+        width: 100%;
+        transform: rotate(180deg); }
+      .application .right-block__text {
+        font-size: 2.8vw;
+        line-height: 4.2vw;
+        margin-bottom: 4.6296vw; }
+      .application .right-block__form {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        margin-bottom: 2.7778vw; }
+        .application .right-block__form:last-child {
+          margin-bottom: 0; }
+      .application .right-block__label {
+        font-size: 2.8vw;
+        line-height: 4.2vw;
+        margin-bottom: 1.0185vw; }
+      .application .right-block__input {
+        height: 7.0926vw;
+        width: 49.3148vw;
+        padding-left: 1vw;
+        font-size: 2.8vw;
+        line-height: 4.2vw; }
+        .application .right-block__input::placeholder {
+          font-size: 2.8vw;
+          line-height: 4.2vw; }
+      .application .right-block__btn {
+        margin-top: 6.7778vw;
+        width: 34.3519vw; }
+  .as-we-work {
+    margin-top: 6.6296vw; }
+    .as-we-work .ua-map {
+      display: none; }
+    .as-we-work .step__item {
+      max-width: 77%;
+      margin-bottom: 5.7778vw; }
+    .as-we-work .step__item--center {
+      margin-left: 0; }
+    .as-we-work .step__number {
+      margin-right: 2.9259vw;
+      font-size: 7.1667vw;
+      line-height: 3.3vw; }
+    .as-we-work .step__text {
+      font-size: 2.8vw;
+      line-height: 4.2vw; }
+  .results {
+    flex-direction: column;
+    padding-top: 3vw;
+    margin-bottom: 9.2593vw; }
+    .results .results__item {
+      justify-content: flex-start;
+      max-width: 77%;
+      margin-bottom: 4vw; }
+    .results .results__img {
+      width: 13.7222vw;
+      height: 13.7222vw;
+      margin-right: 4vw; }
+      .results .results__img img {
+        height: 6.6296vw; }
+      .results .results__img #img--small {
+        height: 6.0185vw; }
+    .results .results__info .results__title {
+      margin-bottom: 2vw;
+      font-size: 6.1667vw;
+      line-height: 4.4815vw; }
+    .results .results__info .results__text {
+      font-size: 2.8vw;
+      line-height: 4.2vw; }
+  .subs {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw; }
+    .subs__title {
+      font-size: 2.8vw;
+      line-height: 3vw;
+      max-width: 81%;
+      margin-bottom: 5vw;
+      margin-top: 3vw; }
+    .subs__btn {
+      width: 34.3519vw;
+      margin-bottom: 3vw; }
+    .subs__form {
+      margin-top: -2vh;
+      margin-bottom: 3vw; }
+    .subs__label {
+      font-size: 2.8vw;
+      line-height: 3vw;
+      margin-bottom: 1.0185vw; }
+    .subs__input {
+      height: 7.0926vw;
+      width: 49.3148vw;
+      padding-left: 1vw;
+      font-size: 2.8vw;
+      line-height: 3vw; }
+      .subs__input::placeholder {
+        font-size: 2.8vw;
+        line-height: 3vw; }
+  .action-page {
+    flex-direction: column;
+    margin-bottom: 8.3333vw; }
+    .action-page__img {
+      width: 74.2778vw;
+      height: 44.3333vw; }
+    .action-page__info {
+      margin: 4vw 0 0 4vw; }
+      .action-page__info .info__title {
+        max-width: 81%;
+        margin-bottom: 2.5vw;
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
+      .action-page__info .info__text {
+        max-width: 81%;
+        font-size: 2.8vw;
+        line-height: 3.3vw; }
+    .action-page .info-btn {
+      margin-top: 4.6296vw;
+      flex-direction: column; }
+      .action-page .info-btn__btn--grey {
+        margin: 4vw 0 0 0; }
+  .coef {
+    padding: 2.7778vw 0 2.7778vw 0;
+    margin: 4.1667vw auto 0 auto; }
+  .table-coef .table__heading {
+    margin-bottom: 2vw; }
+    .table-coef .table__heading th {
+      width: 30%;
+      height: 9.5556vw;
+      font-weight: normal;
+      font-size: 2.8vw;
+      line-height: 3.3vw;
+      text-transform: none; }
+    .table-coef .table__heading th:nth-child(2) {
+      border-right: none;
+      border-left: 1px solid rgba(102, 102, 102, 0.16); }
+    .table-coef .table__heading th:first-child {
+      width: 70%;
+      padding-left: 2vw; }
+    .table-coef .table__heading th:last-child {
+      display: none; }
+  .table-coef .table__info td {
+    width: 30%;
+    height: 4.7037vw;
+    font-size: 2.8vw;
+    line-height: 3.3vw; }
+  .table-coef .table__info td:first-child {
+    width: 70%;
+    padding-left: 2vw; }
+  .table-coef .table__info td:last-child {
+    display: none; }
+  .table-coef .table__info td:nth-child(2) {
+    border-left: 1px solid rgba(102, 102, 102, 0.16);
+    border-right: none; }
+  .car-order__heading {
+    height: 7.5556vw;
+    margin: 0 0 4.6296vw 0; }
+    .car-order__heading h2 {
+      font-size: 2.8vw;
+      line-height: 3vw; }
+  .ac-label__left, .ac-label__right {
+    width: 50%;
+    flex-direction: column;
+    padding-top: 3vw; }
+  .ac-label__right {
+    width: 50%;
+    position: relative; }
+    .ac-label__right:before {
+      content: ' ';
+      position: absolute;
+      left: -15%;
+      top: 50%;
+      width: 30%;
+      height: 1px;
+      background-color: #666;
+      transform: rotate(90deg); }
+  .flight {
+    padding: 5vw 4vw;
+    margin-bottom: 5vw; }
+    .flight .flight__heading {
+      display: none; }
+    .flight .ac-label__heading {
+      flex-direction: column;
+      height: auto;
+      border-right: none;
+      font-weight: bold;
+      font-size: 2.8vw;
+      line-height: 3vw;
+      margin-bottom: 5vw; }
+      .flight .ac-label__heading p:first-child {
+        display: flex;
+        margin-bottom: 2vw;
+        font-weight: normal;
+        font-size: 2.5vw;
+        line-height: 3vw;
+        color: #666; }
+    .flight .city {
+      justify-content: flex-start;
+      padding-left: 0;
+      width: 100%; }
+    .flight .date {
+      width: 100%; }
+      .flight .date span {
+        padding-left: 0.9259vh; }
+    .flight .free-place {
+      width: 100%; }
+    .flight .price {
+      border-right: none;
+      width: 100%; }
+  .flight__form {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 4.6296vh; }
+    .flight__form .form__item {
+      display: flex;
+      flex-direction: column; }
+      .flight__form .form__item:first-child {
+        margin-bottom: 3vw; }
+    .flight__form .form__label {
+      font-size: 2.8vw;
+      line-height: 3vw;
+      margin-bottom: 0; }
+    .flight__form .form__select {
+      height: 7.0926vw;
+      width: 49.3148vw;
+      padding-left: 1vw;
+      font-size: 2.8vw;
+      line-height: 3vw; }
+      .flight__form .form__select option,
+      .flight__form .form__select option:hover,
+      .flight__form .form__select option:focus {
+        font-size: 1.8vw;
+        line-height: 2vw; }
+    .flight__form .form__btn {
+      margin-top: 5vw; }
+  .ac-flight label {
+    height: auto;
+    border: 1px solid transparent; }
+  .ac-flight article {
+    border: 1px solid transparent;
+    transition: ease 0.5s all; }
+    .ac-flight article .flight-info {
+      flex-direction: column;
+      margin-top: 3vw; }
+    .ac-flight article .flight-info__type {
+      width: 100%;
+      margin-bottom: 4vw;
+      padding-bottom: 4vw;
+      border-bottom: 1px solid #E7E7E7; }
+    .ac-flight article .flight-info__container {
+      width: 100%;
+      margin-bottom: 4vw;
+      padding-bottom: 4vw;
+      border-bottom: 1px solid #E7E7E7; }
+      .ac-flight article .flight-info__container .flight-info__title {
+        padding: 0 11vw; }
+    .ac-flight article .flight-info__place {
+      width: 50%; }
+    .ac-flight article .flight-info__price {
+      width: 50%; }
+    .ac-flight article .flight-info__title {
+      font-size: 2.8vw;
+      line-height: 3vw; }
+    .ac-flight article .flight-time {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 0 4vw 0; }
+      .ac-flight article .flight-time .main__btn {
+        margin-top: 3vw; }
+    .ac-flight article p {
+      font-size: 2.8vw;
+      line-height: 3vw;
+      margin-top: 1.5vw; }
+  .ac-flight input:checked ~ article, .ac-flight input:checked ~ label {
+    box-shadow: 0vh 0vh 3.7037vh rgba(236, 0, 8, 0.05);
+    border: 0.0521vw solid rgba(183, 33, 38, 0.19);
+    border-bottom: none;
+    transition: ease 0.5s all; }
+  .ac-flight input:checked ~ article {
+    max-height: 99vh;
+    padding: 3vw;
+    border-top: none; } }

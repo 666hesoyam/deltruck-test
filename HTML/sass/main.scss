@@ -5,13 +5,20 @@
 --------------------------------------------------------------*/
 @import 'variables'; // Variables
 
-html { overflow-x: hidden; box-sizing: border-box; }
+html { overflow-x: hidden; box-sizing: border-box; height: 100%; }
 
 body {
 	font-family: 'Segoe UI';
 	background-color: #fff;
 	color: #303030;
 	font-style: normal;
+	display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 *, *:before, *:after {
@@ -654,17 +661,6 @@ font-size: 1.4667vh;
 .request {
 	width: 50%;
 	padding: 4.7222vh 5.5556vh 3.2407vh 5.5556vh;
-	// &__title {
-	// 	margin-bottom: 4.6296vh;
-	// 	font-family: 'Montserrat', sans-serif;
-	// 	font-weight: bold;
-	// 	font-size: 1.6667vh;
-	// 	line-height: 1.6667vh;
-	// 	text-align: center;
-	// 	letter-spacing: 0.0463vh;
-	// 	text-transform: uppercase;
-	// 	color: #303030;
-	// }
 	&__group {
 		margin: 0 auto;
 		width: 41.6667vh;
@@ -947,6 +943,82 @@ font-size: 1.4667vh;
 		}
 	}
 }
+
+
+
+// For mobile
+.accordion--mob {
+	width: 97%;
+	padding: 1.5208vw;
+	color: #303030;
+	& ul {
+		list-style:none;
+		margin:0;
+		padding:0;    
+	}
+	& li {
+		padding:0;
+		margin:0 0 1px;
+	}
+	& [type=radio], & [type=checkbox] {
+		display:none;
+	}
+	& label {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 3vw;
+		font-weight: bold;
+		cursor: pointer;
+		position: relative;
+		margin-bottom: 3vw;
+		padding: 1.5208vw;
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -2.5vw;
+			left: 8%;
+			width: 85%;
+			height: 0.1042vw;
+			background-color: #DFDFDF;
+		}
+		p {
+			max-width: 80%;
+		}
+	}
+	.arrow img {
+		width: 4vw;
+	}
+	& [type=radio]:checked ~ label, & [type=checkbox]:checked ~ label .arrow img {
+		transform: rotate(-180deg);
+	}
+	& [type=checkbox]:checked ~  label:before {
+		bottom: -2.5vw;
+	}
+	& [type=checkbox]:checked ~ label ~ .content {
+		height: auto;
+		margin-top: 5vw;
+	}
+	& .content {
+		height: 0px;
+		padding: 0 1.5208vw;
+		overflow:hidden;
+		transition: all .5s ease-out;
+		& p {
+			font-size: 2.8vw;
+      line-height: 3.3vw;
+			font-weight: normal;
+			margin:0 0 1.5208vw;
+		}
+		a p {
+			margin-top: 4vw;
+			text-transform: uppercase;
+			color: #B72126;
+			font-weight: bold;
+		}
+	}
+}
+
 
 
 // ==================================================//
@@ -1464,7 +1536,7 @@ font-size: 1.4667vh;
 		}
 		.item__info {
 			background-color: #fff;
-			h5 {
+			p {
 				font-size: 1.4815vh;
 				line-height: 1.9444vh;
 			}
@@ -2134,72 +2206,71 @@ font-size: 1.4667vh;
 // 		Страница	flight-search.html		  		 
 // ================================================//
 
+.ac-label__left, .ac-label__right {
+	display: flex;
+	width: 65%;
+}
+
+.ac-label__right {
+	width: 35%;
+}
+
 .flight {
 	background-color: #FFFFFF;
 	box-shadow: 0vh 0vh 4.6296vh rgba(133, 133, 133, 0.14);
 	border-radius: 0.2778vh;
 	padding: 4.6296vh 2.7778vh;
 	margin-bottom: 9.0741vh;
-	&__heading {
-		display: flex;
-		font-weight: normal;
-		margin-bottom: 1.6667vh;
-		font-size: 1.4815vh;
-		line-height: 1.9444vh;
-		color: #666;
-	}
-	.date, .free-place, .price {
+	.ac-label__heading {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		height: 3vh;
-		border-left: 0.0926vh solid black;
+		border-right: 0.0926vh solid black;
 		transition: all 0.15s ease-out;
-	}
-	.city {
-		font-weight: bold;
-		padding-left: 8.7037vh;
-		&--width {
-			width: 40%;
+		& p:first-child {
+			display:none;
 		}
 	}
+	.city {
+		justify-content: flex-start;
+		font-weight: bold;
+		padding-left: 8.7037vh;
+		width: 65%;
+		text-align: left;
+	}
 	.date {
-		width: 31.2037vh;
-		time {
+		width: 35%;
+		span {
 			color: $color-red;
 			padding-left: 0.9259vh;
 		}
-		&--width {
-			width: 31.2037vh;
-			text-align: center;
-		}
 	}
 	.free-place {
-		width: 25.3704vh;
-		&--width {
-			width: 25.3704vh;
-			text-align: center;
-		}
+		width: 50%;
 	}
 	.price {
 		color: $color-red;
-		width: 22.6852vh;
-		&--width {
-			width: 22.6852vh;
-			text-align: center;
-		}
-	}
-	.ac-label--white:hover .date, .ac-label--white:hover .free-place, .ac-label--white:hover .price {
-		height: 4vh;
-		border-left: 0.1389vh solid $color-red;
-		transition: all 0.25s ease-out;
-	}
-	.ac-label:hover .date, .ac-label:hover .free-place, .ac-label:hover .price {
-		height: 4vh;
-		border-left: 0.1389vh solid $color-red;
-		transition: all 0.25s ease-out;
+		border-right: none;
+		width: 50%;
 	}
 }
+
+
+
+.flight__heading {
+	display: flex;
+	font-weight: normal;
+	margin-bottom: 1.6667vh;
+	font-size: 1.4815vh;
+	line-height: 1.9444vh;
+	color: #666;
+	text-align: center;
+	.city {
+		padding-left: 0;
+	}
+}
+
 
 // Форма выбора городов
 .flight__form {
@@ -2248,11 +2319,11 @@ font-size: 1.4667vh;
 .ac-flight {
 	width: 100%;
 	margin: 0 auto;
-	.ac-label--white {
-		background-color: #fff;
-	}
 	.ac-label {
 		background-color: #F8F8F8;
+	}
+	.ac-label--white {
+		background-color: #fff;
 	}
 	& label {
 		display: flex;
@@ -2263,8 +2334,15 @@ font-size: 1.4667vh;
 		font-size: 1.6667vh;
 		line-height: 2.2222vh;
 		color: #303030;
+		border: 1px solid transparent;
 		height: 5.5556vh;
 		cursor: pointer;
+		transition: ease 0.5s all;
+		&:hover {
+			box-shadow: 0vh 0vh 3.7037vh rgba(236, 0, 8, 0.05);
+			border: 0.0926vh solid rgba(183, 33, 38, 0.19);
+			transition: ease 0.5s all;
+		}
 	}
 	& input:checked + label,
 	& input:checked + label:hover{
@@ -2284,6 +2362,20 @@ font-size: 1.4667vh;
 			display: flex;
 			margin-top: 2vh;
 		}
+		.flight-info__type {
+			width: 65%;
+		}
+		.flight-info__container {
+			width: 35%;
+			display: flex;
+			text-align: center;
+		}
+		.flight-info__place {
+			width: 50%;
+		}
+		.flight-info__price {
+			width: 50%;
+		}
 		.flight-info__title {
 			font-weight: bold;
 			font-size: 1.4815vh;
@@ -2293,17 +2385,6 @@ font-size: 1.4667vh;
 			span {
 				color: $color-red;
 			}
-		}
-		.flight-info__name {
-			width: 65%;
-		}
-		.flight-info__place {
-			text-align: center;
-			width: 25.3704vh;
-		}
-		.flight-info__price {
-			text-align: center;
-			width: 22.6852vh;
 		}
 		& p {
 			font-weight: normal;
@@ -2323,6 +2404,7 @@ font-size: 1.4667vh;
 		transition: max-height 0.25s ease-in;
 	}
 }
+
 
 // Корисні посилання в flight-search.html
 .useful-links {
@@ -2347,7 +2429,7 @@ font-size: 1.4667vh;
 // 				Уведомление Pop-Up			  		 
 // ================================================//
 
-#subscribe__box, #order__box {
+#subscribe__box, #request__box {
 	display: none;
 	position: fixed;
 	right: 2vh; 

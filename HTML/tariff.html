@@ -26,6 +26,7 @@
 
         <!--========== HEADER ==========-->
         <header id="included__header" class="header"></header>
+        <header id="included__header--mobile" class="header header--mobile"></header>
         <!--========== \END HEADER ==========-->
 
         <!--========== PAGE LAYOUT ==========-->
@@ -39,7 +40,7 @@
 
         <main>
             <div class="container">
-                <div class="tariff">
+                <div class="tariff mobile-hide">
                     <h3 class="info-block__title">Тарифи на перевезення стандартного вантажу</h3>
                     <div class="info-block__text">
                         <p>З допомогою компанії «DelTruck» доставка вантажів по Україні відбувається в максимально короткі терміни з високим рівнем безпеки та за <br> вигідними тарифами.</p>
@@ -321,6 +322,314 @@
                         </div>
                     </div>
                 </div>
+
+                    <!-- For Mobile -->
+                <div class="tariff desctop-hide">
+                    <div class="desctop-hide">
+                        <div class="accordion--mob">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="checkbox-1" name="checkbox-accordion"/>
+                                    <label for="checkbox-1"> <p>Тарифи на перевезення <br> стандартного вантажу</p>
+                                        <div class="arrow">
+                                            <img src="img/icon/system/arrow-accardion--mobile.svg" alt="arrow">
+                                        </div>
+                                    </label>
+                                    <div class="content">
+                                        <div class="info-block__text">
+                                            <p>З допомогою компанії «DelTruck» доставка вантажів по Україні відбувається в максимально короткі терміни з високим рівнем безпеки та за <br> вигідними тарифами.</p>
+                                            <p>Запропоновані тарифи працюють тільки між містами та в їх межах. Усі інші відстані, віддалені понад 100 км від обласних та районних центрів (села і смт) розраховуються по кілометражу з точки А в точку В.</p>
+                                            <p>За кожну нову точку вивантаження за межами міста додатково до вартості + 500 грн, в його межах + 300 грн.</p>
+                                            <p>Ціна за 1 км вказана з урахуванням вартості дизельного палива.</p>
+                                            <p>Розрахунок вартості перевезення між населеними пунктами (смт, с) проводиться індивідуально за тел. <strong>(050) 425-23-04.</strong></p>
+                                        </div>
+                                        <!-- Таблица стандартного вантажу-->
+                                        <div class="table">
+                                            <div class="table__container">
+                                                <table class="table__inner">
+                                                    <thead>
+                                                        <tr id="th--no-border-down">
+                                                            <th rowspan="2" id="th--title">Тоннажність авто<br><span>(тент/суцільнометалевий)</span></th>
+                                                            <th colspan="4">Вартість за 1 км, грн.</th>
+                                                        </tr>
+                                                        <tr id="th--border-top">
+                                                            <th >Обласні міста до 250 км<br>(розрахунок в коло)</th>
+                                                            <th>Обласні міста, більше 250 км</th>
+                                                            <th>Районні центри (30 км від<br>обласного центру) +500 грн.</th>
+                                                            <th>Районні центри (100 км від<br>обласного центру) +1000 грн.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>5 тонн</td>
+                                                            <td>16</td>
+                                                            <td>16</td>
+                                                            <td>18</td>
+                                                            <td>18</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10 тонн</td>
+                                                            <td>17</td>
+                                                            <td>18</td>
+                                                            <td>20</td>
+                                                            <td>20</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20 тонн</td>
+                                                            <td>19</td>
+                                                            <td>20</td>
+                                                            <td>22</td>
+                                                            <td>22</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- next -->
+                                                <table class="table__inner">
+                                                    <thead>
+                                                        <tr id="th--no-border-down">
+                                                            <th rowspan="2" id="th--title">Тоннажність авто<br><span>(ізотерм/рефрижератор)</span></th>
+                                                            <th colspan="4">Вартість за 1 км, грн.</th>
+                                                        </tr>
+                                                        <tr id="th--border-top">
+                                                            <th>Обласні міста до 250 км<br>(розрахунок в коло)</th>
+                                                            <th>Обласні міста, більше 250 км</th>
+                                                            <th>Районні центри (30 км від<br>обласного центру) +500 грн.</th>
+                                                            <th>Районні центри (100 км від<br>обласного центру) +1000 грн.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>5 тонн</td>
+                                                            <td>18</td>
+                                                            <td>18</td>
+                                                            <td>20</td>
+                                                            <td>20</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10 тонн</td>
+                                                            <td>20</td>
+                                                            <td>20</td>
+                                                            <td>22</td>
+                                                            <td>22</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20 тонн</td>
+                                                            <td>22</td>
+                                                            <td>22</td>
+                                                            <td>24</td>
+                                                            <td>24</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="checkbox-2" name="checkbox-accordion" />
+                                    <label for="checkbox-2"><p>Тарифи на перевезення <br> консолідованого вантажу</p>
+                                        <div class="arrow">
+                                            <img src="img/icon/system/arrow-accardion--mobile.svg" alt="arrow">
+                                        </div>
+                                    </label>
+                                    <div class="content">
+                                        <div class="info-block__text">
+                                            <p>Вартість палетомісця публікується на «Online табло рейсів» на сайті «DelTruck». Вартість дійсна для заявленого рейсу до відправлення автомобілю.</p>
+                                        </div>
+                                        
+                                        <!-- Таблица консолідованого вантажу-->
+                                        <div class="table table--consal">
+                                            <div class="table__container">
+                                                <table class="table__inner">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="3"><strong>ВИМОГИ ТА ОБМЕЖЕННЯ ДО ВАНТАЖУ, ЩО ПРИЙМАЄТЬСЯ</strong></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="td--width">Тип палети</th>
+                                                            <th class="td--width">Max. вага 1 палети, кг</th>
+                                                            <th class="td--width">Min. кількість палет до відправлення, шт.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Європалета (1,2*0,8*2)</td>
+                                                            <td>700</td>
+                                                            <td>від 6</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Європалета (1,2*0,8*0,5)</td>
+                                                            <td>250</td>
+                                                            <td>від 6</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Американський стандарт (1,2*1,2*2 или 1*1,2*2)</td>
+                                                            <td>900</td>
+                                                            <td>від 5</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="info-block__text info-block--tariff">
+                                            <p><strong>До відправлення приймаються палети, самостійно сформовані клієнтом та такі, що відповідають вимогам:</strong></p>
+                                            <br>
+                                            <ul class="info-block__list">
+                                                <li><p>Палета повинна бути обмотана стрейч-плівкою: в тому числі,зверху, з накладенням краю на піддон</p></li>
+                                                <br>
+                                                <li><p>В палеті вантаж розміщується відповідно до захисного маркування заводу-виробника.</p></li>
+                                                <br>
+                                                <li><p>При наявності крихкого вантажу в палеті нижні два ряди перекладаються щільним гофрокартоном.</p></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Таблица консолідованого вантажу СТАРТОВІ ТАРИФИ-->
+                                        <div class="table">
+                                            <div class="table__container">
+                                                <table class="table__inner">
+                                                    <thead class="start-tarif__thead">
+                                                        <tr>
+                                                            <th colspan="4"><strong>СТАРТОВІ ТАРИФИ</strong></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th rowspan="3" class="td--width" id="th--border-right">Напрямок</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">Тип палети</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Европалета</th>
+                                                            <th class="">Американка</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="start-tarif__tbody">
+                                                        <tr>
+                                                            <td>Київ - Вінниця</td>
+                                                            <td>450</td>
+                                                            <td>900</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Луцьк</td>
+                                                            <td>550</td>
+                                                            <td>1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Дніпро</td>
+                                                            <td>650</td>
+                                                            <td>1300</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Житомир</td>
+                                                            <td>350</td>
+                                                            <td>700</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Ужгород</td>
+                                                            <td >950</td>
+                                                            <td>1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Запоріжжя</td>
+                                                            <td>750</td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Івано-Франківськ</td>
+                                                            <td>750</td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Маріуполь</td>
+                                                            <td>1050</td>
+                                                            <td>2100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Кривий Ріг</td>
+                                                            <td>650</td>
+                                                            <td>1300</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Кіровоград</td>
+                                                            <td>450</td>
+                                                            <td>900</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Львів</td>
+                                                            <td>750</td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Миколаїв</td>
+                                                            <td>750</td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Одеса</td>
+                                                            <td>750</td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Полтава</td>
+                                                            <td>550</td>
+                                                            <td>1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Рівне</td>
+                                                            <td>450</td>
+                                                            <td>900</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Суми</td>
+                                                            <td>550</td>
+                                                            <td>1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Тернопіль</td>
+                                                            <td>750</td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Харків</td>
+                                                            <td>750</td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Херсон</td>
+                                                            <td>750</td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Хмельницький</td>
+                                                            <td>450</td>
+                                                            <td>900</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Черкаси</td>
+                                                            <td>350</td>
+                                                            <td>700</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Чернігів</td>
+                                                            <td>350</td>
+                                                            <td>700</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Київ - Чернівці</td>
+                                                            <td>750</td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- \end mobile -->
+                </div>
             </div>
         </main>
 
@@ -341,8 +650,18 @@
         </section>
 
         <footer id="included__footer" class="footer"></footer>
+        <footer id="included__footer--mobile" class="footer footer--mobile"></footer>
         <!--========== \END FOOTER ==========-->
 
+        <!-- POP UP request-->
+        <div id='request__box'>
+            <div id='box_text'>
+                <img src="img/icon/system/pop-up__icon.svg" alt="done">
+                <p>Ваша заявка успішно відправлена!</p>
+                <p>Менеджер DelTruck зв’яжется з Вами <br> в найближчий час.</p>
+            </div>
+        </div>
+        <!-- \POP UP -->
 
         <!-- ADD JQUERY HERE -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

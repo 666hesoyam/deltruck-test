@@ -29,16 +29,28 @@
 
         <!--========== HEADER ==========-->
         <header id="included__header" class="header"></header>
+        <header id="included__header--mobile" class="header header--mobile"></header>
         <!--========== \END HEADER ==========-->
 
         <!--========== PAGE LAYOUT ==========-->
-        <section class="banners">
+        <section class="banners mobile-hide">
             <div class="container">
                 <div class="slider">
-                    <a href="car-order.html"><img src="img/banner_1.jpg" alt=""></a>
-                    <a href="transit.html"><img src="img/banner_2.jpg" alt=""></a>
-                    <a href="transit.html"><img src="img/banner_3.jpg" alt=""></a>
-                    <a href="action.html"><img src="img/banner_4.jpg" alt=""></a>
+                    <a href="car-order.html"><img src="img/banners/banner_1.jpg" alt=""></a>
+                    <a href="transit.html"><img src="img/banners/banner_2.jpg" alt=""></a>
+                    <a href="transit.html"><img src="img/banners/banner_3.jpg" alt=""></a>
+                    <a href="action.html"><img src="img/banners/banner_4.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="banners desctop-hide">
+            <div class="container">
+                <div class="slider">
+                    <a href="car-order.html"><img src="img/banners/banner_1--mob.jpg" alt=""></a>
+                    <a href="transit.html"><img src="img/banners/banner_2--tablet.jpg" alt=""></a>
+                    <a href="transit.html"><img src="img/banners/banner_3--tablet.jpg" alt=""></a>
+                    <a href="action.html"><img src="img/banners/banner_4--tablet.jpg" alt=""></a>
                 </div>
             </div>
         </section>
@@ -166,7 +178,10 @@
                 <div class="application">
                     <div class="left-block">
                         <h5 class="left-block__title">Готові оформити заявку на перевезення Вашого вантажу?</h5>
-                        <a href="car-order.html" class="main__btn left-block__btn">відправити заявку</a> 
+                        <!-- btn for mobile -->
+                        <a href="transit.html" class="main__btn left-block__btn desctop-hide--fl">відправити заявку</a> 
+                        <!-- btn for desctop -->
+                        <a href="car-order.html" class="main__btn left-block__btn mobile-hide">відправити заявку</a> 
                         <a href="tariff.html" class="main__btn left-block__btn left-block__btn--grey">Переглянути тарифи</a> 
                     </div>
                     <div class="right-block">
@@ -178,7 +193,7 @@
                         <form class="right-block__form">
                             <label class="right-block__label">Номер на який ми зателефонуємо</label>
                             <input class="right-block__input" type="tel" placeholder=" " minlength="10" maxlength="13">
-                            <button class="main__btn right-block__btn" onclick='throw_message_order(" "); return false;'>Надіслати</button> 
+                            <button class="main__btn right-block__btn" onclick='throw_message_request(" "); return false;'>Надіслати</button> 
                         </form>
                     </div>
                 </div>
@@ -195,7 +210,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="mobile-hide">
             <div class="container">
                 <h3 class="info-block__title">Новини</h3>
                 <div class="news-home">
@@ -257,13 +272,14 @@
 
         <!--========== FOOTER ==========-->
         <footer id="included__footer" class="footer"></footer>
+        <footer id="included__footer--mobile" class="footer footer--mobile"></footer>
         <!--========== \END FOOTER ==========-->
 
 
-        <!-- POP UP Order-->
-        <div id='order__box'>
+        <!-- POP UP request-->
+        <div id='request__box'>
             <div id='box_text'>
-                <img src="img/icon/system/pop-up__icon.svg" alt="">
+                <img src="img/icon/system/pop-up__icon.svg" alt="done">
                 <p>Ваша заявка успішно відправлена!</p>
                 <p>Менеджер DelTruck зв’яжется з Вами <br> в найближчий час.</p>
             </div>
@@ -273,7 +289,7 @@
         <!-- POP UP Subscribe-->
         <div id='subscribe__box'>
             <div id='box_text'>
-                <img src="img/icon/system/pop-up__icon.svg" alt="">
+                <img src="img/icon/system/pop-up__icon.svg" alt="done">
                 <p>Вітаємо! Ви успішно підписалися на розсилку.</p>
                 <p>Ми будемо повідомляті Вам тільки найактуальніші <br> та цікаві новини та акції.</p>
             </div>

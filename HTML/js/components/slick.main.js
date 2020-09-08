@@ -1,8 +1,8 @@
 // banners on index.html
 $(document).ready(function(){
     $('.slider').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
         dots: true,
         slidesToShow: 1,
         // prevArrow: "<img src='img/left-arrow.svg' class='prev' alt='prev'>",

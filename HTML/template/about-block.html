@@ -121,21 +121,7 @@
 						<input class="feedback-form__input" type="tel" placeholder="+380" minlength="10" maxlength="13">
 					</form>
 
-					<button class="main__btn feedback-form__btn" onclick='throw_message_order(" "); return false;'>Надіслати</button>
-					<!-- POP UP Order-->
-					<script>
-						function throw_message_order(str) {
-							$("#order__box").fadeIn(500).delay(6000).fadeOut(500);
-						}
-					</script>
-					<div id='order__box'>
-						<div id='box_text'>
-							<img src="img/icon/system/pop-up__icon.svg" alt="Done">
-							<p>Ваша заявка успішно відправлена!</p>
-							<p>Менеджер DelTruck зв’яжется з Вами <br> в найближчий час.</p>
-						</div>
-					</div>
-					<!-- \POP UP -->
+					<button class="main__btn feedback-form__btn" onclick='throw_message_request(" "); return false;'>Надіслати</button>
 				</div>
 			</div>
 		</div>

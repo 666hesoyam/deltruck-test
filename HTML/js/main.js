@@ -14,7 +14,8 @@ $(function(){
 function throw_message_subscribe(str) {
     $("#subscribe__box").fadeIn(500).delay(6000).fadeOut(500);
 }
-// order
-function throw_message_order(str) {
-    $("#order__box").fadeIn(500).delay(6000).fadeOut(500);
+
+// request
+function throw_message_request(str) {
+    $("#request__box").fadeIn(500).delay(6000).fadeOut(500);
 }

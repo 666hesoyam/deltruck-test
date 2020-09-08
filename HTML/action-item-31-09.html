@@ -26,6 +26,7 @@
 
         <!--========== HEADER ==========-->
         <header id="included__header" class="header"></header>
+        <header id="included__header--mobile" class="header header--mobile"></header>
         <!--========== \END HEADER ==========-->
 
         <!--========== PAGE LAYOUT ==========-->
@@ -63,7 +64,10 @@
                             <p>Плануйте власні відправки за допомогою Online-табло рейсів, оптимізуйте свою логістику і беріть участь в акції!</p>
                             <br>
                             <div class="info-btn">
-                                <a href="car-order.html" class="main__btn">Замовити авто</a> 
+                                <!-- btn for mobile -->
+                                <a href="transit.html" class="main__btn desctop-hide--fl">Замовити авто</a> 
+                                <!-- btn for desctop -->
+                                <a href="car-order.html" class="main__btn mobile-hide">Замовити авто</a>
                                 <a href="tariff.html" class="main__btn info-btn__btn--grey">Переглянути тарифи</a> 
                             </div>
                         </div>
@@ -97,6 +101,7 @@
 
         <!--========== FOOTER ==========-->
         <footer id="included__footer" class="footer"></footer>
+        <footer id="included__footer--mobile" class="footer footer--mobile"></footer>
         <!--========== \END FOOTER ==========-->
 
         <!-- POP UP Subscribe-->
@@ -105,6 +110,16 @@
                 <img src="img/icon/system/pop-up__icon.svg" alt="Done">
                 <p>Вітаємо! Ви успішно підписалися на розсилку.</p>
                 <p>Ми будемо повідомляті Вам тільки найактуальніші <br> та цікаві новини та акції.</p>
+            </div>
+        </div>
+        <!-- \POP UP -->
+
+        <!-- POP UP request-->
+        <div id='request__box'>
+            <div id='box_text'>
+                <img src="img/icon/system/pop-up__icon.svg" alt="done">
+                <p>Ваша заявка успішно відправлена!</p>
+                <p>Менеджер DelTruck зв’яжется з Вами <br> в найближчий час.</p>
             </div>
         </div>
         <!-- \POP UP -->
