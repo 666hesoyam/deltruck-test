@@ -1965,7 +1965,7 @@ option:focus {
 .desctop-hide--fl {
   display: none; }
 
-@media screen and (orientation: portrait), screen and (orientation: landscape) {
+@media screen and (orientation: portrait), screen and (max-width: 990px) and (orientation: landscape) {
   .desctop-hide--fl {
     display: flex; }
   .desctop-hide {
@@ -3006,3 +3006,26 @@ option:focus {
     line-height: 4vw; }
   .table-coef .table__info td {
     height: 8.7037vw; } }
+
+@media screen and (max-width: 990px) and (orientation: landscape) {
+  .hot-line__icon {
+    width: 5vw;
+    height: 5vw; }
+    .hot-line__icon img {
+      width: 3.037vw;
+      height: 3.037vw; }
+  #nav ul {
+    padding: 3vw 0 0 6vw; }
+  #nav li {
+    font-size: 2vw;
+    margin-top: 2vw; }
+    #nav li:first-child {
+      margin: 0 5vw 1vw 0; }
+  #new__inner .new {
+    width: 8vw;
+    height: 2.5vw;
+    font-size: 2.1vw; } }
+
+@media screen and (max-width: 737px) and (orientation: landscape) {
+  #nav li {
+    font-size: 2.7vw; } }
