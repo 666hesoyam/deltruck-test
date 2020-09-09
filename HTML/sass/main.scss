@@ -30,6 +30,7 @@ main {
 input:invalid { border-color: red !important; }
 
 textarea, input, select {
+	-webkit-appearance: none;
   border-radius: 0;
 	box-shadow: none;
 		-webkit-box-shadow: none;
