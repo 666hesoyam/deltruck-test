@@ -2053,8 +2053,23 @@ option:focus {
         margin: 0 5vw 5vw 0;
         text-align: right; }
       #nav li:hover {
+        color: #B72126;
         transform: scale(1.05);
         backface-visibility: hidden; }
+  #new__inner {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    line-height: 3vw; }
+    #new__inner .new {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 9vw;
+      height: 3.5vw;
+      margin-left: 1.4vw;
+      font-size: 2.3vw;
+      line-height: 3vw; }
   .about-block {
     display: none; }
   .footer {
@@ -2700,6 +2715,12 @@ option:focus {
     margin-top: 6vw; }
     #nav li:first-child {
       margin: 0 7vw 7vw 0; }
+  #new__inner .new {
+    width: 14vw;
+    height: 5vw;
+    margin-left: 3.4vw;
+    font-size: 3.3vw;
+    line-height: 4vw; }
   .footer {
     margin-top: 13.1481vw; }
     .footer-info {

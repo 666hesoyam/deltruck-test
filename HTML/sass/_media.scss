@@ -151,9 +151,27 @@
         text-align: right;
       }
       &:hover {
+        color: $color-red;
         transform: scale(1.05);
         backface-visibility: hidden;
       }
+    }
+  }
+
+  #new__inner {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    line-height: 3vw;
+    .new {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 9vw;
+      height: 3.5vw;
+      margin-left: 1.4vw;
+      font-size: 2.3vw;
+      line-height: 3vw;
     }
   }
 
@@ -1153,6 +1171,16 @@
       &:first-child {
         margin: 0 7vw 7vw 0;
       }
+    }
+  }
+
+  #new__inner {
+    .new {
+      width: 14vw;
+      height: 5vw;
+      margin-left: 3.4vw;
+      font-size: 3.3vw;
+      line-height: 4vw;
     }
   }
 
