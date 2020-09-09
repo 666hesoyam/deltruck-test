@@ -444,8 +444,8 @@
     ul {
       margin-top: 6.6296vw;
       img {
-        width: 5.7778vw;
-        height: 6.1vw;
+        min-width: 5.7778vw;
+        min-height: 6.1vw;
         margin-right: 2.9259vw;
       }
     }
@@ -1425,8 +1425,8 @@
       line-height: 3.8vw;
     }
     ul img {
-      width: 7.7778vw;
-      height: 8.1vw;
+      min-width: 7.7778vw;
+      min-height: 8.1vw;
     }
     li {
       margin-bottom: 7vw;

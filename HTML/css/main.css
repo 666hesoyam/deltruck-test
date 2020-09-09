@@ -2240,8 +2240,8 @@ option:focus {
   .documentation ul {
     margin-top: 6.6296vw; }
     .documentation ul img {
-      width: 5.7778vw;
-      height: 6.1vw;
+      min-width: 5.7778vw;
+      min-height: 6.1vw;
       margin-right: 2.9259vw; }
   .documentation li {
     margin-bottom: 3.7778vw; }
@@ -2880,8 +2880,8 @@ option:focus {
     font-size: 3.5vw;
     line-height: 3.8vw; }
   .documentation ul img {
-    width: 7.7778vw;
-    height: 8.1vw; }
+    min-width: 7.7778vw;
+    min-height: 8.1vw; }
   .documentation li {
     margin-bottom: 7vw; }
   .action {
