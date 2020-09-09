@@ -15,7 +15,7 @@
 
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait), screen and (orientation: landscape) {
   .desctop-hide--fl {
     display: flex;
   }
@@ -1143,6 +1143,15 @@
     margin-right: 10vw;
   }
 
+  .hot-line__icon {
+    width: 8.1963vw;
+    height: 8.1963vw;
+    img {
+        width: 5.037vw;
+        height: 5.037vw;
+    }
+  }
+
   // Mobile Navigation
 
   .mob-nav {
@@ -1221,8 +1230,8 @@
       width: 8.1963vw;
       height: 8.1963vw;
       & img {
-        width: 6.037vw;
-        height: 6.037vw;
+        width: 5.037vw;
+        height: 5.037vw;
       }
     }
   }
