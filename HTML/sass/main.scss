@@ -36,6 +36,10 @@ textarea, input, select {
 		-webkit-box-shadow: none;
 }
 
+[type="checkbox"], [type="radio"] {
+    -webkit-appearance: checkbox;
+}
+
 :active, :focus { outline: none; }
 
 a, a:focus, a:hover, a:active {

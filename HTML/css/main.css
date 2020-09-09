@@ -34,6 +34,9 @@ textarea, input, select {
   box-shadow: none;
   -webkit-box-shadow: none; }
 
+[type="checkbox"], [type="radio"] {
+  -webkit-appearance: checkbox; }
+
 :active, :focus {
   outline: none; }
 
@@ -2436,16 +2439,14 @@ option:focus {
     height: auto;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 5vw; }
+    padding: 3vw 5vw; }
     .subs__title {
       font-size: 2.8vw;
       line-height: 3vw;
       max-width: 81%;
-      margin-bottom: 5vw;
-      margin-top: 3vw; }
+      margin-bottom: 5vw; }
     .subs__btn {
-      width: 34.3519vw;
-      margin-bottom: 3vw; }
+      width: 34.3519vw; }
     .subs__form {
       margin-top: -2vh;
       margin-bottom: 3vw; }
@@ -2895,27 +2896,24 @@ option:focus {
     margin-left: 3.7778vw;
     font-size: 3.6667vw;
     line-height: 4.5vw; }
-  .subs {
-    padding-right: 5vw; }
-    .subs__title {
-      font-size: 3.8vw;
-      line-height: 4vw;
-      max-width: 100%;
-      margin-bottom: 7vw;
-      margin-top: 5vw; }
-    .subs__label {
-      font-size: 3.8vw;
-      line-height: 4vw;
-      margin-bottom: 2.0185vw; }
-    .subs__input {
-      width: 100%;
-      height: 11vw;
-      font-size: 3.8vw;
-      line-height: 4vw; }
-    .subs__form {
-      margin-top: 0vh;
-      margin-bottom: 8vw;
-      width: 100%; }
+  .subs__title {
+    font-size: 3.8vw;
+    line-height: 4vw;
+    max-width: 100%;
+    margin-bottom: 7vw; }
+  .subs__label {
+    font-size: 3.8vw;
+    line-height: 4vw;
+    margin-bottom: 2.0185vw; }
+  .subs__input {
+    width: 100%;
+    height: 11vw;
+    font-size: 3.8vw;
+    line-height: 4vw; }
+  .subs__form {
+    margin-top: 0vh;
+    margin-bottom: 8vw;
+    width: 100%; }
   .action-page__info .info__title {
     max-width: 100%;
     margin-bottom: 2.5vw;
@@ -3019,7 +3017,7 @@ option:focus {
     height: 2.5vw;
     font-size: 2.1vw; }
   .ac-flight input:checked ~ article {
-    max-height: 118vh; }
+    max-height: 145vh; }
   #subscribe__box, #request__box {
     width: 112.8333vh;
     height: 65.6296vh; }

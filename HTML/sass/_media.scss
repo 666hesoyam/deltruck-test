@@ -746,17 +746,15 @@
     height: auto;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 5vw;
+    padding: 3vw 5vw;
     &__title {
       font-size: 2.8vw;
       line-height: 3vw;
       max-width: 81%;
       margin-bottom: 5vw;
-      margin-top: 3vw;
     }
     &__btn {
       width: 34.3519vw;
-      margin-bottom: 3vw;
     }
     &__form {
       margin-top: -2vh;
@@ -1453,13 +1451,11 @@
   }
 
   .subs {
-    padding-right: 5vw;
     &__title {
       font-size: 3.8vw;
       line-height: 4vw;
       max-width: 100%;
       margin-bottom: 7vw;
-      margin-top: 5vw;
     }
     &__label {
       font-size: 3.8vw;
@@ -1645,7 +1641,7 @@
   }
 
   .ac-flight input:checked ~ article {
-    max-height: 118vh;
+    max-height: 145vh;
   }
 
   #subscribe__box, #request__box {
