@@ -1,18 +1,16 @@
-.desctop-hide {
-  display: none;
-}
-
-.desctop-hide--fl {
-  display: none;
+.header--mobile, .footer--mobile, .desctop-hide, .desctop-hide--fl {
+	display: none;
 }
 
 @media screen and (orientation: portrait), screen and (max-width: 990px) and (orientation: landscape) {
   .desctop-hide--fl {
     display: flex;
   }
+
   .desctop-hide {
     display: block;
   }
+
   .mobile-hide {
     display: none;
   }
@@ -26,21 +24,6 @@
   option:focus {
     font-size: 1.5vw;
   }
-
-  // ==============================//
-  // 			in-dev.html							
-  // ============================//
-
-  .in-dev {
-    margin-top: 20vw;
-    h1 {
-      font-size: 5vw;
-    }
-  }
-
-  // ==============================//
-  // 			Общие стили							
-  // ============================//
 
   .container {
     max-width: 100%;
@@ -1486,6 +1469,8 @@
     &__input {
       width: 100%;
       height: 11vw;
+      font-size: 3.8vw;
+      line-height: 4vw;
     }
     &__form {
       margin-top: 0vh;
@@ -1613,6 +1598,22 @@
   }
 }
 
+// fix for iPhone X
+@media screen and (max-width: 376px) and (min-width: 365px) and (min-height: 800px)  and (orientation: portrait) {
+  #subscribe__box, #request__box {
+    width: 41.8333vh;
+    height: 28.6296vh;
+    #box_text {
+      p {
+        font-size: 1.8519vh;
+        line-height: 2.5vh;
+      }
+      img {
+        width: 7.0185vh;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 990px) and (orientation: landscape) {
   .hot-line__icon {
@@ -1646,12 +1647,114 @@
   .ac-flight input:checked ~ article {
     max-height: 118vh;
   }
+
+  #subscribe__box, #request__box {
+    width: 112.8333vh;
+    height: 65.6296vh;
+    #box_text {
+      p {
+        font-size: 5.8vh;
+        line-height: 6.5vh;
+      }
+      img {
+        width: 14vh;
+      }
+    }
+  }
+
+  .action {
+    a {
+      width: 70%;
+      margin: 0 auto 13vh auto;
+    }
+    .action__item {
+      .item__title {
+        width: 100%;
+        height: 17.3889vh;
+        margin-top: -1.5vh;
+        background-color: #FFFFFF;
+        h3 {
+          max-width: 80%;
+          font-size: 3.6667vh;
+          line-height: 5.037vh;
+        }
+        .item__btn img {
+          width: 4.3889vh;
+          height: 5.5vh;
+        }
+        .item__btn {
+          width: 11.6296vh;
+          height: 100%;
+        }
+      }
+      .item__img {
+        width: 100%;
+        height: 76.9444vh;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 737px) and (orientation: landscape) {
   #nav li {
     font-size: 2.7vw;
   }
+
+  #subscribe__box, #request__box {
+    width: 77.8333vh;
+    height: 45.6296vh;
+    #box_text {
+      p {
+        font-size: 3.8519vh;
+        line-height: 4.5vh;
+      }
+      img {
+        width: 12.0185vh;
+      }
+    }
+  }
+
+  .action {
+    a {
+      width: 70%;
+      margin: 0 auto 13vh auto;
+    }
+    .action__item {
+      .item__title {
+        h3 {
+          line-height: 4.037vh;
+        }
+        .item__btn {
+          width: 9.6296vh;
+        }
+      }
+      .item__img {
+        height: 65.9444vh;
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  .action {
+    .action__item {
+      .item__title {
+        h3 {
+          font-size: 3vh;
+        }
+        .item__btn {
+          width: 8.6296vh;
+        }
+      }
+      .item__img {
+        height: 54.9444vh;
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .action {
+    justify-content: center;
+  }
+}

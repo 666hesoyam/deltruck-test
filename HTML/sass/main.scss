@@ -784,11 +784,6 @@ font-size: 1.4667vh;
 			color: $color-red;
 		}
 	}
-	@-webkit-keyframes pulses {
-		0% { -webkit-transform: scale(0.91); opacity: 0.7; }
-		50% { -webkit-transform: scale(1); opacity: 1; }
-		100% { -webkit-transform: scale(0.91); opacity: 0.7; }
-	}
 	@keyframes pulses {
 		0% { transform: scale(0.91); opacity: 0.7; }
 		50% { transform: scale(1); opacity: 1; }
@@ -946,8 +941,6 @@ font-size: 1.4667vh;
 	}
 }
 
-
-
 // For mobile
 .accordion--mob {
 	width: 97%;
@@ -968,7 +961,7 @@ font-size: 1.4667vh;
 			bottom: 0vw;
 			left: 8%;
 			width: 85%;
-			height: 0.1042vw;
+			height: 1px;
 			background-color: #DFDFDF;
 		}
 	}
@@ -1180,13 +1173,22 @@ font-size: 1.4667vh;
 	border-right: 0.0926vh solid rgba(102, 102, 102, 0.16);
 }
 
-
 .table--consal {
 	margin-bottom: 0;
 }
 
 .info-block--tariff {
 	margin: 4.6296vh 0 4.6296vh 11.1111vh;
+}
+
+#table-title--mobile {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 2.4vw;
+  line-height: 2.9vw;
+	text-transform: uppercase;
+	color: #B72126;
+	border-bottom: 0.0926vh solid rgba(102,102,102,0.16);
 }
 
 // Блок подписки на рассылку 
@@ -1276,8 +1278,8 @@ font-size: 1.4667vh;
 
 // Аккардион в Новостях
 .ac-container {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 	& label {
 		display: block;
 		height: 2.7778vh;
@@ -1568,7 +1570,6 @@ font-size: 1.4667vh;
 }
 
 // Форма обратной связи на Главной Странице
-
 .application {
 	display: flex;
 	justify-content: space-evenly;
@@ -1762,6 +1763,7 @@ font-size: 1.4667vh;
 		}
 	}
 }
+
 // Горизонтальный блок новостей на главной странице
 .news-home {
 	display: flex;
@@ -2126,7 +2128,6 @@ font-size: 1.4667vh;
 	width: 100%;
 	text-align: center;
 	margin-bottom: 2.7778vh;
-
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -2258,8 +2259,6 @@ font-size: 1.4667vh;
 	}
 }
 
-
-
 .flight__heading {
 	display: flex;
 	font-weight: normal;
@@ -2272,7 +2271,6 @@ font-size: 1.4667vh;
 		padding-left: 0;
 	}
 }
-
 
 // Форма выбора городов
 .flight__form {
@@ -2407,7 +2405,6 @@ font-size: 1.4667vh;
 	}
 }
 
-
 // Корисні посилання в flight-search.html
 .useful-links {
 	display: flex;
@@ -2470,38 +2467,9 @@ font-size: 1.4667vh;
 
 
 
-#table-title--mobile {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	font-size: 2.4vw;
-  line-height: 2.9vw;
-	text-transform: uppercase;
-	color: #B72126;
-	border-bottom: 0.0926vh solid rgba(102,102,102,0.16);
-}
 
 
-
-
-
-
-
-
-
-
-.header--mobile, .footer--mobile {
-	display: none;
-}
-
-
-@import 'media'; // media
-
-
-
-
-
-
-
+@import 'media'; // media query
 
 
 // Шрифты которые используются:
