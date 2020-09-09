@@ -366,7 +366,7 @@ option:focus {
             display: none; }
           .about .feedback-block__item .feedback-form__input::placeholder {
             font-size: 1.8667vh;
-            line-height: 2.2222vh;
+            line-height: 4.2222vh;
             color: #D9D9D9; }
         .about .feedback-block__item .feedback-form__btn {
           width: 19.3519vh; }
@@ -558,7 +558,7 @@ option:focus {
       display: none; }
     .form__input::placeholder {
       font-size: 1.6667vh;
-      line-height: 2.2222vh;
+      line-height: 3.2222vh;
       color: #D9D9D9; }
   .form__select {
     width: 100%;
@@ -989,7 +989,7 @@ option:focus {
       display: none; }
     .subs__input::placeholder {
       font-size: 1.6667vh;
-      line-height: 2.2222vh;
+      line-height: 3.2222vh;
       color: #D9D9D9; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -1319,7 +1319,7 @@ option:focus {
         display: none; }
       .application .right-block__input::placeholder {
         font-size: 1.6667vh;
-        line-height: 2.2222vh;
+        line-height: 3.2222vh;
         color: #D9D9D9; }
     .application .right-block__btn {
       margin-top: 2.7778vh;
@@ -1612,7 +1612,7 @@ option:focus {
         display: none; }
       .car-order__group .car-order__form .form__input::placeholder {
         font-size: 1.6667vh;
-        line-height: 2.2222vh;
+        line-height: 3.2222vh;
         color: #D9D9D9; }
     .car-order__group .car-order__form .form__textarea {
       padding-top: 0.7vh;
