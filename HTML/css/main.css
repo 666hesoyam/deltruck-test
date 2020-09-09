@@ -3020,7 +3020,7 @@ option:focus {
     font-size: 2vw;
     margin-top: 2vw; }
     #nav li:first-child {
-      margin: 0 5vw 1vw 0; }
+      margin: 0 5vw -5vw 0; }
   #new__inner .new {
     width: 8vw;
     height: 2.5vw;
