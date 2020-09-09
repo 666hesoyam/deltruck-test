@@ -782,7 +782,16 @@ option:focus {
     padding: 0; }
   .accordion--mob li {
     padding: 0;
-    margin: 0 0 1px; }
+    margin: 0 0 1px;
+    position: relative; }
+    .accordion--mob li:before {
+      content: '';
+      position: absolute;
+      bottom: 0vw;
+      left: 8%;
+      width: 85%;
+      height: 0.1042vw;
+      background-color: #DFDFDF; }
   .accordion--mob [type=radio], .accordion--mob [type=checkbox] {
     display: none; }
   .accordion--mob label {
@@ -792,25 +801,14 @@ option:focus {
     font-size: 3vw;
     font-weight: bold;
     cursor: pointer;
-    position: relative;
     margin-bottom: 3vw;
     padding: 1.5208vw; }
-    .accordion--mob label:before {
-      content: '';
-      position: absolute;
-      bottom: -2.5vw;
-      left: 8%;
-      width: 85%;
-      height: 0.1042vw;
-      background-color: #DFDFDF; }
     .accordion--mob label p {
       max-width: 80%; }
   .accordion--mob .arrow img {
     width: 4vw; }
   .accordion--mob [type=radio]:checked ~ label, .accordion--mob [type=checkbox]:checked ~ label .arrow img {
     transform: rotate(-180deg); }
-  .accordion--mob [type=checkbox]:checked ~ label:before {
-    bottom: -2.5vw; }
   .accordion--mob [type=checkbox]:checked ~ label ~ .content {
     height: auto;
     margin-top: 5vw; }

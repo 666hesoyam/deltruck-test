@@ -954,13 +954,23 @@ font-size: 1.4667vh;
 	padding: 1.5208vw;
 	color: #303030;
 	& ul {
-		list-style:none;
-		margin:0;
-		padding:0;    
+		list-style: none;
+		margin: 0;
+		padding: 0;    
 	}
 	& li {
-		padding:0;
-		margin:0 0 1px;
+		padding: 0;
+		margin: 0 0 1px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0vw;
+			left: 8%;
+			width: 85%;
+			height: 0.1042vw;
+			background-color: #DFDFDF;
+		}
 	}
 	& [type=radio], & [type=checkbox] {
 		display:none;
@@ -972,18 +982,8 @@ font-size: 1.4667vh;
 		font-size: 3vw;
 		font-weight: bold;
 		cursor: pointer;
-		position: relative;
 		margin-bottom: 3vw;
 		padding: 1.5208vw;
-		&:before {
-			content: '';
-			position: absolute;
-			bottom: -2.5vw;
-			left: 8%;
-			width: 85%;
-			height: 0.1042vw;
-			background-color: #DFDFDF;
-		}
 		p {
 			max-width: 80%;
 		}
@@ -994,9 +994,9 @@ font-size: 1.4667vh;
 	& [type=radio]:checked ~ label, & [type=checkbox]:checked ~ label .arrow img {
 		transform: rotate(-180deg);
 	}
-	& [type=checkbox]:checked ~  label:before {
-		bottom: -2.5vw;
-	}
+	// & [type=checkbox]:checked .accordion--mob li:before {
+	// 	width: 0;
+	// }
 	& [type=checkbox]:checked ~ label ~ .content {
 		height: auto;
 		margin-top: 5vw;
