@@ -2613,7 +2613,8 @@ option:focus {
       width: 49.3148vw;
       padding-left: 1vw;
       font-size: 2.8vw;
-      line-height: 3vw; }
+      line-height: 3vw;
+      background-size: 2.8519vw 1.8333vw; }
       .flight__form .form__select option,
       .flight__form .form__select option:hover,
       .flight__form .form__select option:focus {
@@ -2844,12 +2845,14 @@ option:focus {
     height: 9vw;
     padding-left: 1vw;
     font-size: 3.8vw;
-    line-height: 4vw; }
+    line-height: 4vw;
+    background-size: 2.8519vw 1.8333vw; }
     .form__input::placeholder, .form__select::placeholder {
       font-size: 3.8vw;
       line-height: 4vw; }
   .accordion--mob label {
-    font-size: 4vw; }
+    font-size: 4vw;
+    height: 12vw; }
     .accordion--mob label p {
       max-width: 100%; }
   .accordion--mob .content p {
@@ -3025,7 +3028,9 @@ option:focus {
   #new__inner .new {
     width: 8vw;
     height: 2.5vw;
-    font-size: 2.1vw; } }
+    font-size: 2.1vw; }
+  .ac-flight input:checked ~ article {
+    max-height: 118vh; } }
 
 @media screen and (max-width: 737px) and (orientation: landscape) {
   #nav li {
