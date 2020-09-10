@@ -1757,6 +1757,9 @@ font-size: 1.4667vh;
 			font-size: 4.1667vh;
 			line-height: 1.4815vh;
 			color: $color-red;
+			span {
+				font-size: 2.5vh;
+			}
 		}
 		.results__text {
 			display: inline-block;

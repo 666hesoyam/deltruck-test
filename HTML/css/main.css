@@ -1399,6 +1399,8 @@ option:focus {
       font-size: 4.1667vh;
       line-height: 1.4815vh;
       color: #B72126; }
+      .results .results__info .results__title span {
+        font-size: 2.5vh; }
     .results .results__info .results__text {
       display: inline-block;
       font-weight: normal;
@@ -2432,6 +2434,8 @@ option:focus {
       margin-bottom: 2vw;
       font-size: 6.1667vw;
       line-height: 4.4815vw; }
+      .results .results__info .results__title span {
+        font-size: 2.5vh; }
     .results .results__info .results__text {
       font-size: 2.8vw;
       line-height: 4.2vw; }
@@ -3046,7 +3050,9 @@ option:focus {
       height: 100%; }
   .action .action__item .item__img {
     width: 100%;
-    height: 76.9444vh; } }
+    height: 76.9444vh; }
+  .results .results__info .results__title span {
+    font-size: 8.5vh; } }
 
 @media screen and (max-width: 737px) and (orientation: landscape) {
   #nav li {
