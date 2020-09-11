@@ -764,6 +764,14 @@ option:focus {
       transform: scale(1.02);
       transition: all .3s ease; }
 
+.additional-services .info-block__text p {
+  margin-bottom: 2vh; }
+
+.coef-link {
+  text-transform: uppercase;
+  color: #B72126;
+  font-weight: bold; }
+
 .accordion--mob {
   width: 97%;
   padding: 1.5208vw;

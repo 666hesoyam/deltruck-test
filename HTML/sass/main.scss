@@ -945,6 +945,16 @@ font-size: 1.4667vh;
 	}
 }
 
+.additional-services .info-block__text p {
+	margin-bottom: 2vh;
+}
+
+.coef-link {
+	text-transform: uppercase;
+	color: #B72126;
+	font-weight: bold;
+}
+
 // For mobile
 .accordion--mob {
 	width: 97%;
@@ -991,9 +1001,6 @@ font-size: 1.4667vh;
 	& [type=radio]:checked ~ label, & [type=checkbox]:checked ~ label .arrow img {
 		transform: rotate(-180deg);
 	}
-	// & [type=checkbox]:checked .accordion--mob li:before {
-	// 	width: 0;
-	// }
 	& [type=checkbox]:checked ~ label ~ .content {
 		height: auto;
 		margin-top: 5vw;
